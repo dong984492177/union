@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dong.dao.ApplicationDao">
+
+    <resultMap type="com.dong.model.Application" id="ApplicationMap">
+        <result property="aId" column="a_id" jdbcType="INTEGER"/>
+        <result property="aRId" column="a_r_id" jdbcType="INTEGER"/>
+        <result property="aUaId" column="a_ua_id" jdbcType="INTEGER"/>
+        <result property="aOperatingId" column="a_operating_id" jdbcType="INTEGER"/>
+        <result property="aApplicationStatus" column="a_application_status" jdbcType="INTEGER"/>
+        <result property="aDate" column="a_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <!--查询所有-->
+    <select id="getAll" resultMap="ApplicationMap">
+    select
+      a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date    from union.application
+    </select>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ApplicationMap">
+        select
+          a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date
+        from union.application
+        where a_id = #{aId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ApplicationMap">
+        select
+          a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date
+        from union.application
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="ApplicationMap">
+        select
+          a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date
+        from union.application
+        <where>
+            <if test="aId != null">
+                and a_id = #{aId}
+            </if>
+            <if test="aRId != null">
+                and a_r_id = #{aRId}
+            </if>
+            <if test="aUaId != null">
+                and a_ua_id = #{aUaId}
+            </if>
+            <if test="aOperatingId != null">
+                and a_operating_id = #{aOperatingId}
+            </if>
+            <if test="aApplicationStatus != null">
+                and a_application_status = #{aApplicationStatus}
+            </if>
+            <if test="aDate != null">
+                and a_date = #{aDate}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="aId" useGeneratedKeys="true">
+        insert into union.application(a_r_id, a_ua_id, a_operating_id, a_application_status, a_date)
+        values (#{aRId}, #{aUaId}, #{aOperatingId}, #{aApplicationStatus}, #{aDate})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update union.application
+        <set>
+            <if test="aRId != null">
+                a_r_id = #{aRId},
+            </if>
+            <if test="aUaId != null">
+                a_ua_id = #{aUaId},
+            </if>
+            <if test="aOperatingId != null">
+                a_operating_id = #{aOperatingId},
+            </if>
+            <if test="aApplicationStatus != null">
+                a_application_status = #{aApplicationStatus},
+            </if>
+            <if test="aDate != null">
+                a_date = #{aDate},
+            </if>
+        </set>
+        where a_id = #{aId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from union.application where a_id = #{aId}
+    </delete>
+
+</mapper>
