@@ -11,7 +11,7 @@
     <form id="updateFormId" class="layui-form">
         <div class="layui-form-item">
             <label for="rUser"  >账号</label>
-            <input type="text" id="rUser" name="rUser"  class="form-control" th:value="${roles.rUser}" readonly="readonly">
+            <input type="text" id="rUser" name="rUser"  class="form-control" th:value="${roles.RUser}" readonly="readonly">
             <span id="rUserErrorId"></span>
         </div>
        <!-- <div class="form-group">
@@ -21,42 +21,45 @@
         </div>-->
         <div class="layui-form-item">
             <label for="rGrade" >等级</label>
-            <input type="number" id="rGrade" name="rGrade"  class="form-control" readonly="readonly" th:value="${roles.rGrade}">
+            <input type="number" id="rGrade" name="rGrade"  class="form-control" readonly="readonly" th:value="${roles.getRGrade()}">
             <span id="rGradeErrorId"></span>
         </div>
         <div class="layui-form-item">
             <label for="rUsername" >昵称</label>
-            <input type="text" id="rUsername" name="rUsername"  class="form-control" th:value="${roles.rUsername}">
+            <input type="text" id="rUsername" name="rUsername"  class="form-control" th:value="${roles.getRUsername()}">
             <span id="rUsernameErrorId"></span>
         </div>
         <div class="layui-form-item">
             <label for="rGold" >金币</label>
-            <input type="number" id="rGold" name="rGold"  class="form-control" readonly="readonly" th:value="${roles.rGold}">
+            <input type="number" id="rGold" name="rGold"  class="form-control" readonly="readonly" th:value="${roles.getRGold()}">
             <span id="rGoldErrorId"></span>
         </div>
         <div class="layui-form-item">
 <!--            <label for="rUaId" >工会id</label>-->
-            <input type="hidden" id="rUaId" name="rUaId" th:value="${roles.rUaId}">
-            <input type="hidden" id="rId" name="rId" th:value="${roles.rId}">
+            <input type="hidden" id="rUaId" name="rUaId" th:value="${roles.getRUaId()}">
+
+            <input type="hidden" id="rId" name="rId" th:value="${roles.getRId()}">
             <span id="rUaIdErrorId"></span>
         </div>
+
 
         <input type="submit" id="btnResi" value="修改" class="btn btn-warning">
         <input type="reset" value="重置" class="btn btn-warning">
 
     </form>
-
     <div class="layui-upload">
         <label for="picFileId" >头像</label>
         <button type="button" class="layui-btn" id="picFileId">
             <i class="layui-icon">&#xe67c;</i>上传图片
         </button>
         <div class="layui-upload-list">
-            <img class="layui-upload-img" id="demo1" width="50px">
+            <img class="layui-upload-img" id="demo1" width="100px" th:src="${roles.getRImg()}">
             <p id="demoText"></p>
         </div>
 
     </div>
+
+
 </table>
 </body>
 <script type="text/javascript"  th:src="@{/js/jquery-1.11.0.min.js}" ></script>
@@ -71,6 +74,9 @@
         var $ = jQuery = layui.jquery;
         var form = layui.form;
         var upload = layui.upload;
+        /**
+         *修改个人信息
+         */
         $(function () {
             $("#updateFormId").validate({
                 rules: {
@@ -119,6 +125,9 @@
             });
 
         })
+        /**
+         * 图片上传
+         */
         upload.render({
             elem: '#picFileId' //绑定元素
             ,url: /*[[@{/roles/updateRolesPicFile}]]*/ //上传接口

@@ -2872,3 +2872,108 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2020/03/05T15:23:06 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
 2020/03/05T15:23:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2020/03/05T15:23:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/05T15:34:49 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 9844 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/05T15:34:49 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/05T15:34:49 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/05T15:34:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/05T15:34:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/05T15:34:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/05T15:34:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 JDBC repository interfaces.
+2020/03/05T15:34:54 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/05T15:34:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/05T15:34:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/05T15:34:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/05T15:34:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/05T15:34:56 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/05T15:34:56 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6205 ms
+2020/03/05T15:34:58 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/05T15:34:58 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/05T15:34:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/05T15:34:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/05T15:34:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/05T15:34:59 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 13.225 seconds (JVM running for 17.713)
+2020/03/05T15:35:22 [http-nio-80-exec-10] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/05T15:35:22 [http-nio-80-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/05T15:35:22 [http-nio-80-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2020/03/05T15:35:26 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/05T15:35:28 [http-nio-80-exec-7] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/05T15:35:28 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/05T15:35:29 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/05T15:35:29 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/05T15:35:29 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/05T15:35:29 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/05T15:35:29 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 0, null, o11.ico
+2020/03/05T15:35:29 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/05T15:35:30 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/05T15:37:38 [http-nio-80-exec-2] INFO  com.dong.controller.RolesController - 进入updateRolesPicFile方法
+2020/03/05T15:38:05 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.update - ==>  Preparing: update union.roles SET r_img = ? where r_id = ? 
+2020/03/05T15:38:05 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.update - ==> Parameters: b8d4c60a-1818-417c-91fe-472c34dc9ed2.jpg(String), 1(Integer)
+2020/03/05T15:38:05 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.update - <==    Updates: 1
+2020/03/05T15:38:24 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/05T15:38:49 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/05T15:38:51 [http-nio-80-exec-6] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/05T15:38:51 [http-nio-80-exec-6] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/05T15:38:51 [http-nio-80-exec-6] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/05T15:38:51 [http-nio-80-exec-6] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/05T15:38:51 [http-nio-80-exec-6] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 0, null, b8d4c60a-1818-417c-91fe-472c34dc9ed2.jpg
+2020/03/05T15:38:51 [http-nio-80-exec-6] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/05T15:38:53 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/05T15:39:43 [http-nio-80-exec-1] INFO  com.dong.controller.RolesController - 进入getRolesById方法
+2020/03/05T15:39:43 [http-nio-80-exec-1] INFO  com.dong.controller.RolesController - 进入selectOne方法
+2020/03/05T15:39:43 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/05T15:39:43 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/05T15:39:43 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/05T15:39:43 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 0, null, b8d4c60a-1818-417c-91fe-472c34dc9ed2.jpg
+2020/03/05T15:39:43 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/05T15:40:17 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/05T15:40:17 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/05T15:40:17 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/05T15:44:30 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 8332 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/05T15:44:30 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/05T15:44:30 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/05T15:44:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/05T15:44:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/05T15:44:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/05T15:44:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52ms. Found 0 JDBC repository interfaces.
+2020/03/05T15:44:40 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/05T15:44:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/05T15:44:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/05T15:44:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/05T15:44:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/05T15:44:42 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/05T15:44:42 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 11091 ms
+2020/03/05T15:44:44 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/05T15:44:44 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/05T15:44:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/05T15:44:45 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/05T15:44:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/05T15:44:45 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 17.948 seconds (JVM running for 22.728)
+2020/03/05T15:45:09 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/05T15:45:09 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/05T15:45:09 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2020/03/05T15:45:09 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/05T15:45:11 [http-nio-80-exec-2] INFO  com.dong.controller.RolesController - 进入getRolesById方法
+2020/03/05T15:45:11 [http-nio-80-exec-2] INFO  com.dong.controller.RolesController - 进入selectOne方法
+2020/03/05T15:45:12 [http-nio-80-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/05T15:45:12 [http-nio-80-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/05T15:45:12 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/05T15:45:12 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/05T15:45:12 [http-nio-80-exec-2] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/05T15:45:12 [http-nio-80-exec-2] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 0, null, b8d4c60a-1818-417c-91fe-472c34dc9ed2.jpg
+2020/03/05T15:45:13 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/05T15:45:13 [http-nio-80-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "b8d4c60a-1818-417c-91fe-472c34dc9ed2.jpg"]
+2020/03/05T15:48:42 [http-nio-80-exec-4] INFO  com.dong.controller.RolesController - 进入updateRolesPicFile方法
+2020/03/05T15:48:43 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.update - ==>  Preparing: update union.roles SET r_img = ? where r_id = ? 
+2020/03/05T15:48:43 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.update - ==> Parameters: 60f86ac0-2d84-44b7-a8eb-66bf3b417de6.jpg(String), 1(Integer)
+2020/03/05T15:48:43 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.update - <==    Updates: 1
+2020/03/05T15:50:39 [http-nio-80-exec-8] INFO  com.dong.controller.RolesController - 进入getRolesById方法
+2020/03/05T15:50:39 [http-nio-80-exec-8] INFO  com.dong.controller.RolesController - 进入selectOne方法
+2020/03/05T15:50:39 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/05T15:50:39 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/05T15:50:39 [http-nio-80-exec-8] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/05T15:50:39 [http-nio-80-exec-8] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 0, null, 60f86ac0-2d84-44b7-a8eb-66bf3b417de6.jpg
+2020/03/05T15:50:39 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/05T15:50:39 [http-nio-80-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "60f86ac0-2d84-44b7-a8eb-66bf3b417de6.jpg"]
+2020/03/05T15:51:10 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/05T15:51:10 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/05T15:51:11 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -37,5 +37,9 @@ public class ToController {
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "guild";
     }
-
+    @RequestMapping("/topasswordUpdate")
+    public String topasswordUpdate(){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        return "passwordUpdate";
+    }
 }
