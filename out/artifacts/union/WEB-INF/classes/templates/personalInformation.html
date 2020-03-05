@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet" th:href="@{/css/bootstrap.min.css}" type="text/css">
+    <link  rel="stylesheet" th:href="@{/layui/css/layui.css}" type="text/css">
+    <title>个人信息页面</title>
+</head>
+<body>
+<table  class="table table-striped">
+    <form id="updateId">
+        <div class="form-group">
+            <label for="rUser"  >账号</label>
+            <input type="text" id="rUser" name="rUser"  class="form-control">
+            <span id="rUserErrorId"></span>
+        </div>
+        <div class="form-group">
+            <label for="rPassword" >密码</label>
+            <input type="text" id="rPassword" name="rPassword"  class="form-control">
+            <span id="rPasswordErrorId"></span>
+        </div>
+        <div class="form-group">
+            <label for="rGrade" >等级</label>
+            <input type="number" id="rGrade" name="rGrade"  class="form-control" readonly="readonly">
+            <span id="rGradeErrorId"></span>
+        </div>
+        <div class="form-group">
+            <label for="rUsername" >昵称</label>
+            <input type="text" id="rUsername" name="rUsername"  class="form-control">
+            <span id="rUsernameErrorId"></span>
+        </div>
+        <div class="form-group">
+            <label for="rGold" >金币</label>
+            <input type="number" id="rGold" name="rGold"  class="form-control" readonly="readonly">
+            <span id="rGoldErrorId"></span>
+        </div>
+        <div class="form-group">
+<!--            <label for="rUaId" >工会id</label>-->
+            <input type="hidden" id="rUaId" name="rUaId"  class="form-control">
+            <span id="rUaIdErrorId"></span>
+        </div>
+        <div class="form-group">
+            <label for="picFile"  >图片</label>
+            <input type="file" id="picFile" name="picFile"  class="form-control">
+            <span id="rImgErrorId"></span>
+        </div>
+        <input type="submit" id="btnResi" value="修改" class="btn btn-warning">
+        <input type="reset" value="重置" class="btn btn-warning">
+
+    </form>
+</table>
+</body>
+<script type="text/javascript"  th:src="@{/js/jquery-1.11.0.min.js}" ></script>
+<script type="application/javascript"   th:src="@{/js/jquery.validate.js}"></script>
+<script type="application/javascript"   th:src="@{/js/messages_zh.js}" ></script>
+<script type="application/javascript"   th:src="@{/js/bootstrap.min.js}" ></script>
+<script th:src="@{/js/echarts.min.js}"></script>
+<script th:src="@{/layui/layui.js}">
+
+</script>
+</html>

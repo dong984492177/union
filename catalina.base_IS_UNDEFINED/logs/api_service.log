@@ -2866,3 +2866,9 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2020/03/05T14:41:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
 2020/03/05T14:41:16 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 26.591 seconds (JVM running for 34.582)
 2020/03/05T14:46:31 [Thread-36] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/05T15:23:05 [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020/03/05T15:23:06 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 8120 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/05T15:23:06 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/05T15:23:06 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/05T15:23:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/05T15:23:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'

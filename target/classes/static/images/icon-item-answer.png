@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>5DFC6609B1E9EC34319ED4EC</RequestId>
+  <HostId>cdn.eztest.org</HostId>
+  <Key>static/img/icon-item-answer.png</Key>
+</Error>
