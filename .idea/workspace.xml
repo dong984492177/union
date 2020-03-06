@@ -7,6 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/union_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/union_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -1307,7 +1310,7 @@
       <workItem from="1583477576626" duration="955000" />
       <workItem from="1583478563380" duration="157000" />
       <workItem from="1583478822986" duration="1001000" />
-      <workItem from="1583479971770" duration="1727000" />
+      <workItem from="1583479971770" duration="1915000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -1381,10 +1384,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583291928352" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1583481719669">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1583482292162">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1583481719669" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1583482292162" />
     <state x="393" y="112" key="FileChooserDialogImpl" timestamp="1583391943837">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
