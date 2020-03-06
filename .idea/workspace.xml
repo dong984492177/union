@@ -7,1125 +7,102 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/union_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/union_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jdbc_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jdbc_1_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_relational_1_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/UnionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/UnionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/RolesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/RolesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/ToController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/ToController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RolesDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RolesDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/guild.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/guild.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/passwordUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/passwordUpdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/union.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/UnionApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/ApplicationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/PositionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/RolesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/ToController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/UnionattributesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/UnionmemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/dao/ApplicationDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/dao/PositionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/dao/RolesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/dao/UnionattributesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/dao/UnionmemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/model/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/model/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/model/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/model/Unionattributes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/model/Unionmember.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/ApplicationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/PositionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/RolesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/UnionattributesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/UnionmemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/ApplicationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/PositionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/RolesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/UnionattributesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/UnionmemberServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/util/FileContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/util/PicUploadUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ApplicationMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PositionDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RolesDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/RolesDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UnionattributesDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UnionmemberDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-select.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/daterangepicker-bs3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/formValda.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/index-pc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery.datetimepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery.mcustomscrollbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/radialplot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/swiper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/tipsy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/font/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font_176393_zxhuh64kc07ldi.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font_176393_zxhuh64kc07ldi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font_176393_zxhuh64kc07ldi.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font_176393_zxhuh64kc07ldi.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/40px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/arrow-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/automobile7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/banking9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bankofwenzhou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-arrow-guid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-film.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-home-mobile-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-home-title-first.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-home-title-last.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-home-title-v-last.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-home-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-home-v-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-last-arrow-guid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-paper-list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-tm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/canon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/capitaland.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/cfa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/cmb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/cnnc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/command-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/command-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/config8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/consumer1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/consumer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/consumer3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/consumer4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/cpic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dashboard-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dashboard-photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dm1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dm2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dm3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dm4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dm5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dm6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/download-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/download-v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/education1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/education2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/education3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/education4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/education5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/en-icon-custome-offline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/en-one-drive-connect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/en-one-drive-disconnect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/estate1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/estate2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/evaluation-bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/evaluation-bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/evaluation-bg4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/fesco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/grant.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/help_list_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/home-pic6-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/home-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-admission-card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-arrow-down.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-complete-enroll.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-complete-student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-create-student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-custome-offline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-en-statum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-form-expired.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-form-incoming.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-form-ongoing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-hr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-item-analyse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-item-answer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-manager.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-org.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-statum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-teacher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-unverified.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon-verified-sm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icon_sprites.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons-hover-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/import-done.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/import-item-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/internet9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/item-list-img-last-mq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/item-list-img-last.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/item-list-img-mq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/item-list-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/lenovo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/loading-3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/loading-4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/login-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/login-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo-kkl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/mcsb_buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/model1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/model2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/model3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/model4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/model5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/model6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/nav-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/nav-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/news-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/next-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/one-drive-connect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/one-drive-disconnect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/one-driver-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/partner-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/partner-dh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/partner-hw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/partner-nd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/partner-yd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/partner-yl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/place-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/prev-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/product-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec1-bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec1-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec2-bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec2-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec2-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-cloud1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-cloud2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-cloud3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-cloud4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-cloud5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec3-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec4-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec4-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec4-txt1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec4-txt2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec4-txt3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec5-cir1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec5-cir2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec5-cir3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec5-cir4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec5-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec5-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec6-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec6-txt1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec6-txt2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sec6-txt3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/servier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/session-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/speak-player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/speak-playing.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/spend-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/student-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/swiper1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/swiper2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/swiper3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/swiper4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/template-li-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/template-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/throbber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/tip-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/tip-imgs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/top_bg_tm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-icons_0078ae_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unionpay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/user_128px_1232016_easyicon.net.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/wacker-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/wacker-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/游戏工会管理.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap-prompts-alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/echarts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/funnel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/highcharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/i18next.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/i18nextxhrbackend.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/iconfont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/index_public.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-1.11.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-1.11.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.datetimepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.mcustomscrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.mousewheel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.placeholder.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/messages_zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/particles.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/swiper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/xhr-polyfill.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/colorpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/transfer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/layui.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/guild.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/personalInformation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/META-INF/union.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/UnionApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/controller/ApplicationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/controller/PositionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/controller/RolesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/controller/ToController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/controller/UnionattributesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/controller/UnionmemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/dao/ApplicationDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/dao/PositionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/dao/RolesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/dao/UnionattributesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/dao/UnionmemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/model/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/model/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/model/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/model/Unionattributes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/model/Unionmember.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/ApplicationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/PositionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/RolesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/UnionattributesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/UnionmemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/impl/ApplicationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/impl/PositionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/impl/RolesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/impl/UnionattributesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/com/dong/service/impl/UnionmemberServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/ApplicationMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/PositionDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/RolesDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/UnionattributesDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/UnionmemberDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/bootstrap-select.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/daterangepicker-bs3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/formValda.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/index-pc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/jquery.datetimepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/jquery.mcustomscrollbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/radialplot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/swiper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/css/tipsy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/font/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/font_176393_zxhuh64kc07ldi.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/font_176393_zxhuh64kc07ldi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/font_176393_zxhuh64kc07ldi.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/font_176393_zxhuh64kc07ldi.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/40px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/arrow-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/automobile7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/banking9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bankofwenzhou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-arrow-guid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-film.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-home-mobile-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-home-title-first.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-home-title-last.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-home-title-v-last.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-home-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-home-v-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-last-arrow-guid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-paper-list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg-tm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/bg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/canon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/capitaland.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/cfa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/cmb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/cnnc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/command-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/command-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/config8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/consumer1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/consumer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/consumer3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/consumer4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/cpic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dashboard-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dashboard-photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dm1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dm2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dm3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dm4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dm5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/dm6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/download-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/download-v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/education1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/education2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/education3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/education4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/education5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/en-icon-custome-offline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/en-one-drive-connect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/en-one-drive-disconnect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/estate1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/estate2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/evaluation-bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/evaluation-bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/evaluation-bg4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/fesco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/grant.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/help_list_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/home-pic6-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/home-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-admission-card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-arrow-down.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-complete-enroll.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-complete-student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-create-student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-custome-offline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-en-statum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-form-expired.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-form-incoming.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-form-ongoing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-hr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-item-analyse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-item-answer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-manager.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-org.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-statum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-teacher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-unverified.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon-verified-sm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icon_sprites.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icons-hover-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/icons-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/import-done.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/import-item-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/internet9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/item-list-img-last-mq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/item-list-img-last.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/item-list-img-mq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/item-list-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/lenovo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/loading-3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/loading-4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/login-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/login-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/logo-kkl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/mcsb_buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/model1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/model2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/model3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/model4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/model5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/model6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/nav-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/nav-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/news-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/next-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/one-drive-connect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/one-drive-disconnect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/one-driver-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/partner-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/partner-dh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/partner-hw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/partner-nd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/partner-yd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/partner-yl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/place-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/prev-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/product-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec1-bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec1-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec2-bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec2-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec2-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-cloud1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-cloud2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-cloud3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-cloud4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-cloud5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec3-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec4-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec4-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec4-txt1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec4-txt2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec4-txt3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec5-cir1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec5-cir2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec5-cir3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec5-cir4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec5-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec5-pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec6-pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec6-txt1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec6-txt2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/sec6-txt3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/servier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/session-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/speak-player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/speak-playing.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/spend-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/student-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/swiper1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/swiper2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/swiper3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/swiper4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/template-li-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/template-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/throbber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/tip-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/tip-imgs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/top_bg_tm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-icons_0078ae_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/unionpay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/user_128px_1232016_easyicon.net.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/wacker-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/wacker-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/images/游戏工会管理.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/bootstrap-prompts-alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/bootstrap-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/echarts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/funnel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/highcharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/i18next.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/i18nextxhrbackend.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/iconfont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/index_public.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery-1.11.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery-1.11.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery.datetimepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery.form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery.mcustomscrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery.mousewheel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery.placeholder.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/messages_zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/particles.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/swiper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/xhr-polyfill.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/font/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/colorpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/transfer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/layui.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/static/layui/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/templates/guild.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/classes/templates/personalInformation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-3.5.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-autoconfigure-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-starter-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jdbc-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-thymeleaf-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-validation-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-jdbc-1.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-relational-1.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-java8time-3.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-9.0.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-el-9.0.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-9.0.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dong-0.0.1-SNAPSHOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dong/UnionApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RolesDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/union.iml" beforeDir="false" afterPath="$PROJECT_DIR$/union.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1243,7 +220,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TemplateSettingPanel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1310,7 +287,8 @@
       <workItem from="1583477576626" duration="955000" />
       <workItem from="1583478563380" duration="157000" />
       <workItem from="1583478822986" duration="1001000" />
-      <workItem from="1583479971770" duration="1915000" />
+      <workItem from="1583479971770" duration="2373000" />
+      <workItem from="1583483682794" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -1333,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583404565281</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="001">
+      <created>1583482212436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583482212436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="001">
+      <created>1583482338114</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583482338114</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1356,10 +348,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="205" y="15" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1583317148108" />
-    <state x="106" y="20" width="1166" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583481901985">
+    <state x="106" y="20" width="1166" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583484709842">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="106" y="20" width="1166" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1583481901985" />
+    <state x="106" y="20" width="1166" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1583484709842" />
     <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1583392519845">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -1400,54 +392,54 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="448" y="76" key="Github.UntrackedFilesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583392681841" />
-    <state width="1103" height="219" key="GridCell.Tab.0.bottom" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.0.bottom" timestamp="1583487193468">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.0.center" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583487193468" />
+    <state width="1325" height="306" key="GridCell.Tab.0.center" timestamp="1583487193468">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.0.left" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583487193468" />
+    <state width="1325" height="306" key="GridCell.Tab.0.left" timestamp="1583487193467">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.0.right" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583487193467" />
+    <state width="1325" height="306" key="GridCell.Tab.0.right" timestamp="1583487193468">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.1.bottom" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583487193468" />
+    <state width="1325" height="306" key="GridCell.Tab.1.bottom" timestamp="1583487292612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.1.center" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583487292612" />
+    <state width="1325" height="306" key="GridCell.Tab.1.center" timestamp="1583487292611">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.1.left" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1583487292611" />
+    <state width="1325" height="306" key="GridCell.Tab.1.left" timestamp="1583487292611">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.1.right" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1583487292611" />
+    <state width="1325" height="306" key="GridCell.Tab.1.right" timestamp="1583487292611">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.2.bottom" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1583487292611" />
+    <state width="1325" height="306" key="GridCell.Tab.2.bottom" timestamp="1583486036614">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.2.center" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583486036614" />
+    <state width="1325" height="306" key="GridCell.Tab.2.center" timestamp="1583486036614">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.2.left" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1583486036614" />
+    <state width="1325" height="306" key="GridCell.Tab.2.left" timestamp="1583486036614">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
-    <state width="1103" height="219" key="GridCell.Tab.2.right" timestamp="1583478556361">
+    <state width="1325" height="306" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1583486036614" />
+    <state width="1325" height="306" key="GridCell.Tab.2.right" timestamp="1583486036614">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1103" height="219" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1583478556361" />
+    <state width="1325" height="306" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1583486036614" />
     <state width="1103" height="219" key="GridCell.Tab.3.bottom" timestamp="1583478556361">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -1472,10 +464,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="25" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1583286147717" />
-    <state x="52" y="13" width="1087" height="712" key="SettingsEditor" timestamp="1583481908157">
+    <state x="52" y="13" width="1087" height="712" key="SettingsEditor" timestamp="1583484588249">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="52" y="13" width="1087" height="712" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1583481908157" />
+    <state x="52" y="13" width="1087" height="712" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1583484588249" />
     <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1583393394341">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -1518,9 +510,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dong/controller/RolesController.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/dong/controller/ToController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

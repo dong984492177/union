@@ -26,7 +26,7 @@
         <ul class="layui-nav layui-layout-left" lay-filter="test">
             <li class="layui-nav-item"><a th:href="@{/tologin}" >首页</a></li>
             <li class="layui-nav-item"><a th:href="@{/tologin}" >登录/注册</a></li>
-            <li class="layui-nav-item"><a th:href="@{'/torguild'+${session.id}}">工会</a></li>
+            <li class="layui-nav-item"><a th:href="@{'/torguild/'+${session.id}}">工会</a></li>
             <!--<li class="layui-nav-item"><a href="">用户</a></li>
             <li class="layui-nav-item">
                 <a href="javascript:;">其它系统</a>
@@ -72,7 +72,7 @@
                         <dd><a href="">超链接</a></dd>
                     </dl>-->
                 </li>
-                <li class="layui-nav-item"> <a th:href="@{/torguild}">工会</a></li>
+                <li class="layui-nav-item"> <a th:href="@{'/torguild/'+${session.id}}">工会</a></li>
 
             </ul>
         </div>
