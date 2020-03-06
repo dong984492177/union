@@ -22,10 +22,12 @@
     <div class="layui-header">
         <div class="layui-logo">layui 后台布局</div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
+        <!--    主页 以此为模板    -->
         <ul class="layui-nav layui-layout-left" lay-filter="test">
+            <li class="layui-nav-item"><a th:href="@{/tologin}" >首页</a></li>
             <li class="layui-nav-item"><a th:href="@{/tologin}" >登录/注册</a></li>
-            <li class="layui-nav-item"><a th:href="@{/torguild}">工会</a></li>
-            <li class="layui-nav-item"><a href="">用户</a></li>
+            <li class="layui-nav-item"><a th:href="@{'/torguild'+${session.id}}">工会</a></li>
+            <!--<li class="layui-nav-item"><a href="">用户</a></li>
             <li class="layui-nav-item">
                 <a href="javascript:;">其它系统</a>
                 <dl class="layui-nav-child">
@@ -33,37 +35,27 @@
                     <dd><a href="">消息管理</a></dd>
                     <dd><a href="">授权管理</a></dd>
                 </dl>
-            </li>
+            </li>-->
         </ul>
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item">
-
                 <a href="javascript:;" >
-                    <img th:src="'/java/'+${session.img}" class='layui-nav-img'>
+                    <img th:src="'/java/'+${session.img}" class='layui-nav-img' src="/java/Music.ico">
                     <span th:text="${session.name}">未登陆</span>
-
                 </a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:;" lay-id="personalInformationId" th:attr="lay-src=@{'/roles/getRolesById/'+${session.id}}" lay-name="基本信息" data-btn="btn">基本资料</a></dd>
-                    <dd><a href="">安全设置</a></dd>
-                </dl>
+                    <dd><a href="javascript:;" lay-id="getRolesId" th:attr="lay-src=@{'/roles/getRolesById/'+${session.id}}" lay-name="基本信息" data-btn="btn">基本资料</a></dd>
+                    <dd><a href="javascript:;" lay-id="passwordUpdateId" th:attr="lay-src=@{/topasswordUpdate}" lay-name="修改密码" data-btn="btn">修改密码</a></dd> </dl>
             </li>
             <li class="layui-nav-item"><a href="">退了</a></li>
         </ul>
     </div>
-
+    <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
     <div class="layui-side layui-bg-black">
         <div class="layui-side-scroll">
-            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-            <ul class="layui-nav layui-nav-tree " lay-filter="test">
-                <li class="layui-nav-item layui-nav-itemed" >
-                    <a class="" href="javascript:;" >所有商品</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;" lay-id="longinId" th:attr="lay-src=@{/tologin}" lay-name="登录" data-btn="btn">登录</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="javascript:;">超链接</a></dd>
-                    </dl>
+            <ul class="layui-nav layui-nav-tree " lay-filter="test" id="sideId">
+                <li class="layui-nav-item layui-nav-itemed"  >
+                    <a href="javascript:;" lay-id="guildlQueryAllnId" th:attr="lay-src=@{}" lay-name="查看工会" data-btn="btn">查看工会</a>
                 </li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">解决方案</a>
@@ -78,8 +70,10 @@
             </ul>
         </div>
     </div>
+
+    <!--  嵌入页面内容区  -->
     <div class="layui-body">
-        <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true" style="height: 800%;">
+        <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true" style="height: 100%;">
             <ul class="layui-tab-title">
                 <li class="layui-this">主页</li>
 
@@ -128,6 +122,8 @@
                 element.tabChange('demo', id);
             }
         });
+        var guild=/*[[${session.guild}]]*/;
+        alert(guild);
 
     });
 </script>

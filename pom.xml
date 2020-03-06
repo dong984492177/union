@@ -22,15 +22,16 @@
         <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
     </properties>
 
-    <packaging>war</packaging>
+ <!--   <packaging>war</packaging>-->
     <build>
         <plugins>
             <!--     项目打jar包       -->
-            <!--<plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>-->
+            </plugin>
             <!--      项目打war包      -->
+<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -38,6 +39,7 @@
                     <warName>springboot</warName>
                 </configuration>
             </plugin>
+-->
 
             <plugin>
                 <!--热部署配置-->
@@ -79,18 +81,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
 
-                <!-- 如果在使用自带tomcat请注释下面，如果使用第三方tomcat不要注释下面 -->
-                <!-- <exclusion>
-                     <groupId>org.springframework.boot</groupId>
-                     <artifactId>spring-boot-starter-tomcat</artifactId>
-                 </exclusion>-->
-            </exclusions>
 
 
         </dependency>
@@ -98,12 +89,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
+
             <version>2.1.1</version>
         </dependency>
         <dependency>
@@ -123,10 +109,10 @@
             </exclusions>
         </dependency>
         <!--    日志    -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>-->
+        </dependency>
         <!--添加热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -146,12 +132,12 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <!--部署到生产环境放开 -->
-            <!--<scope>provided</scope>-->
-        </dependency>
+            &lt;!&ndash;部署到生产环境放开 &ndash;&gt;
+            &lt;!&ndash;<scope>provided</scope>&ndash;&gt;
+        </dependency>-->
     </dependencies>
 
 </project>

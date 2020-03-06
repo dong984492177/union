@@ -111,6 +111,13 @@ public class RolesController {
         model.addAttribute("roles",roles);
         return "personalInformation";
     }
+
+    /**
+     * 个人信息修改
+     * @param roles
+     * @param request
+     * @return
+     */
     @ResponseBody
     @RequestMapping("/updateRoles")
     public int updateRoles(Roles roles, HttpServletRequest request){
@@ -122,6 +129,15 @@ public class RolesController {
         }
         return count;
     }
+
+    /**
+     * 头像删除修改
+     * @param id 账号id
+     * @param roles
+     * @param picFile 文件
+     * @param request
+     * @return
+     */
     @ResponseBody
     @RequestMapping("/updateRolesPicFile")
     public int updateRolesPicFile(int id ,Roles roles,@RequestParam("file") MultipartFile picFile , HttpServletRequest request){
@@ -133,6 +149,25 @@ public class RolesController {
         int count = rolesService.updateReturnInt(roles);
         if(count==1){
             session.setAttribute("img",roles.getRImg());
+        }
+        return count;
+    }
+
+    /**
+     * 密码修改
+     * @param roles
+     * @param password2
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/updateRolesPassword")
+    public int updateRolesPassword(Roles roles,String password2){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        List<Roles> rolesList=rolesService.queryAll(roles);
+        int count=rolesList.size();
+        if(count>0){
+            roles.setRPassword(password2);
+            count=rolesService.updateReturnInt(roles);
         }
         return count;
     }
