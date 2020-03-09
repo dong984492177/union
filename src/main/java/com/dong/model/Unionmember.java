@@ -6,38 +6,38 @@ import java.io.Serializable;
  * (Unionmember)实体类
  *
  * @author makejava
- * @since 2020-03-03 13:32:15
+ * @since 2020-03-08 13:14:18
  */
 public class Unionmember implements Serializable {
-    private static final long serialVersionUID = 116188987839253291L;
+    public static final long serialVersionUID = 794596466366075583L;
     /**
     * id
     */
-    private Integer umId;
+    public Integer umId;
     /**
     * 工会id
     */
-    private Integer umUaId;
+    public Integer umUaId;
     /**
-    * 工会创建人id
+    * 工会成员id
     */
-    private Integer unRId;
+    public Integer unRId;
     /**
     * 周贡献
     */
-    private Integer unWeekContribution;
+    public Integer unWeekContribution;
     /**
     * 月贡献
     */
-    private Integer unMonthlyContribution;
+    public Integer unMonthlyContribution;
     /**
     * 总贡献
     */
-    private Integer unTotalContribution;
+    public Integer unTotalContribution;
     /**
     * 职位id
     */
-    private Integer unPId;
+    public Integer unPId;
 
 
     public Integer getUmId() {

@@ -52,4 +52,5 @@ public interface UnionmemberService {
      */
     boolean deleteById(Integer umId);
 
+    List<Unionmember> queryAll(Unionmember unionmember);
 }

@@ -1,18 +1,20 @@
 package com.dong.controller;
 
 import com.dong.model.Roles;
+import com.dong.model.Unionmember;
 import com.dong.service.RolesService;
+import com.dong.service.UnionmemberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 public class ToController {
@@ -24,6 +26,8 @@ public class ToController {
      */
     @Resource
     private RolesService rolesService;
+    @Resource
+    private UnionmemberService unionmemberService;
     /**
      * 到主页
      * @return
@@ -44,19 +48,59 @@ public class ToController {
         return "login";
     }
 
-
-    @RequestMapping("/torguild/{id}")
+    /**
+     * 进入工会管理页面 返回工会id 和该成员在工会的职位
+     * @param request
+     * @param id 成员个人信息id
+     * @return
+     */
+    @RequestMapping(value = "/torguild/{id}")
     public String torguild(HttpServletRequest request , @PathVariable int id){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         //创建session
         HttpSession session=request.getSession();
         Roles roles= rolesService.queryById(id);
-        session.setAttribute("guild", roles.getRUaId());
+        session.setAttribute("uald", roles.getRUaId());
+        //通过id查工会表中的该成员的职位
+        Unionmember unionmember=new Unionmember();
+        unionmember.setUnRId(id);
+        List<Unionmember> unionmembers=unionmemberService.queryAll(unionmember);
+        if (unionmembers.size()>0) {
+            session.setAttribute("position", unionmembers.get(0).getUnPId());
+        }else{
+            session.setAttribute("position", null);
+        }
         return "guild";
     }
+
+    /**
+     * 进入密码修改页面
+     * @return
+     */
     @RequestMapping("/topasswordUpdate")
     public String topasswordUpdate(){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "passwordUpdate";
     }
+
+    /**
+     * 进入创建工会页面
+     * @return
+     */
+    @RequestMapping("/tonewGuild")
+    public String tonewGuild(){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        return "newGuild";
+    }
+    @RequestMapping("/tomyGuild")
+    public String tomyGuild(){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        return "myGuild";
+    }
+    @RequestMapping("/toguildAll")
+    public String toguildAll(){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        return "guildAll";
+    }
+
 }

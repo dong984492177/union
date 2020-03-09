@@ -10,24 +10,24 @@ import java.io.Serializable;
  */
 public class Application implements Serializable {
     private static final long serialVersionUID = 521409313114289246L;
-    
-    private Integer aId;
+
+    public Integer aId;
     /**
     * 成员id
     */
-    private Integer aRId;
+    public Integer aRId;
     /**
     * 申请的工会id
     */
-    private Integer aUaId;
+    public Integer aUaId;
     /**
     * 操作的人id
     */
-    private Integer aOperatingId;
+    public Integer aOperatingId;
     /**
     * 申请状态 1表示未操作 2表示拒绝
     */
-    private Integer aApplicationStatus;
+    public Integer aApplicationStatus;
 
 
     public Integer getAId() {

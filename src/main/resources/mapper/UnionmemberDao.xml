@@ -60,8 +60,49 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="umId" useGeneratedKeys="true">
-        insert into union.unionmember(um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id)
-        values (#{umUaId}, #{unRId}, #{unWeekContribution}, #{unMonthlyContribution}, #{unTotalContribution}, #{unPId})
+        insert into union.unionmember
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test ='null != umUaId'>
+                um_ua_id,
+            </if>
+            <if test ='null != unRId'>
+                un_r_id,
+            </if>
+            <if test ='null != unWeekContribution'>
+                un_week_contribution,
+            </if>
+            <if test ='null != unMonthlyContribution'>
+                un_monthly_contribution,
+            </if>
+            <if test ='null != unTotalContribution'>
+                un_total_contribution,
+            </if>
+            <if test ='null != unPId'>
+                un_p_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test ='null != umUaId'>
+                #{umUaId},
+            </if>
+            <if test ='null != unRId'>
+                #{unRId},
+            </if>
+            <if test ='null != unWeekContribution'>
+                #{unWeekContribution},
+            </if>
+            <if test ='null != unMonthlyContribution'>
+                #{unMonthlyContribution},
+            </if>
+            <if test ='null != unTotalContribution'>
+                #{unTotalContribution},
+            </if>
+            <if test ='null != unPId'>
+                #{unPId},
+            </if>
+
+
+        </trim>
     </insert>
 
     <!--通过主键修改数据-->

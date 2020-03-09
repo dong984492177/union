@@ -70,9 +70,12 @@
 <script th:src="@{/layui/layui.js}"></script>
 <script th:inline="javascript">
     layui.use(['element','jquery','form','upload'], function() {
+
         var element = layui.element;
         var $ = jQuery = layui.jquery;
+        //表单
         var form = layui.form;
+        //图片上传
         var upload = layui.upload;
         /**
          *修改个人信息

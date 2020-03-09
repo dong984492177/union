@@ -24,7 +24,7 @@
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <!--    主页 以此为模板    -->
         <ul class="layui-nav layui-layout-left" lay-filter="test">
-            <li class="layui-nav-item"><a th:href="@{/tologin}" >首页</a></li>
+            <li class="layui-nav-item"><a th:href="@{/index}" >首页</a></li>
             <li class="layui-nav-item"><a th:href="@{/tologin}" >登录/注册</a></li>
             <li class="layui-nav-item"><a th:href="@{'/torguild/'+${session.id}}">工会</a></li>
             <!--<li class="layui-nav-item"><a href="">用户</a></li>
@@ -45,7 +45,8 @@
                 </a>
                 <dl class="layui-nav-child">
                     <dd><a href="javascript:;" lay-id="getRolesId" th:attr="lay-src=@{'/roles/getRolesById/'+${session.id}}" lay-name="基本信息" data-btn="btn">基本资料</a></dd>
-                    <dd><a href="javascript:;" lay-id="passwordUpdateId" th:attr="lay-src=@{/topasswordUpdate}" lay-name="修改密码" data-btn="btn">修改密码</a></dd> </dl>
+                    <dd><a href="javascript:;" lay-id="passwordUpdateId" th:attr="lay-src=@{/topasswordUpdate}" lay-name="修改密码" data-btn="btn">修改密码</a></dd>
+                </dl>
             </li>
             <li class="layui-nav-item"><a href="">退了</a></li>
         </ul>
@@ -55,18 +56,9 @@
         <div class="layui-side-scroll">
             <ul class="layui-nav layui-nav-tree " lay-filter="test" id="sideId">
                 <li class="layui-nav-item layui-nav-itemed"  >
-                    <a href="javascript:;" lay-id="guildlQueryAllnId" th:attr="lay-src=@{/in}" lay-name="查看工会" data-btn="btn">查看工会</a>
+                    <a href="javascript:;" lay-id="guildlQueryAllnId" th:attr="lay-src=@{/toguildAll}" lay-name="查看所有工会" data-btn="btn">查看所有工会</a>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">解决方案</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="">超链接</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item"><a href="">云市场</a></li>
-                <li class="layui-nav-item"><a href="">发布商品</a></li>
+
             </ul>
         </div>
     </div>
@@ -76,7 +68,6 @@
         <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true" style="height: 100%;">
             <ul class="layui-tab-title">
                 <li class="layui-this">主页</li>
-
             </ul>
             <div class="layui-tab-content"  >
                 <div class="layui-tab-item layui-show" >
@@ -94,6 +85,13 @@
 </div>
 
 
+
+
+
+
+
+
+
 </body>
 <script type="text/javascript"  th:src="@{/js/jquery-1.11.0.min.js}" ></script>
 <script type="application/javascript"   th:src="@{/js/jquery.validate.js}"></script>
@@ -105,10 +103,8 @@
     layui.use('element', function(){
         var element = layui.element;
         var $ = jQuery = layui.jquery;
-
         //一些事件监听
         element.on('nav()', function(data){
-
             var id=$(this).attr("lay-id");
             var src= $(this).attr("lay-src");
             var sname= $(this).attr("lay-name");
@@ -122,9 +118,23 @@
                 element.tabChange('demo', id);
             }
         });
-        var guild=/*[[${session.guild}]]*/;
-        alert(guild);
+        var uald=/*[[${session.uald}]]*/;
+        var position=/*[[${session.position}]]*/
+        var project=/*[[@{/}]]*/;
+        if(uald==null){
+            $("#sideId").append("<li class='layui-nav-item' >\n" +
+                "    <a href='javascript:;' lay-id='newGuild' lay-src='"+project+"tonewGuild' lay-name='创建工会' data-btn='btn'>创建工会</a>\n" +
+                "</li>")
+        }else {
+            $("#sideId").append(" <li class='layui-nav-item'>\n" +
+                "                    <a href='javascript:;'>我的工会</a>\n" +
+                "                    <dl class='layui-nav-child' id='myGuild'></dl>\n" +
+                "                </li>")
+            $("#myGuild").append("<a href='javascript:;' lay-id='myGuild' lay-src='"+project+"tomyGuild' lay-name='查看工会' data-btn='btn'>查看工会</a>");
 
+        }
+        //全部更新导航条
+        element.init();
     });
 </script>
 </html>

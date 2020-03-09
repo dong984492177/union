@@ -1,6 +1,8 @@
 package com.dong.service;
 
 import com.dong.model.Unionattributes;
+import com.dong.model.UnionattributesAndRoles;
+
 import java.util.List;
 
 /**
@@ -10,6 +12,8 @@ import java.util.List;
  * @since 2020-03-03 13:32:09
  */
 public interface UnionattributesService {
+
+
 
     /**
      * 通过ID查询单条数据
@@ -52,4 +56,21 @@ public interface UnionattributesService {
      */
     boolean deleteById(Integer uaId);
 
+    /**
+     * 查询符合实体类的所有集合
+     * @param unionattributes
+     * @return
+     */
+    List<Unionattributes> queryAll(Unionattributes unionattributes);
+
+    /**
+     * 工会添加
+     * 三表连动
+     * @param unionattributes
+     * @return返回int值
+     */
+    int insertReturnInt(Unionattributes unionattributes);
+
+
+    List<UnionattributesAndRoles> getAll();
 }

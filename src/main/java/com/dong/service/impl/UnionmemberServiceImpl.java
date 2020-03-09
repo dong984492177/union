@@ -76,4 +76,9 @@ public class UnionmemberServiceImpl implements UnionmemberService {
     public boolean deleteById(Integer umId) {
         return this.unionmemberDao.deleteById(umId) > 0;
     }
+
+    @Override
+    public List<Unionmember> queryAll(Unionmember unionmember) {
+        return this.unionmemberDao.queryAll(unionmember);
+    }
 }

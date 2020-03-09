@@ -1,9 +1,18 @@
 package com.dong.service.impl;
 
+import com.dong.dao.RolesDao;
+import com.dong.dao.UnionmemberDao;
+import com.dong.model.Roles;
 import com.dong.model.Unionattributes;
 import com.dong.dao.UnionattributesDao;
+import com.dong.model.UnionattributesAndRoles;
+import com.dong.model.Unionmember;
+
 import com.dong.service.UnionattributesService;
+
+
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -18,6 +27,10 @@ import java.util.List;
 public class UnionattributesServiceImpl implements UnionattributesService {
     @Resource
     private UnionattributesDao unionattributesDao;
+    @Resource
+    private UnionmemberDao unionmemberDao;
+    @Resource
+    private RolesDao rolesDao;
 
     /**
      * 通过ID查询单条数据
@@ -75,5 +88,54 @@ public class UnionattributesServiceImpl implements UnionattributesService {
     @Override
     public boolean deleteById(Integer uaId) {
         return this.unionattributesDao.deleteById(uaId) > 0;
+    }
+
+    /**
+     * 通过实体作为筛选条件查询
+     * @param unionattributes
+     * @return
+     */
+    @Override
+    public List<Unionattributes> queryAll(Unionattributes unionattributes) {
+        return unionattributesDao.queryAll(unionattributes);
+    }
+
+    /**
+     * 工会表添加已经相关联表添加修改
+     * @param unionattributes
+     * @return
+     */
+    @Override
+    @Transactional(rollbackFor=Exception.class)
+    public int insertReturnInt(Unionattributes unionattributes) {
+        int count=0;
+        //角色id
+        int rid = unionattributes.getUaCreateId();
+        //添加工会
+        unionattributes=this.insert(unionattributes);
+        //工会id
+        int uaid= unionattributes.getUaId();
+        Unionmember unionmember = new Unionmember();
+        //工会成员信息表中成员所属工会id
+        unionmember.setUmUaId(uaid);
+        //工会成员信息表中成员id
+        unionmember.setUnRId(rid);
+        //工会成员信息表中成员所属工会职务为工会会长
+        unionmember.setUnPId(1);
+        //工会成员添加
+        unionmemberDao.insert(unionmember);
+        //获得角色信息
+        Roles roles =rolesDao.queryById(rid);
+        //更改角色金币数量
+        roles.setRGold(roles.getRGold()-500000);
+        //更改角色工会id
+        roles.setRUaId(uaid);
+        count=rolesDao.update(roles);
+        return count;
+    }
+
+    @Override
+    public List<UnionattributesAndRoles> getAll() {
+        return unionattributesDao.getAll();
     }
 }

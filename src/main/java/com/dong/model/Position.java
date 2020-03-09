@@ -13,11 +13,11 @@ public class Position implements Serializable {
     /**
     * 职位id
     */
-    private Integer pId;
+    public Integer pId;
     /**
     * 职位名字
     */
-    private String pName;
+    public String pName;
 
 
     public Integer getPId() {

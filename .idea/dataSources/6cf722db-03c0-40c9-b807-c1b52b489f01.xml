@@ -979,6 +979,7 @@
       <Position>4</Position>
       <Comment>工会等级</Comment>
       <DataType>int(255)|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="238" parent="213" name="ua_announcement">
@@ -1014,7 +1015,7 @@
     </column>
     <column id="243" parent="214" name="un_r_id">
       <Position>3</Position>
-      <Comment>工会创建人id</Comment>
+      <Comment>工会成员id</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1022,24 +1023,28 @@
       <Position>4</Position>
       <Comment>周贡献</Comment>
       <DataType>int(255)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="245" parent="214" name="un_monthly_contribution">
       <Position>5</Position>
       <Comment>月贡献</Comment>
       <DataType>int(255)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="246" parent="214" name="un_total_contribution">
       <Position>6</Position>
       <Comment>总贡献</Comment>
       <DataType>int(11)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="247" parent="214" name="un_p_id">
       <Position>7</Position>
       <Comment>职位id</Comment>
       <DataType>int(11)|0s</DataType>
+      <DefaultExpression>4</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="248" parent="214" name="PRIMARY">

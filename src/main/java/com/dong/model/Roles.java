@@ -13,35 +13,35 @@ public class Roles implements Serializable {
     /**
     * 用户id
     */
-    private Integer rId;
+    public Integer rId;
     /**
     * 账号
     */
-    private String rUser;
+    public String rUser;
     /**
     * 密码
     */
-    private String rPassword;
+    public String rPassword;
     /**
     * 成员等级
     */
-    private Integer rGrade;
+    public Integer rGrade;
     /**
     * 昵称
     */
-    private String rUsername;
+    public String rUsername;
     /**
     * 金币
     */
-    private Long rGold;
+    public Long rGold;
     /**
     * 工会id
     */
-    private Integer rUaId;
+    public Integer rUaId;
     /**
     * 头像图片路径地址
     */
-    private String rImg;
+    public String rImg;
 
 
     public Integer getRId() {

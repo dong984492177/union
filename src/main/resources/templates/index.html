@@ -24,7 +24,7 @@
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <!--    主页 以此为模板    -->
         <ul class="layui-nav layui-layout-left" lay-filter="test">
-            <li class="layui-nav-item"><a th:href="@{/tologin}" >首页</a></li>
+            <li class="layui-nav-item"><a th:href="@{/index}" >首页</a></li>
             <li class="layui-nav-item"><a th:href="@{/tologin}" >登录/注册</a></li>
             <li class="layui-nav-item"><a th:href="@{'/torguild/'+${session.id}}">工会</a></li>
             <!--<li class="layui-nav-item"><a href="">用户</a></li>
@@ -56,8 +56,8 @@
         <div class="layui-side-scroll">
             <ul class="layui-nav layui-nav-tree " lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed" >
-                    <a th:href="@{/tologin}" >首页</a>
-                    <!--<dl class="layui-nav-child">
+                    <a th:href="@{/index}" >首页</a>
+                   <!-- <dl class="layui-nav-child">
                         <dd><a href="javascript:;" lay-id="longinId" th:attr="lay-src=@{/tologin}" lay-name="登录" data-btn="btn">登录</a></dd>
                         <dd><a href="javascript:;">列表二</a></dd>
                         <dd><a href="javascript:;">列表三</a></dd>

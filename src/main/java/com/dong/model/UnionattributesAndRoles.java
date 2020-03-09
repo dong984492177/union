@@ -1,41 +1,34 @@
 package com.dong.model;
 
 import java.util.Date;
-import java.io.Serializable;
 
-/**
- * (Unionattributes)实体类
- *
- * @author makejava
- * @since 2020-03-08 15:12:44
- */
-public class Unionattributes implements Serializable {
-    private static final long serialVersionUID = 995991952144832526L;
+public class UnionattributesAndRoles {
     /**
-    * 工会id
-    */
+     * 工会id
+     */
     public Integer uaId;
     /**
-    * 工会名字
-    */
+     * 工会名字
+     */
     public String uaName;
     /**
-    * 工会创建人id
-    */
+     * 工会创建人id
+     */
     public Integer uaCreateId;
     /**
-    * 工会等级
-    */
+     * 工会等级
+     */
     public Integer uaRank;
     /**
-    * 工会公告
-    */
+     * 工会公告
+     */
     public String uaAnnouncement;
     /**
-    * 公会创建时间
-    */
+     * 公会创建时间
+     */
     public Date udDate;
 
+    public Roles roles;
 
     public Integer getUaId() {
         return uaId;
@@ -85,4 +78,24 @@ public class Unionattributes implements Serializable {
         this.udDate = udDate;
     }
 
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
+    }
+
+    public UnionattributesAndRoles(Integer uaId, String uaName, Integer uaCreateId, Integer uaRank, String uaAnnouncement, Date udDate, Roles roles) {
+        this.uaId = uaId;
+        this.uaName = uaName;
+        this.uaCreateId = uaCreateId;
+        this.uaRank = uaRank;
+        this.uaAnnouncement = uaAnnouncement;
+        this.udDate = udDate;
+        this.roles = roles;
+    }
+
+    public UnionattributesAndRoles() {
+    }
 }

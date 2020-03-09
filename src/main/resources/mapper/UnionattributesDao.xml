@@ -8,7 +8,32 @@
         <result property="uaCreateId" column="ua_create_id" jdbcType="INTEGER"/>
         <result property="uaRank" column="ua_rank" jdbcType="INTEGER"/>
         <result property="uaAnnouncement" column="ua_announcement" jdbcType="VARCHAR"/>
+        <result property="udDate" column="ud_date" jdbcType="TIMESTAMP"/>
     </resultMap>
+    <resultMap type="com.dong.model.UnionattributesAndRoles" id="rolesMap">
+        <result property="uaId" column="ua_id" jdbcType="INTEGER"/>
+        <result property="uaName" column="ua_name" jdbcType="VARCHAR"/>
+        <result property="uaCreateId" column="ua_create_id" jdbcType="INTEGER"/>
+        <result property="uaRank" column="ua_rank" jdbcType="INTEGER"/>
+        <result property="uaAnnouncement" column="ua_announcement" jdbcType="VARCHAR"/>
+        <result property="udDate" column="ud_date" />
+        <association property="roles" javaType="com.dong.model.Roles">
+            <id property="rId" column="r_id" jdbcType="INTEGER"/>
+            <result property="rUser" column="r_user" jdbcType="VARCHAR"/>
+            <result property="rPassword" column="r_password" jdbcType="VARCHAR"/>
+            <result property="rGrade" column="r_grade" jdbcType="INTEGER"/>
+            <result property="rUsername" column="r_username" jdbcType="VARCHAR"/>
+            <result property="rGold" column="r_gold" jdbcType="INTEGER"/>
+            <result property="rUaId" column="r_ua_id" jdbcType="INTEGER"/>
+            <result property="rImg" column="r_img" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
+    <select id="getAll" resultMap="rolesMap">
+        select
+        ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+        from unionattributes left join roles
+        on ua_create_id=r_id
+    </select>
 
     <!--查询单个-->
     <select id="queryById" resultMap="UnionattributesMap">
@@ -52,8 +77,39 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="uaId" useGeneratedKeys="true">
-        insert into union.unionattributes(ua_name, ua_create_id, ua_rank, ua_announcement)
-        values (#{uaName}, #{uaCreateId}, #{uaRank}, #{uaAnnouncement})
+        INSERT INTO union.unionattributes
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test ='null != uaName'>
+                ua_name,
+            </if>
+            <if test ='null != uaCreateId'>
+                ua_create_id,
+            </if>
+            <if test ='null != uaRank'>
+                ua_rank,
+            </if>
+            <if test ='null != uaAnnouncement'>
+                ua_announcement,
+            </if>
+
+                ud_date
+
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test ='null != uaName'>
+                #{uaName},
+            </if>
+            <if test ='null != uaCreateId'>
+                #{uaCreateId},
+            </if>
+            <if test ='null != uaRank'>
+                #{uaRank},
+            </if>
+            <if test ='null != uaAnnouncement'>
+                #{uaAnnouncement},
+            </if>
+            Now()
+        </trim>
     </insert>
 
     <!--通过主键修改数据-->

@@ -1,6 +1,7 @@
 package com.dong.dao;
 
 import com.dong.model.Unionattributes;
+import com.dong.model.UnionattributesAndRoles;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
@@ -64,4 +65,5 @@ public interface UnionattributesDao {
      */
     int deleteById(Integer uaId);
 
+    List<UnionattributesAndRoles> getAll();
 }
