@@ -2,6 +2,7 @@ package com.dong.service.impl;
 
 import com.dong.model.Unionmember;
 import com.dong.dao.UnionmemberDao;
+import com.dong.model.UnionmemberAndRoles;
 import com.dong.service.UnionmemberService;
 import org.springframework.stereotype.Service;
 
@@ -77,8 +78,33 @@ public class UnionmemberServiceImpl implements UnionmemberService {
         return this.unionmemberDao.deleteById(umId) > 0;
     }
 
+    /**
+     * 通过实体作为筛选条件查询
+     * @param unionmember
+     * @return
+     */
     @Override
     public List<Unionmember> queryAll(Unionmember unionmember) {
         return this.unionmemberDao.queryAll(unionmember);
+    }
+
+    /**
+     * 连表分页
+     * @param offset 开始位置
+     * @param limit 条数
+     * @return
+     */
+    @Override
+    public List<UnionmemberAndRoles> queryAllByLimitAndRoles(int offset, int limit ,int uaid) {
+        return this.unionmemberDao.queryAllByLimitAndRoles(offset,limit,uaid);
+    }
+
+    /**
+     * 获得总条数
+     * @return
+     */
+    @Override
+    public int getCount() {
+        return unionmemberDao.getCount();
     }
 }

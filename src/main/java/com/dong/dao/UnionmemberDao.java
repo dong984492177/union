@@ -1,6 +1,7 @@
 package com.dong.dao;
 
 import com.dong.model.Unionmember;
+import com.dong.model.UnionmemberAndRoles;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
@@ -64,4 +65,17 @@ public interface UnionmemberDao {
      */
     int deleteById(Integer umId);
 
+    /**
+     * 连表分页
+     * @param offset
+     * @param limit
+     * @return
+     */
+    List<UnionmemberAndRoles> queryAllByLimitAndRoles(int offset, int limit,int uaid);
+
+    /**
+     * 获得总条数
+     * @return
+     */
+    int getCount();
 }

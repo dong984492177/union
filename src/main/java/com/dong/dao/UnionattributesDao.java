@@ -65,5 +65,30 @@ public interface UnionattributesDao {
      */
     int deleteById(Integer uaId);
 
+    /**
+     * 连表查所有数据
+     * @return
+     */
     List<UnionattributesAndRoles> getAll();
+
+    /**
+     * 查总数
+     * @return
+     */
+    int getCount();
+
+    /**
+     * 连表分页
+     * @param offset
+     * @param limit
+     * @return
+     */
+    List<UnionattributesAndRoles> queryAllByLimitAndRoles(int offset, int limit);
+
+    /**
+     * 通过id连表查
+     * @param uaid
+     * @return
+     */
+    UnionattributesAndRoles getById(int uaid);
 }

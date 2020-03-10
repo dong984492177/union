@@ -1,33 +1,43 @@
 package com.dong.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
 import java.io.Serializable;
 
 /**
  * (Application)实体类
  *
  * @author makejava
- * @since 2020-03-03 13:32:08
+ * @since 2020-03-10 14:46:49
  */
 public class Application implements Serializable {
-    private static final long serialVersionUID = 521409313114289246L;
-
-    public Integer aId;
+    private static final long serialVersionUID = -64038241085183412L;
+    
+    private Integer aId;
     /**
     * 成员id
     */
-    public Integer aRId;
+    private Integer aRId;
     /**
     * 申请的工会id
     */
-    public Integer aUaId;
+    private Integer aUaId;
     /**
     * 操作的人id
     */
-    public Integer aOperatingId;
+    private Integer aOperatingId;
     /**
     * 申请状态 1表示未操作 2表示拒绝
     */
-    public Integer aApplicationStatus;
+    private Integer aApplicationStatus;
+    /**
+    * 申请时间
+    */
+    @JsonFormat(pattern = "yyyy年MM月dd日",timezone="GMT+8")
+    @DateTimeFormat(pattern = "yyyy年MM月dd日")
+    private Date aDate;
 
 
     public Integer getAId() {
@@ -68,6 +78,14 @@ public class Application implements Serializable {
 
     public void setAApplicationStatus(Integer aApplicationStatus) {
         this.aApplicationStatus = aApplicationStatus;
+    }
+
+    public Date getADate() {
+        return aDate;
+    }
+
+    public void setADate(Date aDate) {
+        this.aDate = aDate;
     }
 
 }

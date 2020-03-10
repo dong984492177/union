@@ -136,5 +136,25 @@
     <delete id="deleteById">
         delete from union.unionattributes where ua_id = #{uaId}
     </delete>
+    <!-- 获得总条数-->
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) from unionattributes
+    </select>
+    <!--连表分页查询 -->
+    <select id="queryAllByLimitAndRoles" resultMap="rolesMap">
+        select
+            ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+            from unionattributes left join roles
+            on ua_create_id=r_id
+            limit #{offset}, #{limit}
+    </select>
+    <!-- 通过id连表查工会信息 -->
+    <select id="getById" resultMap="rolesMap" parameterType="int">
+        select
+            ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+            from unionattributes left join roles
+            on ua_create_id=r_id where ua_id=#{uaId}
+    </select>
+
 
 </mapper>

@@ -11,6 +11,25 @@
         <result property="unTotalContribution" column="un_total_contribution" jdbcType="INTEGER"/>
         <result property="unPId" column="un_p_id" jdbcType="INTEGER"/>
     </resultMap>
+    <resultMap type="com.dong.model.UnionmemberAndRoles" id="RolesMap">
+        <result property="umId" column="um_id" jdbcType="INTEGER"/>
+        <result property="umUaId" column="um_ua_id" jdbcType="INTEGER"/>
+        <result property="unRId" column="un_r_id" jdbcType="INTEGER"/>
+        <result property="unWeekContribution" column="un_week_contribution" jdbcType="INTEGER"/>
+        <result property="unMonthlyContribution" column="un_monthly_contribution" jdbcType="INTEGER"/>
+        <result property="unTotalContribution" column="un_total_contribution" jdbcType="INTEGER"/>
+        <result property="unPId" column="un_p_id" jdbcType="INTEGER"/>
+        <association property="roles" javaType="com.dong.model.Roles">
+            <id property="rId" column="r_id" jdbcType="INTEGER"/>
+            <result property="rUser" column="r_user" jdbcType="VARCHAR"/>
+            <result property="rPassword" column="r_password" jdbcType="VARCHAR"/>
+            <result property="rGrade" column="r_grade" jdbcType="INTEGER"/>
+            <result property="rUsername" column="r_username" jdbcType="VARCHAR"/>
+            <result property="rGold" column="r_gold" jdbcType="INTEGER"/>
+            <result property="rUaId" column="r_ua_id" jdbcType="INTEGER"/>
+            <result property="rImg" column="r_img" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="UnionmemberMap">
@@ -135,5 +154,16 @@
     <delete id="deleteById">
         delete from union.unionmember where um_id = #{umId}
     </delete>
-
+    <!--连表分页-->
+    <select id="queryAllByLimitAndRoles" resultMap="RolesMap">
+        select
+            um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+            from unionmember left  join roles
+            on un_r_id=r_id
+            where um_ua_id=#{uaid}
+            limit #{offset}, #{limit}
+    </select>
+    <select id="getCount" resultType="int">
+            select COUNT(*) FROM unionmember
+    </select>
 </mapper>

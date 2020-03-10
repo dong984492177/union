@@ -76,4 +76,34 @@ public class ApplicationServiceImpl implements ApplicationService {
     public boolean deleteById(Integer aId) {
         return this.applicationDao.deleteById(aId) > 0;
     }
+
+    /**
+     * 通过实体作为筛选条件查询
+     * @param application
+     * @return
+     */
+    @Override
+    public List<Application> queryAll(Application application) {
+        return applicationDao.queryAll(application);
+    }
+
+    /**
+     * 修改 返回int
+     * @param application
+     * @return
+     */
+    @Override
+    public int updateIsInt(Application application) {
+        return this.applicationDao.update(application);
+    }
+
+    /**
+     * 删除 返回int
+     * @param application
+     * @return
+     */
+    @Override
+    public int insertIsInt(Application application) {
+        return this.applicationDao.insert(application);
+    }
 }

@@ -53,4 +53,24 @@ public interface ApplicationService {
      */
     boolean deleteById(Integer aId);
 
+    /**
+     * 通过实体作为筛选条件查询
+     * @param application
+     * @return
+     */
+    List<Application> queryAll(Application application);
+
+    /**
+     * 修改返回int
+     * @param application
+     * @return
+     */
+    int updateIsInt(Application application);
+
+    /**
+     * 添加返回int
+     * @param application
+     * @return
+     */
+    int insertIsInt(Application application);
 }

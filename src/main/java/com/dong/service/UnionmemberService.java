@@ -1,6 +1,8 @@
 package com.dong.service;
 
 import com.dong.model.Unionmember;
+import com.dong.model.UnionmemberAndRoles;
+
 import java.util.List;
 
 /**
@@ -52,5 +54,24 @@ public interface UnionmemberService {
      */
     boolean deleteById(Integer umId);
 
+    /**
+     * 通过实体作为筛选条件查询
+     * @param unionmember
+     * @return
+     */
     List<Unionmember> queryAll(Unionmember unionmember);
+
+    /**
+     * 连表分页
+     * @param offset
+     * @param limit
+     * @return
+     */
+    List<UnionmemberAndRoles> queryAllByLimitAndRoles(int offset, int limit,int uaid);
+
+    /**
+     * 获得总条数
+     * @return
+     */
+    int getCount();
 }

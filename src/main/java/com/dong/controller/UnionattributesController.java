@@ -122,13 +122,30 @@ public class UnionattributesController {
         return resultMsg;
     }
 
+    /**
+     * 分页
+     * @param page 当前页数
+     * @param limit 分多少页
+     * @return
+     */
     @RequestMapping("/getAll")
-    public ParseData getAll(){
+    public ParseData getAll(int page ,int limit){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
-        List<UnionattributesAndRoles> unionattributesAndRolesList =unionattributesService.getAll();
+        int offset=(page-1)*limit;
+        List<UnionattributesAndRoles> unionattributesAndRolesList =unionattributesService.queryAllByLimitAndRoles(offset,limit);
+        int count =unionattributesService.getCount();
         ParseData parseData= new ParseData();
-
         parseData.setData(unionattributesAndRolesList);
+        parseData.setCount(count);
         return parseData;
+    }
+
+    @RequestMapping("/getById")
+    public UnionattributesAndRoles getById(HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        int uaid= (int) session.getAttribute("uald");
+        UnionattributesAndRoles unionattributesAndRoles =unionattributesService.getById(uaid);
+        return unionattributesAndRoles;
     }
 }

@@ -134,8 +134,38 @@ public class UnionattributesServiceImpl implements UnionattributesService {
         return count;
     }
 
+    /**
+     * 获得所有的信息
+     *
+     * @return
+     */
     @Override
     public List<UnionattributesAndRoles> getAll() {
         return unionattributesDao.getAll();
+    }
+
+    /**
+     * 获得总条数
+     * @return
+     */
+    @Override
+    public int getCount() {
+        return unionattributesDao.getCount();
+    }
+
+    /**
+     * 连表分页
+     * @param offset
+     * @param limit
+     * @return
+     */
+    @Override
+    public List<UnionattributesAndRoles> queryAllByLimitAndRoles(int offset, int limit) {
+        return unionattributesDao.queryAllByLimitAndRoles(offset,limit);
+    }
+
+    @Override
+    public UnionattributesAndRoles getById(int uaid) {
+        return unionattributesDao.getById(uaid);
     }
 }

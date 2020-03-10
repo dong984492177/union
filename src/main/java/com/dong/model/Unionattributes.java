@@ -1,5 +1,8 @@
 package com.dong.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 import java.io.Serializable;
 
@@ -34,6 +37,8 @@ public class Unionattributes implements Serializable {
     /**
     * 公会创建时间
     */
+    @JsonFormat(pattern = "yyyy年MM月dd日",timezone="GMT+8")
+    @DateTimeFormat(pattern = "yyyy年MM月dd日")
     public Date udDate;
 
 

@@ -7,7 +7,10 @@
     <title>我的工会</title>
 </head>
 <body>
-这是我的工会页面
+<div id="thisDivId" >
+
+
+</div>
 <table id="demo" lay-filter="test"></table>
 </body>
 <script type="text/javascript"  th:src="@{/js/jquery-1.11.0.min.js}" ></script>
@@ -17,13 +20,76 @@
 <script th:src="@{/js/echarts.min.js}"></script>
 <script th:src="@{/layui/layui.js}"></script>
 <script th:inline="javascript">
-    layui.use(['element','jquery','form','upload','table'], function(){
+    layui.use(['element','jquery','form','upload','table','laypage'], function(){
         var element = layui.element;
         var $ = jQuery = layui.jquery;
         var form = layui.form;
         var upload = layui.upload;
         var table = layui.table;
+        var laypage = layui.laypage;
+        /**
+         * 工会头部信息
+         */
+        $.ajax({
+            type: "post",   //提交的方法
+            dataType: "json",//预期服务器返回的数据类型
+            //需要修改的地方
+            url:/*[[@{/unionattributes/getById}]]*/, //提交的地址
+            data: $('#formId').serialize(),// 序列化表单值
+            success: function(data){
+                //徒手添加到页面工会的基本信息
+                $("#thisDivId").append("<h2 align='center' style='color:red'>"+data.uaName+"</h2>\n" +
+                    "    <div class='layui-form-item' style='width: 50%'>\n" +
+                    "        <label class='layui-form-label' for='rUsername'>工会会长:</label>\n" +
+                    "        <div class='layui-input-block'>\n" +
+                    "            <button   class='layui-input' id='rUsername'>\n" +
+                    "                "+data.roles.rUsername+"\n" +
+                    "            </button>\n" +
+                    "        </div>\n" +
+                    "    </div>\n" +
+                    "    <div class='layui-form-item' style='width: 50%'>\n" +
+                    "        <label class='layui-form-label' for='uaRank'>工会等级:</label>\n" +
+                    "        <div class='layui-input-block'>\n" +
+                    "            <button   class='layui-input' id='uaRank'>\n" +
+                    "                "+data.uaRank+"\n" +
+                    "            </button>\n" +
+                    "        </div>\n" +
+                    "    </div>\n" +
+                    "    <div class='layui-form-item' style='width: 50%'>\n" +
+                    "        <label class='layui-form-label' for='udDate'>工会创建时间:</label>\n" +
+                    "        <div class='layui-input-block'>\n" +
+                    "            <button   class='layui-input' id='udDate'>\n" +
+                    "                "+data.udDate+"\n" +
+                    "            </button>\n" +
+                    "        </div>\n" +
+                    "    </div>\n" +
+                    "    <div class='layui-form-item' style='width: 50%'>\n" +
+                    "        <label class='layui-form-label' for='uaAnnouncement'>工会公告:</label>\n" +
+                    "        <div class='layui-input-block'>\n" +
+                    "            <textarea  class='layui-textarea' readonly id='uaAnnouncement'> "+data.uaAnnouncement+"\n" +
+                    "            </textarea >\n" +
+                    "        </div>\n" +
+                    "    </div>")
+            }
+        })
 
+        /**
+         * 工会成员分页
+         */
+        table.render({
+            elem: '#demo'
+            ,height: 800
+            ,url:/*[[@{/unionmember/getAll}]]*/ //数据接口
+            ,page: true //开启分页
+            ,cols: [ [  //表头
+
+                {title:'成员',templet:function(d){
+                        return d.roles.rUsername;
+                    },width:200}
+
+            ] ]
+            ,limit:10
+        });
     })
 </script>
 </html>
