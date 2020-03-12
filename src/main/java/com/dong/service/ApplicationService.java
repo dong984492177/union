@@ -1,7 +1,11 @@
 package com.dong.service;
 
 import com.dong.model.Application;
+import com.dong.model.ApplicationAndRoles;
+import com.dong.util.AgreeCount;
+
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Application)表服务接口
@@ -73,4 +77,29 @@ public interface ApplicationService {
      * @return
      */
     int insertIsInt(Application application);
+
+    /**
+     * 连表分页查询
+     * @param page
+     * @param limit
+     * @param applicationAndRoles
+     * @return
+     */
+    List<ApplicationAndRoles> queryAllByLimitAndRoles(int page, int limit, ApplicationAndRoles applicationAndRoles);
+
+    /**
+     * 分页查询条数
+     * @param applicationAndRoles
+     * @return
+     */
+    int getCountAll(ApplicationAndRoles applicationAndRoles);
+
+    /**
+     * 多条拒绝
+     * @param data
+     * @return
+     */
+    AgreeCount refuseall(Map<String ,Object>[] data,int aOperatingId );
+
+    int refuse(int aId,int aOperatingId );
 }

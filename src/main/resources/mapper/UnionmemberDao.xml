@@ -29,6 +29,10 @@
             <result property="rUaId" column="r_ua_id" jdbcType="INTEGER"/>
             <result property="rImg" column="r_img" jdbcType="VARCHAR"/>
         </association>
+        <association property="position" javaType="com.dong.model.Position">
+            <id property="pId" column="p_id" jdbcType="INTEGER"/>
+            <result property="pName" column="p_name" jdbcType="VARCHAR"/>
+        </association>
     </resultMap>
 
     <!--查询单个-->
@@ -156,14 +160,13 @@
     </delete>
     <!--连表分页-->
     <select id="queryAllByLimitAndRoles" resultMap="RolesMap">
-        select
-            um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
-            from unionmember left  join roles
-            on un_r_id=r_id
-            where um_ua_id=#{uaid}
+       select
+            um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name
+            from unionmember, roles , position
+            where un_r_id=r_id and um_ua_id=#{uaid} and un_p_id=p_id
             limit #{offset}, #{limit}
     </select>
-    <select id="getCount" resultType="int">
-            select COUNT(*) FROM unionmember
+    <select id="getCount" resultType="int" parameterType="UnionmemberAndRoles">
+            select COUNT(*) FROM unionmember where um_ua_id=#{uaid}
     </select>
 </mapper>

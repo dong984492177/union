@@ -131,7 +131,9 @@
                 "                    <dl class='layui-nav-child' id='myGuild'></dl>\n" +
                 "                </li>")
             $("#myGuild").append("<a href='javascript:;' lay-id='myGuild' lay-src='"+project+"tomyGuild' lay-name='查看工会' data-btn='btn'>查看工会</a>");
-
+            if (position<=2){
+                $("#myGuild").append("<a href='javascript:;' lay-id='application' lay-src='"+project+"toapplication' lay-name='申请' data-btn='btn'>申请</a>");
+            }
         }
         //全部更新导航条
         element.init();

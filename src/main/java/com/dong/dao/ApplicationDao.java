@@ -1,6 +1,7 @@
 package com.dong.dao;
 
 import com.dong.model.Application;
+import com.dong.model.ApplicationAndRoles;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
@@ -64,4 +65,21 @@ public interface ApplicationDao {
      */
     int deleteById(Integer aId);
 
+    /**
+     * 连表分页查询
+     * @param page
+     * @param limit
+     * @param applicationAndRoles
+     * @return
+     */
+    List<ApplicationAndRoles> queryAllByLimitAndRoles(int page, int limit, ApplicationAndRoles applicationAndRoles);
+
+    /**
+     * 连表分页查询总条数
+     * @param applicationAndRoles
+     * @return
+     */
+    int getCountAll(ApplicationAndRoles applicationAndRoles);
+
+    int refuse(int aId, int aOperatingId);
 }

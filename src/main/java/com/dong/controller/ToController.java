@@ -102,5 +102,10 @@ public class ToController {
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "guildAll";
     }
+    @RequestMapping("/toapplication")
+    public String toapplication(){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        return "application";
+    }
 
 }

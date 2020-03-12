@@ -28,6 +28,7 @@
             <result property="rImg" column="r_img" jdbcType="VARCHAR"/>
         </association>
     </resultMap>
+    <!--  连表查询  -->
     <select id="getAll" resultMap="rolesMap">
         select
         ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img

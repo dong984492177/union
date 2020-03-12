@@ -77,5 +77,5 @@ public interface UnionmemberDao {
      * 获得总条数
      * @return
      */
-    int getCount();
+    int getCount(int uaid);
 }

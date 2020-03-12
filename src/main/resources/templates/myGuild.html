@@ -8,8 +8,6 @@
 </head>
 <body>
 <div id="thisDivId" >
-
-
 </div>
 <table id="demo" lay-filter="test"></table>
 </body>
@@ -78,14 +76,28 @@
          */
         table.render({
             elem: '#demo'
-            ,height: 800
+            ,height: 500
             ,url:/*[[@{/unionmember/getAll}]]*/ //数据接口
             ,page: true //开启分页
             ,cols: [ [  //表头
-
-                {title:'成员',templet:function(d){
+                {type: 'checkbox', fixed: 'left'},
+                {title:'成员昵称',templet:function(d){
                         return d.roles.rUsername;
-                    },width:200}
+                    },width:200,},
+                {title:'成员等级',templet:function(d){
+                        return d.roles.rGrade;
+                    },width:200},
+                {field: 'unWeekContribution', title: '周贡献',width:200,  sort: true},
+                {field: 'unMonthlyContribution', title: '月贡献',width:200,  sort: true},
+                {field: 'unTotalContribution', title: '总贡献' ,width:200,  sort: true},
+                {title:'职务',templet:function(d){
+                        if(d.position.pName === '工会会长'){
+                            return  "<span style='color: #F581B1;'>"+ d.position.pName+"</span>"
+                             } else {
+                            return d.position.pName
+                        }
+                        //return d.position.pName;
+                    },width:200},
 
             ] ]
             ,limit:10

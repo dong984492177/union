@@ -43,6 +43,13 @@ public class UnionmemberController {
         return this.unionmemberService.queryById(id);
     }
 
+    /**
+     * 分页连表查询
+     * @param page
+     * @param limit
+     * @param request
+     * @return
+     */
     @RequestMapping("/getAll")
     public ParseData getAll(int page , int limit, HttpServletRequest request){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
@@ -50,7 +57,7 @@ public class UnionmemberController {
         int uaid= (int) session.getAttribute("uald");
         int offset=(page-1)*limit;
         List<UnionmemberAndRoles> unionmemberAndRolesList=unionmemberService.queryAllByLimitAndRoles(offset,limit,uaid);
-        int count =unionmemberService.getCount();
+        int count =unionmemberService.getCount(uaid);
         ParseData parseData= new ParseData();
         parseData.setData(unionmemberAndRolesList);
         parseData.setCount(count);

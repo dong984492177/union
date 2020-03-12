@@ -2,11 +2,14 @@ package com.dong.service.impl;
 
 import com.dong.model.Application;
 import com.dong.dao.ApplicationDao;
+import com.dong.model.ApplicationAndRoles;
 import com.dong.service.ApplicationService;
+import com.dong.util.AgreeCount;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Application)表服务实现类
@@ -105,5 +108,60 @@ public class ApplicationServiceImpl implements ApplicationService {
     @Override
     public int insertIsInt(Application application) {
         return this.applicationDao.insert(application);
+    }
+
+    /**
+     * 连表分页查询
+     * @param page
+     * @param limit
+     * @param applicationAndRoles 俩表联立类
+     * @return
+     */
+    @Override
+    public List<ApplicationAndRoles> queryAllByLimitAndRoles(int page, int limit, ApplicationAndRoles applicationAndRoles) {
+        return applicationDao.queryAllByLimitAndRoles(page,limit,applicationAndRoles);
+    }
+
+    /**
+     * 连表分页查询总条数
+     * @param applicationAndRoles
+     * @return
+     */
+    @Override
+    public int getCountAll(ApplicationAndRoles applicationAndRoles) {
+        return applicationDao.getCountAll(applicationAndRoles);
+    }
+
+
+    @Override
+    public AgreeCount refuseall(Map<String ,Object>[] data,int aOperatingId) {
+        AgreeCount agreeCount=new AgreeCount();
+        //拒绝成功
+        int refuseCount=0;
+        //失败
+        int failure=0;
+        for (Map map:data) {
+            int aid= (int) map.get("aid");
+            int count=applicationDao.refuse(aid,aOperatingId);
+            if(count>0){
+                refuseCount++;
+            }else {
+                failure++;
+            }
+        }
+        agreeCount.setFailure(failure);
+        agreeCount.setRefuseCount(refuseCount);
+        return agreeCount;
+    }
+
+    /**
+     * 拒绝申请
+     * @param aId 申请的id
+     * @param aOperatingId 拒绝操作人
+     * @return
+     */
+    @Override
+    public int refuse(int aId,int aOperatingId) {
+        return applicationDao.refuse(aId,aOperatingId);
     }
 }

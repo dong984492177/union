@@ -7,7 +7,7 @@ import java.util.List;
 public class ParseData<T> {
     private int code=0;
     private String msg="";
-    private int count=1000;
+    private int count=0;
     private List<T> data;
 
 

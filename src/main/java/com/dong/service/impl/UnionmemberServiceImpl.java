@@ -104,7 +104,7 @@ public class UnionmemberServiceImpl implements UnionmemberService {
      * @return
      */
     @Override
-    public int getCount() {
-        return unionmemberDao.getCount();
+    public int getCount(int uaid) {
+        return unionmemberDao.getCount( uaid);
     }
 }

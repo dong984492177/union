@@ -7767,3 +7767,1420 @@ org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps
 2020/03/10T17:55:08 [Thread-18] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2020/03/10T17:55:08 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2020/03/10T17:55:08 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/11T09:01:03 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 4712 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/11T09:01:03 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/11T09:01:03 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/11T09:01:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/11T09:01:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/11T09:01:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/11T09:01:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 0 JDBC repository interfaces.
+2020/03/11T09:01:17 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/11T09:01:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/11T09:01:30 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/11T09:01:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/11T09:01:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/11T09:01:31 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/11T09:01:31 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 27305 ms
+2020/03/11T09:01:38 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/11T09:01:39 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/11T09:01:44 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/11T09:01:44 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/11T09:01:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/11T09:01:45 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 47.845 seconds (JVM running for 69.392)
+2020/03/11T09:01:52 [http-nio-80-exec-10] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/11T09:01:52 [http-nio-80-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/11T09:01:52 [http-nio-80-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 76 ms
+2020/03/11T09:01:52 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T09:02:00 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/11T09:02:09 [http-nio-80-exec-7] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/11T09:02:09 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/11T09:02:10 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/11T09:02:10 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/11T09:02:10 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/11T09:02:10 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:02:10 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:02:10 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/11T09:02:12 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T09:02:17 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T09:02:17 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T09:02:17 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T09:02:17 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:02:17 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:02:17 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T09:02:17 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T09:02:17 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T09:02:17 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T09:02:17 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T09:02:17 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T09:02:21 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T09:02:22 [http-nio-80-exec-7] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T09:02:22 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T09:02:22 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T09:02:22 [http-nio-80-exec-6] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T09:02:22 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember left join roles on un_r_id=r_id where um_ua_id=? limit ?, ? 
+2020/03/11T09:02:22 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T09:02:22 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:02:22 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:02:22 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T09:02:22 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember 
+2020/03/11T09:02:22 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 
+2020/03/11T09:02:22 [http-nio-80-exec-6] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T09:02:22 [http-nio-80-exec-6] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 12
+2020/03/11T09:02:22 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T09:02:22 [http-nio-80-exec-7] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:02:22 [http-nio-80-exec-7] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:02:22 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T09:03:02 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T09:03:02 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T09:03:02 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T09:03:02 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:03:02 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:03:02 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T09:03:02 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T09:03:02 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T09:03:02 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T09:03:02 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T09:03:02 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T09:03:32 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T09:03:34 [http-nio-80-exec-7] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T09:03:34 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T09:03:34 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T09:03:34 [http-nio-80-exec-7] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:03:34 [http-nio-80-exec-7] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:03:34 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T09:03:34 [http-nio-80-exec-6] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T09:03:34 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember left join roles on un_r_id=r_id where um_ua_id=? limit ?, ? 
+2020/03/11T09:03:34 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T09:03:34 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:03:34 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:03:34 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T09:03:34 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember 
+2020/03/11T09:03:34 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 
+2020/03/11T09:03:34 [http-nio-80-exec-6] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T09:03:34 [http-nio-80-exec-6] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 12
+2020/03/11T09:03:34 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T09:04:27 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T09:04:27 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T09:04:27 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T09:04:27 [http-nio-80-exec-2] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:04:27 [http-nio-80-exec-2] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:04:27 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T09:04:27 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T09:04:27 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T09:04:27 [http-nio-80-exec-2] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T09:04:27 [http-nio-80-exec-2] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T09:04:27 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T09:05:25 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T09:05:28 [http-nio-80-exec-8] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T09:05:28 [http-nio-80-exec-8] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T09:05:28 [http-nio-80-exec-8] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T09:05:28 [http-nio-80-exec-8] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:05:28 [http-nio-80-exec-8] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:05:28 [http-nio-80-exec-8] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T09:05:28 [http-nio-80-exec-5] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T09:05:28 [http-nio-80-exec-5] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember left join roles on un_r_id=r_id where um_ua_id=? limit ?, ? 
+2020/03/11T09:05:28 [http-nio-80-exec-5] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T09:05:28 [http-nio-80-exec-5] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:05:28 [http-nio-80-exec-5] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:05:28 [http-nio-80-exec-5] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T09:05:28 [http-nio-80-exec-5] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember 
+2020/03/11T09:05:28 [http-nio-80-exec-5] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 
+2020/03/11T09:05:28 [http-nio-80-exec-5] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T09:05:28 [http-nio-80-exec-5] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 12
+2020/03/11T09:05:28 [http-nio-80-exec-5] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T09:05:43 [http-nio-80-exec-4] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T09:05:45 [http-nio-80-exec-6] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T09:05:45 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T09:05:45 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T09:05:45 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:05:45 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:05:45 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T09:05:45 [http-nio-80-exec-4] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T09:05:45 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember left join roles on un_r_id=r_id where um_ua_id=? limit ?, ? 
+2020/03/11T09:05:45 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T09:05:45 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:05:45 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:05:45 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T09:05:45 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember 
+2020/03/11T09:05:45 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 
+2020/03/11T09:05:45 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T09:05:45 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 12
+2020/03/11T09:05:45 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T09:10:11 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T09:10:15 [http-nio-80-exec-9] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T09:10:15 [http-nio-80-exec-9] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T09:10:15 [http-nio-80-exec-9] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T09:10:15 [http-nio-80-exec-9] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:10:15 [http-nio-80-exec-9] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:10:15 [http-nio-80-exec-9] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T09:10:15 [http-nio-80-exec-1] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T09:10:15 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember left join roles on un_r_id=r_id where um_ua_id=? limit ?, ? 
+2020/03/11T09:10:15 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T09:10:15 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T09:10:15 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T09:10:15 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T09:10:16 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember 
+2020/03/11T09:10:16 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 
+2020/03/11T09:10:16 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T09:10:16 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 12
+2020/03/11T09:10:16 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T09:12:47 [Thread-96] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/11T09:12:47 [Thread-96] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/11T09:12:47 [Thread-96] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/11T14:03:30 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 9496 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/11T14:03:30 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/11T14:03:30 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/11T14:03:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/11T14:03:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/11T14:03:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/11T14:03:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 167ms. Found 0 JDBC repository interfaces.
+2020/03/11T14:03:48 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/11T14:03:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/11T14:03:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/11T14:03:50 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/11T14:03:50 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/11T14:03:50 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/11T14:03:50 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 19737 ms
+2020/03/11T14:03:53 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/11T14:03:54 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/11T14:03:55 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/11T14:03:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/11T14:03:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/11T14:03:56 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 28.756 seconds (JVM running for 39.302)
+2020/03/11T14:09:54 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/11T14:09:54 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/11T14:09:54 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2020/03/11T14:09:54 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T14:10:17 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/11T14:10:23 [http-nio-80-exec-4] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/11T14:10:23 [http-nio-80-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/11T14:10:24 [http-nio-80-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/11T14:10:24 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/11T14:10:24 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/11T14:10:24 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T14:10:24 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T14:10:24 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/11T14:10:29 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T14:10:34 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T14:10:34 [http-nio-80-exec-9] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T14:10:34 [http-nio-80-exec-9] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T14:10:34 [http-nio-80-exec-9] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T14:10:34 [http-nio-80-exec-9] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T14:10:34 [http-nio-80-exec-9] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T14:10:34 [http-nio-80-exec-9] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T14:10:34 [http-nio-80-exec-9] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T14:10:34 [http-nio-80-exec-9] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T14:10:34 [http-nio-80-exec-9] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T14:10:34 [http-nio-80-exec-9] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T14:10:44 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T14:10:44 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T14:10:44 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T14:10:44 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T14:10:44 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T14:10:44 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T14:10:44 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T14:10:44 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T14:10:44 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T14:10:44 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T14:10:44 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T14:10:50 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入toguildAll方法
+2020/03/11T14:10:53 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T14:10:59 [http-nio-80-exec-2] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T14:10:59 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T14:10:59 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T14:10:59 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T14:10:59 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T14:10:59 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T14:11:00 [http-nio-80-exec-4] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T14:11:00 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/11T14:11:00 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T14:11:00 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/11T14:11:00 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/11T14:11:00 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T14:11:00 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/11T14:11:00 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/11T14:11:00 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T14:11:00 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 1
+2020/03/11T14:11:00 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T14:12:15 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T14:12:15 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T14:12:15 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T14:12:15 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T14:12:15 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T14:12:15 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T14:12:15 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T14:12:15 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T14:12:15 [http-nio-80-exec-7] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T14:12:15 [http-nio-80-exec-7] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T14:12:15 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T14:12:21 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T14:12:24 [http-nio-80-exec-1] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T14:12:24 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T14:12:24 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T14:12:24 [http-nio-80-exec-1] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T14:12:24 [http-nio-80-exec-1] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T14:12:24 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T14:12:24 [http-nio-80-exec-2] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T14:12:24 [http-nio-80-exec-2] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/11T14:12:24 [http-nio-80-exec-2] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T14:12:24 [http-nio-80-exec-2] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/11T14:12:24 [http-nio-80-exec-2] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/11T14:12:24 [http-nio-80-exec-2] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T14:12:24 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/11T14:12:24 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/11T14:12:24 [http-nio-80-exec-2] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T14:12:24 [http-nio-80-exec-2] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 1
+2020/03/11T14:12:24 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T14:23:46 [Thread-26] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/11T14:23:46 [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/11T14:23:46 [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/11T15:32:25 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 10172 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/11T15:32:25 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/11T15:32:25 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/11T15:32:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/11T15:32:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/11T15:32:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/11T15:32:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 JDBC repository interfaces.
+2020/03/11T15:32:31 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/11T15:32:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/11T15:32:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/11T15:32:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/11T15:32:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/11T15:32:32 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/11T15:32:32 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6861 ms
+2020/03/11T15:32:34 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/11T15:32:35 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/11T15:32:35 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/11T15:32:35 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/11T15:32:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/11T15:32:35 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 12.058 seconds (JVM running for 17.934)
+2020/03/11T15:32:55 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/11T15:32:55 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/11T15:32:55 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
+2020/03/11T15:32:55 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toguildAll方法
+2020/03/11T15:32:57 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/11T15:33:04 [http-nio-80-exec-7] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/11T15:33:04 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/11T15:33:04 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/11T15:33:04 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/11T15:33:04 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: roo3(String), root(String)
+2020/03/11T15:33:04 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:33:04 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/11T15:33:04 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/11T15:33:06 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T15:33:13 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T15:33:13 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T15:33:13 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 3(Integer)
+2020/03/11T15:33:13 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:33:13 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/11T15:33:13 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T15:33:13 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T15:33:13 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 3(Integer)
+2020/03/11T15:33:13 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 0
+2020/03/11T15:33:16 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入toguildAll方法
+2020/03/11T15:33:17 [http-nio-80-exec-6] INFO  c.d.c.UnionattributesController - 进入getAll方法
+2020/03/11T15:33:17 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id limit ?, ? 
+2020/03/11T15:33:17 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 0(Integer), 10(Integer)
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 2, 战神2, 2, 1, 这是战神2, 2020-03-09, 2, root2, root, 1, 我是一根葱, 499500000, 2, o11.ico
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 3, 战神工会2, 12, 1, 2, 2020-03-09, 12, root3, root, 1, root, 59500000, 3, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 4, 鬼丶杀, 13, 1, 这里不欢迎你.滚, 2020-03-10, 13, root4, root, 1, root, 0, 4, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 5, 咕咕咕, 14, 1, 这是测试用的工会, 2020-03-10, 14, root5, root, 1, root, 0, 5, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 6, 提莫, 15, 1, 这是测试用的工会, 2020-03-10, 15, root6, root, 1, root, 0, 6, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 7, 迅捷斥候, 16, 1, 这是测试用的工会, 2020-03-10, 16, root7, root, 1, 战神, 0, 7, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 8, 盖伦, 17, 1, 123, 2020-03-10, 17, root8, root, 1, root, 0, 8, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 9, 刺客联盟, 18, 1, 999, 2020-03-10, 18, root9, root, 1, root, 0, 9, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 10, 黑暗军团, 19, 1, 黑暗军团, 2020-03-10, 19, root10, root, 1, root, 0, 10, dashboard-photo.png
+2020/03/11T15:33:17 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/11T15:33:17 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getCount - ==>  Preparing: SELECT COUNT(*) from unionattributes 
+2020/03/11T15:33:17 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getCount - ==> Parameters: 
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T15:33:17 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getCount - <==        Row: 12
+2020/03/11T15:33:17 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getCount - <==      Total: 1
+2020/03/11T15:33:19 [http-nio-80-exec-8] INFO  c.d.controller.ApplicationController - 进入add方法
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 3(Integer)
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 0
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.ApplicationDao.queryAll - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date from union.application WHERE a_r_id = ? and a_ua_id = ? 
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.ApplicationDao.queryAll - ==> Parameters: 3(Integer), 1(Integer)
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.ApplicationDao.queryAll - <==      Total: 0
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.ApplicationDao.insert - ==>  Preparing: insert into union.application ( a_r_id, a_ua_id, a_date ) values ( ?, ?, ? ) 
+2020/03/11T15:33:19 [http-nio-80-exec-8] DEBUG com.dong.dao.ApplicationDao.insert - ==> Parameters: 3(Integer), 1(Integer), 2020-03-11 15:33:19.613(Timestamp)
+2020/03/11T15:33:20 [http-nio-80-exec-8] DEBUG com.dong.dao.ApplicationDao.insert - <==    Updates: 1
+2020/03/11T15:33:26 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/11T15:33:29 [http-nio-80-exec-4] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/11T15:33:29 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/11T15:33:29 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/11T15:33:29 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:33:29 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:33:29 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/11T15:33:30 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T15:33:33 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T15:33:33 [http-nio-80-exec-10] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T15:33:33 [http-nio-80-exec-10] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T15:33:33 [http-nio-80-exec-10] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:33:33 [http-nio-80-exec-10] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:33:33 [http-nio-80-exec-10] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T15:33:33 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T15:33:33 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T15:33:33 [http-nio-80-exec-10] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T15:33:33 [http-nio-80-exec-10] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T15:33:33 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T15:33:35 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T15:33:36 [http-nio-80-exec-4] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T15:33:36 [http-nio-80-exec-4] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T15:33:36 [http-nio-80-exec-4] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T15:33:36 [http-nio-80-exec-4] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:33:36 [http-nio-80-exec-4] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:33:36 [http-nio-80-exec-4] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T15:33:36 [http-nio-80-exec-5] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T15:33:36 [http-nio-80-exec-5] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/11T15:33:36 [http-nio-80-exec-5] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T15:33:36 [http-nio-80-exec-5] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/11T15:33:36 [http-nio-80-exec-5] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/11T15:33:36 [http-nio-80-exec-5] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T15:33:36 [http-nio-80-exec-5] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/11T15:33:36 [http-nio-80-exec-5] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/11T15:33:36 [http-nio-80-exec-5] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T15:33:36 [http-nio-80-exec-5] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 1
+2020/03/11T15:33:36 [http-nio-80-exec-5] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T15:33:40 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:34:48 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:36:38 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:36:48 [http-nio-80-exec-1] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T15:36:49 [http-nio-80-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/union] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:120)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2719)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy72.queryAllByLimitAndRoles(Unknown Source)
+	at com.dong.service.impl.ApplicationServiceImpl.queryAllByLimitAndRoles(ApplicationServiceImpl.java:120)
+	at com.dong.controller.ApplicationController.getAll(ApplicationController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/03/11T15:36:52 [http-nio-80-exec-4] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T15:36:52 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T15:36:52 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T15:36:52 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:36:52 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:36:52 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T15:36:52 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T15:36:52 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T15:36:52 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T15:36:52 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T15:36:52 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T15:36:57 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:36:58 [http-nio-80-exec-8] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T15:36:58 [http-nio-80-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/union] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:120)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2719)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy72.queryAllByLimitAndRoles(Unknown Source)
+	at com.dong.service.impl.ApplicationServiceImpl.queryAllByLimitAndRoles(ApplicationServiceImpl.java:120)
+	at com.dong.controller.ApplicationController.getAll(ApplicationController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/03/11T15:37:22 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T15:37:22 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T15:37:22 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T15:37:22 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:37:22 [http-nio-80-exec-1] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:37:22 [http-nio-80-exec-1] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T15:37:22 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T15:37:22 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T15:37:22 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T15:37:22 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T15:37:22 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T15:37:40 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/11T15:37:42 [http-nio-80-exec-6] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/11T15:37:42 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/11T15:37:42 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/11T15:37:42 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T15:37:42 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T15:37:42 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/11T15:37:42 [http-nio-80-exec-8] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/11T15:37:42 [http-nio-80-exec-8] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/11T15:37:42 [http-nio-80-exec-8] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/11T15:37:42 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/11T15:37:42 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/11T15:37:42 [http-nio-80-exec-8] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/11T15:37:42 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/11T15:37:42 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/11T15:37:42 [http-nio-80-exec-8] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/11T15:37:42 [http-nio-80-exec-8] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 1
+2020/03/11T15:37:42 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/11T15:37:43 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:37:45 [http-nio-80-exec-9] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T15:37:45 [http-nio-80-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/union] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:120)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2719)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy72.queryAllByLimitAndRoles(Unknown Source)
+	at com.dong.service.impl.ApplicationServiceImpl.queryAllByLimitAndRoles(ApplicationServiceImpl.java:120)
+	at com.dong.controller.ApplicationController.getAll(ApplicationController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/03/11T15:38:07 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:38:10 [http-nio-80-exec-10] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T15:38:10 [http-nio-80-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/union] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:120)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2719)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy72.queryAllByLimitAndRoles(Unknown Source)
+	at com.dong.service.impl.ApplicationServiceImpl.queryAllByLimitAndRoles(ApplicationServiceImpl.java:120)
+	at com.dong.controller.ApplicationController.getAll(ApplicationController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/03/11T15:42:25 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T15:42:27 [http-nio-80-exec-3] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T15:42:27 [http-nio-80-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/union] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'aId' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:120)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2719)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy72.queryAllByLimitAndRoles(Unknown Source)
+	at com.dong.service.impl.ApplicationServiceImpl.queryAllByLimitAndRoles(ApplicationServiceImpl.java:120)
+	at com.dong.controller.ApplicationController.getAll(ApplicationController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/03/11T15:43:47 [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/11T15:43:47 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/11T15:43:47 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/11T17:09:36 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 328 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/11T17:09:36 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/11T17:09:36 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/11T17:09:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/11T17:09:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/11T17:09:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/11T17:09:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 JDBC repository interfaces.
+2020/03/11T17:09:40 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/11T17:09:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/11T17:09:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/11T17:09:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/11T17:09:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/11T17:09:42 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/11T17:09:42 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4814 ms
+2020/03/11T17:09:44 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/11T17:09:44 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/11T17:09:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/11T17:09:45 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/11T17:09:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/11T17:09:45 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 11.474 seconds (JVM running for 16.634)
+2020/03/11T17:09:50 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/11T17:09:50 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/11T17:09:50 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 34 ms
+2020/03/11T17:09:50 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/11T17:09:55 [http-nio-80-exec-6] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/11T17:09:55 [http-nio-80-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/11T17:09:56 [http-nio-80-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/11T17:09:56 [http-nio-80-exec-6] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/11T17:09:56 [http-nio-80-exec-6] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/11T17:09:56 [http-nio-80-exec-6] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T17:09:56 [http-nio-80-exec-6] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T17:09:56 [http-nio-80-exec-6] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/11T17:09:57 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T17:10:02 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T17:10:02 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T17:10:02 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T17:10:02 [http-nio-80-exec-2] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T17:10:02 [http-nio-80-exec-2] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T17:10:02 [http-nio-80-exec-2] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T17:10:02 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T17:10:02 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T17:10:02 [http-nio-80-exec-2] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T17:10:02 [http-nio-80-exec-2] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T17:10:02 [http-nio-80-exec-2] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T17:10:05 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T17:10:06 [http-nio-80-exec-7] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T17:10:06 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/11T17:10:06 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/11T17:10:06 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T17:10:06 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/11T17:10:06 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/11T17:10:06 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/11T17:10:06 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/11T17:10:06 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/11T17:10:06 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/11T17:10:06 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/11T17:10:06 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/11T17:13:17 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/11T17:13:17 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/11T17:13:17 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/11T17:51:07 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 3288 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/11T17:51:07 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/11T17:51:07 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/11T17:51:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/11T17:51:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/11T17:51:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/11T17:51:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85ms. Found 0 JDBC repository interfaces.
+2020/03/11T17:51:13 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/11T17:51:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/11T17:51:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/11T17:51:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/11T17:51:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/11T17:51:15 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/11T17:51:15 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7187 ms
+2020/03/11T17:51:17 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/11T17:51:17 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/11T17:51:18 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/11T17:51:18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/11T17:51:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/11T17:51:18 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 13.819 seconds (JVM running for 18.426)
+2020/03/11T17:51:54 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/11T17:51:54 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/11T17:51:54 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2020/03/11T17:51:54 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T17:51:56 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/11T17:51:58 [http-nio-80-exec-7] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/11T17:51:58 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/11T17:51:59 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/11T17:51:59 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/11T17:51:59 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/11T17:51:59 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T17:51:59 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T17:51:59 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/11T17:52:01 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/11T17:52:03 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/11T17:52:03 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/11T17:52:03 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/11T17:52:03 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/11T17:52:03 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/11T17:52:03 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/11T17:52:03 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/11T17:52:03 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/11T17:52:03 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/11T17:52:03 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/11T17:52:03 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/11T17:52:10 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/11T17:52:11 [http-nio-80-exec-7] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/11T17:52:11 [http-nio-80-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/union] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'offset' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'offset' not found. Available parameters are [applicationAndRoles, limit, page, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.reflection.wrapper.MapWrapper.get(MapWrapper.java:45)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.executor.BaseExecutor.createCacheKey(BaseExecutor.java:219)
+	at org.apache.ibatis.executor.CachingExecutor.createCacheKey(CachingExecutor.java:146)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy72.queryAllByLimitAndRoles(Unknown Source)
+	at com.dong.service.impl.ApplicationServiceImpl.queryAllByLimitAndRoles(ApplicationServiceImpl.java:120)
+	at com.dong.controller.ApplicationController.getAll(ApplicationController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/03/11T17:53:27 [Thread-18] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/11T17:53:27 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/11T17:53:27 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/12T09:20:37 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 1444 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/12T09:20:37 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/12T09:20:37 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/12T09:20:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/12T09:20:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/12T09:20:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/12T09:20:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82ms. Found 0 JDBC repository interfaces.
+2020/03/12T09:20:49 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/12T09:20:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/12T09:20:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/12T09:20:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/12T09:20:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/12T09:20:52 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/12T09:20:52 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 14240 ms
+2020/03/12T09:20:56 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/12T09:20:57 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/12T09:21:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/12T09:21:00 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/12T09:21:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/12T09:21:00 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 30.476 seconds (JVM running for 46.921)
+2020/03/12T09:21:56 [Thread-67] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/12T11:29:24 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 9764 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/12T11:29:24 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/12T11:29:24 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/12T11:29:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/12T11:29:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/12T11:29:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/12T11:29:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 JDBC repository interfaces.
+2020/03/12T11:29:29 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/12T11:29:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/12T11:29:30 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/12T11:29:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/12T11:29:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/12T11:29:31 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/12T11:29:31 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6098 ms
+2020/03/12T11:29:35 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/12T11:29:35 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/12T11:29:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/12T11:29:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/12T11:29:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/12T11:29:36 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 15.066 seconds (JVM running for 18.628)
+2020/03/12T11:30:23 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/12T11:30:23 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/12T11:30:23 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2020/03/12T11:30:23 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/12T11:30:29 [http-nio-80-exec-7] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/12T11:30:30 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/12T11:30:30 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/12T11:30:30 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/12T11:30:30 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/12T11:30:30 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:30:30 [http-nio-80-exec-7] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/12T11:30:30 [http-nio-80-exec-7] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/12T11:30:31 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/12T11:30:37 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/12T11:30:41 [http-nio-80-exec-4] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/12T11:30:41 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/12T11:30:41 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/12T11:30:41 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:30:41 [http-nio-80-exec-4] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/12T11:30:41 [http-nio-80-exec-4] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/12T11:30:41 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/12T11:30:41 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/12T11:30:41 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/12T11:30:41 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/12T11:30:41 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/12T11:30:44 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:30:45 [http-nio-80-exec-10] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:30:45 [http-nio-80-exec-10] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:30:45 [http-nio-80-exec-10] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:30:45 [http-nio-80-exec-10] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:30:45 [http-nio-80-exec-10] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:30:45 [http-nio-80-exec-10] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:30:45 [http-nio-80-exec-10] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:30:45 [http-nio-80-exec-10] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:30:45 [http-nio-80-exec-10] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:30:45 [http-nio-80-exec-10] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:30:45 [http-nio-80-exec-10] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:30:45 [http-nio-80-exec-10] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:32:15 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:32:15 [http-nio-80-exec-7] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:32:15 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:32:15 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:32:15 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:32:15 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:32:15 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:32:15 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:32:15 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:32:15 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:32:15 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:32:15 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:32:15 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:32:36 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:32:38 [http-nio-80-exec-8] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:32:38 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:32:38 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:32:38 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:32:38 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:32:38 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:32:38 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:32:38 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:32:38 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:32:38 [http-nio-80-exec-8] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:32:38 [http-nio-80-exec-8] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:32:38 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:33:06 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:33:08 [http-nio-80-exec-1] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:33:08 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:33:08 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:33:08 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:33:08 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:33:08 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:33:08 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:33:08 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:33:08 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:33:08 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:33:08 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:33:08 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:36:10 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:36:12 [http-nio-80-exec-5] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:36:12 [http-nio-80-exec-5] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:36:12 [http-nio-80-exec-5] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:36:12 [http-nio-80-exec-5] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:36:12 [http-nio-80-exec-5] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:36:12 [http-nio-80-exec-5] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:36:12 [http-nio-80-exec-5] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:36:12 [http-nio-80-exec-5] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:36:12 [http-nio-80-exec-5] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:36:12 [http-nio-80-exec-5] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:36:12 [http-nio-80-exec-5] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:36:12 [http-nio-80-exec-5] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:37:11 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:37:12 [http-nio-80-exec-7] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:37:12 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:37:12 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:37:12 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:37:12 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:37:12 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:37:12 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:37:12 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:37:12 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:37:12 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:37:12 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:37:12 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:38:05 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:38:06 [http-nio-80-exec-1] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:38:06 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:38:06 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:38:06 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:38:06 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:38:06 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:38:06 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:38:06 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:38:06 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:38:06 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:38:06 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:38:06 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:38:41 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:38:44 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:38:46 [http-nio-80-exec-7] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:38:46 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:38:46 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:38:46 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:38:46 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:38:46 [http-nio-80-exec-7] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:38:46 [http-nio-80-exec-7] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:38:46 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:38:46 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:38:46 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:38:46 [http-nio-80-exec-7] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:38:46 [http-nio-80-exec-7] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:39:15 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:39:17 [http-nio-80-exec-8] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:39:17 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:39:17 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:39:17 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:39:17 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:39:17 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:39:17 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:39:17 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:39:17 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:39:17 [http-nio-80-exec-8] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:39:17 [http-nio-80-exec-8] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:39:17 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:40:11 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:40:13 [http-nio-80-exec-1] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:40:13 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:40:13 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:40:13 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:40:13 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:40:13 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:40:13 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:40:13 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:40:13 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:40:13 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:40:13 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:40:13 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:40:40 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/12T11:40:42 [http-nio-80-exec-2] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/12T11:40:42 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/12T11:40:42 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/12T11:40:42 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:40:42 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/12T11:40:42 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/12T11:40:42 [http-nio-80-exec-4] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/12T11:40:42 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/12T11:40:42 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:40:42 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/12T11:40:42 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 0, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/12T11:40:42 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 1
+2020/03/12T11:40:42 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/12T11:40:42 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/12T11:40:42 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/12T11:40:42 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 1
+2020/03/12T11:40:42 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/12T11:40:43 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:40:45 [http-nio-80-exec-6] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:40:45 [http-nio-80-exec-6] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:40:45 [http-nio-80-exec-6] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:40:45 [http-nio-80-exec-6] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:40:45 [http-nio-80-exec-6] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:40:45 [http-nio-80-exec-6] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:40:45 [http-nio-80-exec-6] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:40:45 [http-nio-80-exec-6] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:40:45 [http-nio-80-exec-6] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:40:45 [http-nio-80-exec-6] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:40:45 [http-nio-80-exec-6] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:40:45 [http-nio-80-exec-6] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:41:44 [http-nio-80-exec-8] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:41:46 [http-nio-80-exec-8] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:41:46 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:41:46 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:41:46 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:41:46 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:41:46 [http-nio-80-exec-8] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:41:46 [http-nio-80-exec-8] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:41:46 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:41:46 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:41:46 [http-nio-80-exec-8] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:41:46 [http-nio-80-exec-8] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:41:46 [http-nio-80-exec-8] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:42:35 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T11:42:36 [http-nio-80-exec-1] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T11:42:36 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T11:42:36 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T11:42:36 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T11:42:36 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, null, 1, 2020-03-11, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T11:42:36 [http-nio-80-exec-1] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, null, 1, 2020-03-11, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T11:42:36 [http-nio-80-exec-1] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 2
+2020/03/12T11:42:36 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T11:42:36 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T11:42:36 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T11:42:36 [http-nio-80-exec-1] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 2
+2020/03/12T11:42:36 [http-nio-80-exec-1] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T11:43:15 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/12T11:43:15 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/12T11:43:15 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/12T15:28:53 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 7768 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/12T15:28:53 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/12T15:28:53 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/12T15:28:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/12T15:28:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/12T15:28:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/12T15:28:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 JDBC repository interfaces.
+2020/03/12T15:28:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/12T15:28:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/12T15:28:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/12T15:28:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/12T15:28:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/12T15:28:57 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/12T15:28:57 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4264 ms
+2020/03/12T15:29:00 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/12T15:29:00 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/12T15:29:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/12T15:29:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/12T15:29:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/12T15:29:01 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 9.873 seconds (JVM running for 20.201)
+2020/03/12T15:30:03 [Thread-26] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/12T15:58:12 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 308 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/12T15:58:12 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/12T15:58:12 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/12T15:58:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/12T15:58:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/12T15:58:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/12T15:58:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64ms. Found 0 JDBC repository interfaces.
+2020/03/12T15:58:18 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/12T15:58:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/12T15:58:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/12T15:58:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/12T15:58:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/12T15:58:19 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/12T15:58:19 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6552 ms
+2020/03/12T15:58:21 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/12T15:58:21 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/12T15:58:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/12T15:58:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/12T15:58:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/12T15:58:22 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 12.057 seconds (JVM running for 16.612)
+2020/03/12T15:59:20 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/12T15:59:20 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/12T15:59:20 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020/03/12T15:59:20 [http-nio-80-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2020/03/12T15:59:34 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/12T15:59:39 [http-nio-80-exec-8] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/12T15:59:40 [http-nio-80-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/12T15:59:40 [http-nio-80-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/12T15:59:40 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/12T15:59:40 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/12T15:59:40 [http-nio-80-exec-8] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T15:59:40 [http-nio-80-exec-8] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/12T15:59:40 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/12T15:59:42 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/12T15:59:45 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/12T15:59:49 [http-nio-80-exec-3] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/12T15:59:49 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/12T15:59:49 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/12T15:59:49 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T15:59:49 [http-nio-80-exec-3] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/12T15:59:49 [http-nio-80-exec-3] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/12T15:59:49 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/12T15:59:49 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/12T15:59:49 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/12T15:59:49 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 0, 1
+2020/03/12T15:59:49 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/12T15:59:55 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入toapplication方法
+2020/03/12T15:59:56 [http-nio-80-exec-9] INFO  c.d.controller.ApplicationController - 进入getAll方法
+2020/03/12T15:59:56 [http-nio-80-exec-9] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==>  Preparing: select a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from application left join roles on a_r_id=r_id WHERE a_ua_id = ? and a_application_status = ? limit ?, ? 
+2020/03/12T15:59:56 [http-nio-80-exec-9] DEBUG c.d.d.A.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 1(Integer), 0(Integer), 10(Integer)
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.d.A.queryAllByLimitAndRoles - <==    Columns: a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 2, 3, 1, 1, 1, 2020-03-12, 3, roo3, root, 1, 我是一根葱, 500000000, null, o11.ico
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 3, 4, 1, 1, 1, 2020-03-12, 4, root22, root, 1, root, 500000000, null, o11.ico
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 4, 8, 1, 1, 1, 2020-03-12, 8, root66, root, 1, root, 0, null, dashboard-photo.png
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 5, 5, 1, null, 1, 2020-03-12, 5, root222, root, 1, root, 500000000, null, o11.ico
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.d.A.queryAllByLimitAndRoles - <==        Row: 6, 10, 1, null, 1, 2020-03-12, 10, root67, root, 1, root, 0, null, dashboard-photo.png
+2020/03/12T15:59:56 [http-nio-80-exec-9] DEBUG c.d.d.A.queryAllByLimitAndRoles - <==      Total: 5
+2020/03/12T15:59:56 [http-nio-80-exec-9] DEBUG c.d.dao.ApplicationDao.getCountAll - ==>  Preparing: select COUNT(*) FROM application WHERE a_ua_id = ? and a_application_status = ? 
+2020/03/12T15:59:56 [http-nio-80-exec-9] DEBUG c.d.dao.ApplicationDao.getCountAll - ==> Parameters: 1(Integer), 1(Integer)
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.dao.ApplicationDao.getCountAll - <==    Columns: COUNT(*)
+2020/03/12T15:59:56 [http-nio-80-exec-9] TRACE c.d.dao.ApplicationDao.getCountAll - <==        Row: 5
+2020/03/12T15:59:56 [http-nio-80-exec-9] DEBUG c.d.dao.ApplicationDao.getCountAll - <==      Total: 1
+2020/03/12T16:00:02 [http-nio-80-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2020/03/12T16:00:48 [http-nio-80-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2020/03/12T16:07:57 [http-nio-80-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2020/03/12T16:15:04 [Thread-14] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/12T16:15:04 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/12T16:15:04 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

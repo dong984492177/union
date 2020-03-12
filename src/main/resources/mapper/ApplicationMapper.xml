@@ -9,6 +9,24 @@
         <result property="aApplicationStatus" column="a_application_status" jdbcType="INTEGER"/>
         <result property="aDate" column="a_date" jdbcType="TIMESTAMP"/>
     </resultMap>
+    <resultMap type="com.dong.model.ApplicationAndRoles" id="ApplicationAndRolesMap">
+        <result property="aId" column="a_id" jdbcType="INTEGER"/>
+        <result property="aRId" column="a_r_id" jdbcType="INTEGER"/>
+        <result property="aUaId" column="a_ua_id" jdbcType="INTEGER"/>
+        <result property="aOperatingId" column="a_operating_id" jdbcType="INTEGER"/>
+        <result property="aApplicationStatus" column="a_application_status" jdbcType="INTEGER"/>
+        <result property="aDate" column="a_date" jdbcType="TIMESTAMP"/>
+        <association property="roles" javaType="com.dong.model.Roles">
+            <id property="rId" column="r_id" jdbcType="INTEGER"/>
+            <result property="rUser" column="r_user" jdbcType="VARCHAR"/>
+            <result property="rPassword" column="r_password" jdbcType="VARCHAR"/>
+            <result property="rGrade" column="r_grade" jdbcType="INTEGER"/>
+            <result property="rUsername" column="r_username" jdbcType="VARCHAR"/>
+            <result property="rGold" column="r_gold" jdbcType="INTEGER"/>
+            <result property="rUaId" column="r_ua_id" jdbcType="INTEGER"/>
+            <result property="rImg" column="r_img" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
     <!--查询所有-->
     <select id="getAll" resultMap="ApplicationMap">
     select
@@ -126,5 +144,91 @@
     <delete id="deleteById">
         delete from union.application where a_id = #{aId}
     </delete>
+    <!--  连表分页查询  -->
+    <select id="queryAllByLimitAndRoles" resultMap="ApplicationAndRolesMap" >
+        select
+            a_id, a_r_id, a_ua_id, a_operating_id, a_application_status, a_date,
+            r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+            from application left join roles
+            on a_r_id=r_id
+            <where>
+            <if test="applicationAndRoles.aId != null">
+                and a_id = #{applicationAndRoles.aId}
+            </if>
+            <if test="applicationAndRoles.aRId != null">
+                and a_r_id = #{applicationAndRoles.aRId}
+            </if>
+            <if test="applicationAndRoles.aUaId != null">
+                and a_ua_id = #{applicationAndRoles.aUaId}
+            </if>
+            <if test="applicationAndRoles.aOperatingId != null">
+                and a_operating_id = #{applicationAndRoles.aOperatingId}
+            </if>
+            <if test="applicationAndRoles.aApplicationStatus != null">
+                and a_application_status = #{applicationAndRoles.aApplicationStatus}
+            </if>
+            <if test="applicationAndRoles.aDate != null">
+                and a_date = #{applicationAndRoles.aDate}
+            </if>
 
+           <!-- <if test="applicationAndRoles.roles.rId != null">
+                and r_id = #{applicationAndRoles.roles.rId}
+            </if>
+            <if test="applicationAndRoles.roles.rUser != null and applicationAndRoles.roles.rUser != ''">
+                and r_user = #{applicationAndRoles.roles.rUser}
+            </if>
+            <if test="applicationAndRoles.roles.rPassword != null and applicationAndRoles.roles.rPassword != ''">
+                and r_password = #{applicationAndRoles.roles.rPassword}
+            </if>
+            <if test="applicationAndRoles.roles.rGrade != null">
+                and r_grade = #{applicationAndRoles.roles.rGrade}
+            </if>
+            <if test="applicationAndRoles.roles.rUsername != null and applicationAndRoles.roles.rUsername != ''">
+                and r_username = #{applicationAndRoles.roles.rUsername}
+            </if>
+            <if test="applicationAndRoles.roles.rGold != null">
+                and r_gold = #{applicationAndRoles.roles.rGold}
+            </if>
+            <if test="applicationAndRoles.roles.rUaId != null">
+                and r_ua_id = #{applicationAndRoles.roles.rUaId}
+            </if>
+            <if test="applicationAndRoles.roles.rImg != null and applicationAndRoles.roles.rImg != ''">
+                and r_img = #{applicationAndRoles.roles.rImg}
+            </if>-->
+
+
+        </where>
+            limit #{page}, #{limit}
+    </select>
+    <!--  连表分页查询总条数  -->
+    <select id="getCountAll" resultType="int" >
+        select COUNT(*) FROM application
+        <where>
+            <if test="aId != null">
+                and a_id = #{aId}
+            </if>
+            <if test="aRId != null">
+                and a_r_id = #{aRId}
+            </if>
+            <if test="aUaId != null">
+                and a_ua_id = #{aUaId}
+            </if>
+            <if test="aOperatingId != null">
+                and a_operating_id = #{aOperatingId}
+            </if>
+            <if test="aApplicationStatus != null">
+                and a_application_status = #{aApplicationStatus}
+            </if>
+            <if test="aDate != null">
+                and a_date = #{aDate}
+            </if>
+        </where>
+    </select>
+    <update id="refuse" >
+        update union.application
+        <set>
+            a_operating_id=#{aOperatingId} , a_application_status=2
+        </set>
+        where a_id = #{aId}
+    </update>
 </mapper>
