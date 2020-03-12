@@ -7,28 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dong/model/ApplicationAndRoles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dong/util/AgreeCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/application.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/ToController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/ToController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionmemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionmemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/dao/ApplicationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/dao/ApplicationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/dao/UnionmemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/dao/UnionmemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/model/UnionmemberAndRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/model/UnionmemberAndRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/ApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/UnionmemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/UnionmemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/ApplicationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionmemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionmemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/util/ParseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/util/ParseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UnionattributesDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnionattributesDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UnionmemberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnionmemberDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/guild.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/guild.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/guildAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/guildAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myGuild.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/myGuild.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionattributesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionattributesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +44,6 @@
         <item name="本地" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="union: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="本地" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="union: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="application: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -221,7 +194,7 @@
       <workItem from="1583715225944" duration="26921000" />
       <workItem from="1583801253360" duration="23423000" />
       <workItem from="1583888079403" duration="21047000" />
-      <workItem from="1583974432703" duration="20456000" />
+      <workItem from="1583974432703" duration="20729000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -279,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583834451348</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1">
+      <created>1584005575591</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584005575591</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,10 +311,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583291928352" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1583834442352">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584005857240">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1583834442352" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584005857240" />
     <state x="393" y="112" key="FileChooserDialogImpl" timestamp="1583391943837">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -347,54 +327,54 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="448" y="76" key="Github.UntrackedFilesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583392681841" />
-    <state width="1325" height="208" key="GridCell.Tab.0.bottom" timestamp="1584003563939">
+    <state width="1325" height="208" key="GridCell.Tab.0.bottom" timestamp="1584005733653">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584003563939" />
-    <state width="1325" height="208" key="GridCell.Tab.0.center" timestamp="1584003563939">
+    <state width="1325" height="208" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584005733653" />
+    <state width="1325" height="208" key="GridCell.Tab.0.center" timestamp="1584005733652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1584003563939" />
-    <state width="1325" height="208" key="GridCell.Tab.0.left" timestamp="1584003563938">
+    <state width="1325" height="208" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1584005733652" />
+    <state width="1325" height="208" key="GridCell.Tab.0.left" timestamp="1584005733652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1584003563938" />
-    <state width="1325" height="208" key="GridCell.Tab.0.right" timestamp="1584003563939">
+    <state width="1325" height="208" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1584005733652" />
+    <state width="1325" height="208" key="GridCell.Tab.0.right" timestamp="1584005733652">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1584003563939" />
-    <state width="1325" height="208" key="GridCell.Tab.1.bottom" timestamp="1584003563940">
+    <state width="1325" height="208" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1584005733652" />
+    <state width="1325" height="208" key="GridCell.Tab.1.bottom" timestamp="1584005733654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584003563940" />
-    <state width="1325" height="208" key="GridCell.Tab.1.center" timestamp="1584003563939">
+    <state width="1325" height="208" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584005733654" />
+    <state width="1325" height="208" key="GridCell.Tab.1.center" timestamp="1584005733653">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1584003563939" />
-    <state width="1325" height="208" key="GridCell.Tab.1.left" timestamp="1584003563939">
+    <state width="1325" height="208" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1584005733653" />
+    <state width="1325" height="208" key="GridCell.Tab.1.left" timestamp="1584005733653">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1584003563939" />
-    <state width="1325" height="208" key="GridCell.Tab.1.right" timestamp="1584003563940">
+    <state width="1325" height="208" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1584005733653" />
+    <state width="1325" height="208" key="GridCell.Tab.1.right" timestamp="1584005733653">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1584003563940" />
-    <state width="1325" height="208" key="GridCell.Tab.2.bottom" timestamp="1584003563941">
+    <state width="1325" height="208" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1584005733653" />
+    <state width="1325" height="208" key="GridCell.Tab.2.bottom" timestamp="1584005733654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584003563941" />
-    <state width="1325" height="208" key="GridCell.Tab.2.center" timestamp="1584003563940">
+    <state width="1325" height="208" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584005733654" />
+    <state width="1325" height="208" key="GridCell.Tab.2.center" timestamp="1584005733654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1584003563940" />
-    <state width="1325" height="208" key="GridCell.Tab.2.left" timestamp="1584003563940">
+    <state width="1325" height="208" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1584005733654" />
+    <state width="1325" height="208" key="GridCell.Tab.2.left" timestamp="1584005733654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1584003563940" />
-    <state width="1325" height="208" key="GridCell.Tab.2.right" timestamp="1584003563941">
+    <state width="1325" height="208" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1584005733654" />
+    <state width="1325" height="208" key="GridCell.Tab.2.right" timestamp="1584005733654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="208" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1584003563941" />
+    <state width="1325" height="208" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1584005733654" />
     <state width="1103" height="219" key="GridCell.Tab.3.bottom" timestamp="1583478556361">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

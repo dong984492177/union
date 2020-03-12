@@ -140,6 +140,11 @@ public class UnionattributesController {
         return parseData;
     }
 
+    /**
+     * 获得工会头部信息
+     * @param request
+     * @return
+     */
     @RequestMapping("/getById")
     public UnionattributesAndRoles getById(HttpServletRequest request){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
