@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dong.dao.RolesDao">
+
+    <resultMap type="com.dong.model.Roles" id="RolesMap">
+        <result property="rId" column="r_id" jdbcType="INTEGER"/>
+        <result property="rUser" column="r_user" jdbcType="VARCHAR"/>
+        <result property="rPassword" column="r_password" jdbcType="VARCHAR"/>
+        <result property="rGrade" column="r_grade" jdbcType="INTEGER"/>
+        <result property="rUsername" column="r_username" jdbcType="VARCHAR"/>
+        <result property="rGold" column="r_gold" jdbcType="INTEGER"/>
+        <result property="rUaId" column="r_ua_id" jdbcType="INTEGER"/>
+        <result property="rImg" column="r_img" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="RolesMap">
+        select
+          r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+        from union.roles
+        where r_id = #{rId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="RolesMap">
+        select
+          r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+        from union.roles
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="RolesMap">
+        select
+          r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+        from union.roles
+        <where>
+            <if test="rId != null">
+                and r_id = #{rId}
+            </if>
+            <if test="rUser != null and rUser != ''">
+                and r_user = #{rUser}
+            </if>
+            <if test="rPassword != null and rPassword != ''">
+                and r_password = #{rPassword}
+            </if>
+            <if test="rGrade != null">
+                and r_grade = #{rGrade}
+            </if>
+            <if test="rUsername != null and rUsername != ''">
+                and r_username = #{rUsername}
+            </if>
+            <if test="rGold != null">
+                and r_gold = #{rGold}
+            </if>
+            <if test="rUaId != null">
+                and r_ua_id = #{rUaId}
+            </if>
+            <if test="rImg != null and rImg != ''">
+                and r_img = #{rImg}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="rId" useGeneratedKeys="true">
+        INSERT INTO union.roles
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test ='null != rUser'>
+                r_user,
+            </if>
+            <if test ='null != rPassword'>
+                r_password,
+            </if>
+            <if test ='null != rGrade'>
+                r_grade,
+            </if>
+            <if test ='null != rUsername'>
+                r_username,
+            </if>
+            <if test ='null != rGold'>
+                r_gold,
+            </if>
+            <if test ='null != rUaId'>
+                r_ua_id,
+            </if>
+            <if test ='null != rImg'>
+                r_img
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test ='null != rUser'>
+                #{rUser},
+            </if>
+            <if test ='null != rPassword'>
+                #{rPassword},
+            </if>
+            <if test ='null != rGrade'>
+                #{rGrade},
+            </if>
+            <if test ='null != rUsername'>
+                #{rUsername},
+            </if>
+            <if test ='null != rGold'>
+                #{rGold},
+            </if>
+            <if test ='null != rUaId'>
+                #{rUaId},
+            </if>
+            <if test ='null != rImg'>
+                #{rImg}
+            </if>
+        </trim>
+    </insert>
+
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update union.roles
+        <set>
+            <if test="rUser != null and rUser != ''">
+                r_user = #{rUser},
+            </if>
+            <if test="rPassword != null and rPassword != ''">
+                r_password = #{rPassword},
+            </if>
+            <if test="rGrade != null">
+                r_grade = #{rGrade},
+            </if>
+            <if test="rUsername != null and rUsername != ''">
+                r_username = #{rUsername},
+            </if>
+            <if test="rGold != null">
+                r_gold = #{rGold},
+            </if>
+            <if test="rUaId != null">
+                r_ua_id = #{rUaId},
+            </if>
+            <if test="rImg != null and rImg != ''">
+                r_img = #{rImg},
+            </if>
+        </set>
+        where r_id = #{rId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from union.roles where r_id = #{rId}
+    </delete>
+
+</mapper>

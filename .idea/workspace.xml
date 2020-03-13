@@ -6,26 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionattributesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionattributesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionmemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionmemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/dao/UnionmemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/dao/UnionmemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/ApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/UnionmemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/UnionmemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/ApplicationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionattributesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionattributesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionmemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionmemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/util/AgreeCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/util/AgreeCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UnionmemberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnionmemberDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/guildAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/guildAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myGuild.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/myGuild.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/newGuild.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/newGuild.html" afterDir="false" />
-    </list>
+    <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +200,7 @@
       <workItem from="1583888079403" duration="21047000" />
       <workItem from="1583974432703" duration="20729000" />
       <workItem from="1584005761799" duration="267000" />
-      <workItem from="1584061315014" duration="20599000" />
+      <workItem from="1584061315014" duration="20847000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -291,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584005865997</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="最终01">
+      <created>1584089874262</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584089874263</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +288,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="001" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="最终01" />
+    <option name="LAST_COMMIT_MESSAGE" value="最终01" />
   </component>
   <component name="WindowStateProjectService">
     <state x="543" y="200" key="#BuildArtifactsBeforeRunChooser" timestamp="1583317074804">
@@ -343,10 +332,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583291928352" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584005857240">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584089934461">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584005857240" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584089934461" />
     <state x="393" y="112" key="FileChooserDialogImpl" timestamp="1583391943837">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
