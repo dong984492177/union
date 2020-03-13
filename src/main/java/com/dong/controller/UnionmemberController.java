@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Unionmember)表控制层
@@ -20,7 +23,7 @@ import java.util.List;
  * @since 2020-03-03 13:32:14
  */
 @RestController
-@RequestMapping("unionmember")
+@RequestMapping("/unionmember")
 public class UnionmemberController {
    /**
      * 开启日志
@@ -64,5 +67,20 @@ public class UnionmemberController {
         return parseData;
     }
 
+    @RequestMapping("/getEveryone")
+    public List<Map<String ,Object>> getEveryone(HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        int uaid= (int) session.getAttribute("uald");
+        List<Map<String ,Object>> data=unionmemberService.getAllAndRoles(uaid);
+        List<Map<String ,Object>> datas=new ArrayList<>();
+        for (Map<String ,Object> map: data) {
+            Map<String ,Object> maps= new HashMap<>();
+            maps.put("value",map.get("un_total_contribution"));
+            maps.put("name",map.get("r_username"));
+            datas.add(maps);
+        }
+        return datas;
 
+    }
 }

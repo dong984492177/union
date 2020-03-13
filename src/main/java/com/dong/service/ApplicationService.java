@@ -96,10 +96,36 @@ public interface ApplicationService {
 
     /**
      * 多条拒绝
-     * @param data
+     * @param data 数据数组
+     * @param aOperatingId 操作人id
      * @return
      */
     AgreeCount refuseall(Map<String ,Object>[] data,int aOperatingId );
 
+    /**
+     * 单条拒绝
+     * @param aId 申请表id
+     * @param aOperatingId 操作人id
+     * @return
+     */
     int refuse(int aId,int aOperatingId );
+
+    /**
+     * 单条同意
+     * @param aid 申请表id
+     * @param aOperatingId 操作人id
+     * @param rid 申请人id
+     * @param uald 工会id
+     * @return
+     */
+    AgreeCount agree(int aid, int aOperatingId,int rid,int uald);
+
+    /**
+     * 批量同意
+     * @param data 数据组格式
+     * @param aOperatingId 操作人id
+     * @param uald
+     * @return
+     */
+    AgreeCount agreeAll(Map<String, Object>[] data, int aOperatingId, int uald);
 }

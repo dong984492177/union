@@ -3,6 +3,7 @@ package com.dong.controller;
 import com.dong.model.Application;
 
 import com.dong.model.ApplicationAndRoles;
+import com.dong.model.Roles;
 import com.dong.model.Unionmember;
 import com.dong.service.ApplicationService;
 import com.dong.service.RolesService;
@@ -117,7 +118,12 @@ public class ApplicationController {
         return parseData;
     }
 
-
+    /**
+     * 申请全部拒绝
+     * @param data 申请的数组的详情
+     * @param request
+     * @return 操作成功和失败数
+     */
     @RequestMapping("/refuseAll")
     public AgreeCount refuseall(@RequestBody  Map<String ,Object>[] data ,HttpServletRequest request){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
@@ -127,5 +133,55 @@ public class ApplicationController {
         return agreeCount;
     }
 
+    /**
+     * 申请拒绝
+     * @param data 单个申请
+     * @param request
+     * @return
+     */
+    @RequestMapping("/refuse")
+    public int refuse(@RequestBody  Map<String ,Object> data,HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        int aid = (int) data.get("aid");
+        int aOperatingId = (int) session.getAttribute("id");
+        int count =applicationService.refuse(aid,aOperatingId);
+        return count;
+    }
+
+    /**
+     * 申请同意
+     * @param data
+     * @param request
+     * @return
+     */
+    @RequestMapping("/agree")
+    public AgreeCount agree(@RequestBody  Map<String ,Object> data,HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        //角色表id
+        int aid = (int) data.get("aid");
+        //操作申请人的id
+        int aOperatingId = (int) session.getAttribute("id");
+        Map<String ,Object> roles= (Map<String, Object>) data.get("roles");
+        //角色id
+        int rid= (int) roles.get("rid");
+        //工会id
+        int uald= (int) session.getAttribute("uald");
+        AgreeCount agreeCount =applicationService.agree(aid,aOperatingId,rid,uald);
+        return agreeCount;
+    }
+
+    @RequestMapping("/agreeAll")
+    public AgreeCount agree(@RequestBody  Map<String ,Object>[] data ,HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        //操作申请人id
+        int aOperatingId = (int) session.getAttribute("id");
+        //工会id
+        int uald= (int) session.getAttribute("uald");
+        AgreeCount agreeCount=applicationService.agreeAll(data,aOperatingId,uald);
+        return agreeCount;
+    }
 
 }

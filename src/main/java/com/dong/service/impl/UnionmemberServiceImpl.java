@@ -1,13 +1,16 @@
 package com.dong.service.impl;
 
+import com.dong.model.Roles;
 import com.dong.model.Unionmember;
 import com.dong.dao.UnionmemberDao;
 import com.dong.model.UnionmemberAndRoles;
+import com.dong.service.RolesService;
 import com.dong.service.UnionmemberService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Unionmember)表服务实现类
@@ -19,6 +22,8 @@ import java.util.List;
 public class UnionmemberServiceImpl implements UnionmemberService {
     @Resource
     private UnionmemberDao unionmemberDao;
+    @Resource
+    private RolesService rolesService;
 
     /**
      * 通过ID查询单条数据
@@ -106,5 +111,31 @@ public class UnionmemberServiceImpl implements UnionmemberService {
     @Override
     public int getCount(int uaid) {
         return unionmemberDao.getCount( uaid);
+    }
+
+    /**
+     *工会成员添加
+     * @param unionmember
+     * @return
+     */
+    @Override
+    public int add(Unionmember unionmember) {
+        unionmemberDao.insert(unionmember);
+        int uaid =unionmember.umUaId;
+        int rid =unionmember.unRId;
+        Roles roles =new Roles();
+        roles.setRId(rid);
+        roles.setRUaId(uaid);
+        return rolesService.updateReturnInt(roles);
+    }
+
+    /**
+     * 获得工会成员信息的全部键值对
+     * @param uaid
+     * @return
+     */
+    @Override
+    public List<Map<String, Object>> getAllAndRoles(int uaid) {
+        return unionmemberDao.getAllAndRoles(uaid);
     }
 }

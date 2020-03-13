@@ -17,6 +17,7 @@ import javax.net.ssl.SSLServerSocket;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Unionattributes)表控制层
@@ -153,4 +154,5 @@ public class UnionattributesController {
         UnionattributesAndRoles unionattributesAndRoles =unionattributesService.getById(uaid);
         return unionattributesAndRoles;
     }
+
 }

@@ -75,7 +75,9 @@
                 })
             })
         })
-
+        /**
+         * 创建工会提交
+         */
         form.on('submit(formDemo)', function(data){
             var param = {
                 "uaName": $("#uaName").val(),
@@ -92,8 +94,7 @@
                 success: function(data) {
                     alert(data.msg);
                     if (data.count>0){
-//-----------------------------------------还没写好---------------------------------------------
-                        location.href="跳转页面"
+                        location.href=/*[[@{/tomyGuild}]]*/;
                     }
                 }
 

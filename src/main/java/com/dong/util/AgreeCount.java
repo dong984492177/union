@@ -4,15 +4,15 @@ public class AgreeCount {
     /**
      * 同意成功数量
      */
-    int agree;
+    int agree=0;
     /**
      * 拒绝成功数量
      */
-    int refuseCount;
+    int refuseCount=0;
     /**
      * 失败数量
      */
-    int failure;
+    int failure=0;
 
     public AgreeCount() {
     }

@@ -1,9 +1,14 @@
 package com.dong.service.impl;
 
+import com.dong.dao.RolesDao;
+import com.dong.dao.UnionmemberDao;
 import com.dong.model.Application;
 import com.dong.dao.ApplicationDao;
 import com.dong.model.ApplicationAndRoles;
+import com.dong.model.Roles;
+import com.dong.model.Unionmember;
 import com.dong.service.ApplicationService;
+import com.dong.service.UnionmemberService;
 import com.dong.util.AgreeCount;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +26,10 @@ import java.util.Map;
 public class ApplicationServiceImpl implements ApplicationService {
     @Resource
     private ApplicationDao applicationDao;
+    @Resource
+    private RolesDao rolesDao;
+    @Resource
+    private UnionmemberService unionmemberService;
 
     /**
      * 通过ID查询单条数据
@@ -132,7 +141,12 @@ public class ApplicationServiceImpl implements ApplicationService {
         return applicationDao.getCountAll(applicationAndRoles);
     }
 
-
+    /**
+     * 批量拒绝
+     * @param data
+     * @param aOperatingId
+     * @return
+     */
     @Override
     public AgreeCount refuseall(Map<String ,Object>[] data,int aOperatingId) {
         AgreeCount agreeCount=new AgreeCount();
@@ -164,4 +178,72 @@ public class ApplicationServiceImpl implements ApplicationService {
     public int refuse(int aId,int aOperatingId) {
         return applicationDao.refuse(aId,aOperatingId);
     }
+
+    /**
+     * 同意申请
+     * @param aid 申请表id
+     * @param aOperatingId 操作申请人id
+     * @param rid 申请角色的id
+     * @param uald 工会id
+     * @return
+     */
+    @Override
+    public AgreeCount agree(int aid, int aOperatingId, int rid,int uald) {
+        Roles roles = rolesDao.queryById(rid);
+        AgreeCount agreeCount=new AgreeCount();
+        int count =0;
+        //如果有工会
+        if (roles.getRUaId()!=null){
+            count= applicationDao.refuse(aid,aOperatingId);
+            if (count>0){
+                agreeCount.setRefuseCount(1);
+
+            }else{
+                agreeCount.setFailure(1);
+            }
+
+        }else {
+            //如果没有工会
+            Unionmember unionmember=new Unionmember();
+            unionmember.setUmUaId(uald);
+            unionmember.setUnRId(rid);
+            count = unionmemberService.add(unionmember);
+            if (count>0){
+                agreeCount.setAgree(1);
+                applicationDao.deleteById(aid);
+            }else{
+                agreeCount.setFailure(1);
+            }
+
+        }
+
+        return agreeCount;
+    }
+
+    @Override
+    public AgreeCount agreeAll(Map<String, Object>[] data, int aOperatingId, int uald) {
+        AgreeCount agreeCount=new AgreeCount();
+        //同意成功
+        int agree=0;
+        //拒绝成功
+        int refuseCount=0;
+        //失败
+        int failure=0;
+        for (Map map:data ){
+            //角色表id
+            int aid = (int) map.get("aid");
+            //角色id
+            Map<String ,Object> roles= (Map<String, Object>) map.get("roles");
+            int rid= (int) roles.get("rid");
+            AgreeCount  agreeCount2=this.agree(aid,aOperatingId,rid,uald);
+            agree += agreeCount2.getAgree();
+            refuseCount += agreeCount2.getRefuseCount();
+            failure += agreeCount2.getFailure();
+        }
+        agreeCount.setAgree(agree);
+        agreeCount.setFailure(failure);
+        agreeCount.setRefuseCount(refuseCount);
+        return agreeCount;
+    }
+
 }

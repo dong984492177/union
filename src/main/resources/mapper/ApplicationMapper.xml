@@ -224,6 +224,7 @@
             </if>
         </where>
     </select>
+    <!--  拒绝申请  -->
     <update id="refuse" >
         update union.application
         <set>

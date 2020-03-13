@@ -101,6 +101,7 @@ public class UnionattributesServiceImpl implements UnionattributesService {
     }
 
     /**
+     * 创建工会
      * 工会表添加已经相关联表添加修改
      * @param unionattributes
      * @return

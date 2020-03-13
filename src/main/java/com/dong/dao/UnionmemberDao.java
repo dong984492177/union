@@ -5,6 +5,7 @@ import com.dong.model.UnionmemberAndRoles;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Unionmember)表数据库访问层
@@ -78,4 +79,11 @@ public interface UnionmemberDao {
      * @return
      */
     int getCount(int uaid);
+
+    /**
+     * 工会成员信息已键值对形式获取
+     * @param uaid
+     * @return
+     */
+    List<Map<String, Object>> getAllAndRoles(int uaid);
 }

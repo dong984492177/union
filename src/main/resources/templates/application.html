@@ -73,6 +73,20 @@
                 //选中同意
                 case 'agreeCheckData':
                     var data = checkStatus.data;
+                    $.ajax({
+                        type: "post",   //提交的方法
+                        dataType: "json",//预期服务器返回的数据类型
+                        contentType:"application/json",
+                        //需要修改的地方
+                        url:/*[[@{/application/agreeAll}]]*/, //提交的地址
+                        data: JSON.stringify(data),// 序列化表单值
+                        success: function(data){
+                            layer.msg('同意操作成功:'+data.agree+'个,拒绝操作：'+ data. refuseCount+ ' 个,拒绝操作失败:'+data.failure);
+                            setTimeout(function(){  //使用  setTimeout（）方法设定定时2000毫秒
+                                location.reload();//页面刷新
+                            },2000);
+                        }
+                    })
                     break;
                 //选中拒绝
                 case 'refuseCheckLength':
@@ -84,12 +98,13 @@
                         //需要修改的地方
                         url:/*[[@{/application/refuseAll}]]*/, //提交的地址
                         data: JSON.stringify(data),// 序列化表单值
-
                         success: function(data){
                             layer.msg('拒绝操作成功：'+ data. refuseCount+ ' 个,拒绝操作失败:'+data.failure);
+                            setTimeout(function(){  //使用  setTimeout（）方法设定定时2000毫秒
+                                location.reload();//页面刷新
+                            },2000);
                         }
                     })
-                    location.reload();
                     break;
                 case 'getCheckData':
                     var data = checkStatus.data;
@@ -115,6 +130,59 @@
                     break;
             };
         });
+        //表格内部工具栏
+        table.on('tool(test)', function(obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的 DOM 对象（如果有的话）
+
+            //拒绝
+            if(layEvent === 'refuse'){ //查看
+                $.ajax({
+                    type: "post",   //提交的方法
+                    dataType: "json",//预期服务器返回的数据类
+                    contentType:"application/json",
+                    //需要修改的地方
+                    url:/*[[@{/application/refuse}]]*/, //提交的地址
+                    data: JSON.stringify(data),// 序列化表单值
+                    success: function(data){
+                        if(data>0){
+                            layer.alert('拒绝操作成功');
+                        }else{
+                            layer.alert('拒绝操作失败');
+                        }
+                        setTimeout(function(){  //使用  setTimeout（）方法设定定时2000毫秒
+                            location.reload();//页面刷新
+                        },2000);
+                    }
+                })
+
+            }
+            //同意
+            if(layEvent === 'agree'){
+                $.ajax({
+                    type: "post",   //提交的方法
+                    dataType: "json",//预期服务器返回的数据类
+                    contentType:"application/json",
+                    //需要修改的地方
+                    url:/*[[@{/application/agree}]]*/, //提交的地址
+                    data: JSON.stringify(data),// 序列化表单值
+                    success: function(data){
+                        if (data.agree>0){
+                            layer.alert('同意操作成功');
+                        }else if (data.refuseCount>0){
+                            layer.alert('该人员以及加入其他工会,无法同意');
+                        }else{
+                            layer.alert('同意操作失败');
+                        }
+                        setTimeout(function(){  //使用  setTimeout（）方法设定定时2000毫秒
+                            location.reload();//页面刷新
+                        },2000);
+
+                    }
+                })
+            }
+        })
 
     })
 </script>

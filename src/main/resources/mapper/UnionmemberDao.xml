@@ -169,4 +169,11 @@
     <select id="getCount" resultType="int" parameterType="UnionmemberAndRoles">
             select COUNT(*) FROM unionmember where um_ua_id=#{uaid}
     </select>
+    <select id="getAllAndRoles" resultType="map">
+        select
+            um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,
+            r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+            from unionmember, roles
+            where un_r_id=r_id and um_ua_id=#{uaid}
+    </select>
 </mapper>

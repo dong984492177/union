@@ -4,6 +4,7 @@ import com.dong.model.Unionmember;
 import com.dong.model.UnionmemberAndRoles;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * (Unionmember)表服务接口
@@ -74,4 +75,18 @@ public interface UnionmemberService {
      * @return
      */
     int getCount(int uaid);
+
+    /**
+     * 工会添加成员操作
+     * @param unionmember
+     * @return
+     */
+    int add(Unionmember unionmember);
+
+    /**
+     * 获得信息键值对形式
+     * @param uaid
+     * @return
+     */
+    List<Map<String, Object>> getAllAndRoles(int uaid);
 }
