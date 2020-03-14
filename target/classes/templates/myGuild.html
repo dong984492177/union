@@ -80,28 +80,28 @@
             ,url:/*[[@{/unionmember/getAll}]]*/ //数据接口
             ,page: true //开启分页
             ,cols: [ [  //表头
-                {type: 'checkbox', fixed: 'left'},
+                //{type: 'checkbox', fixed: 'left'},
                 {title:'成员昵称',templet:function(d){
                         return d.roles.rUsername;
-                    },width:200,},
+                    }},
                 {title:'成员等级',templet:function(d){
                         return d.roles.rGrade;
-                    },width:200},
-                {field: 'unWeekContribution', title: '周贡献',width:200,  sort: true},
-                {field: 'unMonthlyContribution', title: '月贡献',width:200,  sort: true},
-                {field: 'unTotalContribution', title: '总贡献' ,width:200,  sort: true},
+                    }},
+                {field: 'unWeekContribution', title: '周贡献'  ,sort: true},
+                {field: 'unMonthlyContribution', title: '月贡献'  ,sort: true},
+                {field: 'unTotalContribution', title: '总贡献' ,  sort: true},
                 {title:'职务',templet:function(d){
                         if(d.position.pName === '工会会长'){
                             return  "<span style='color: #F581B1;'>"+ d.position.pName+"</span>"
                         } else if (d.position.pName === '副会长'){
-                            return  "<span style='color: green;'>"+ d.position.pName+"</span>"
+                            return  "<span style='color: #7CFC00;'>"+ d.position.pName+"</span>"
                         }else if (d.position.pName === '精英骨干'){
                             return  "<span style='color: yellow;'>"+ d.position.pName+"</span>"
                         }else{
                             return d.position.pName
                         }
-                        //return d.position.pName;
-                    },width:200},
+
+                    }},
 
             ] ]
             ,limit:10
@@ -143,7 +143,7 @@
                 {
                     name: '贡献总图',
                     type: 'pie',
-                    radius: '55%',
+                    radius: '65%',
                     center: ['50%', '50%'],
                     data: [
                         {value: 335, name: '哈哈'},
@@ -164,13 +164,13 @@
                             color: 'rgba(255, 0, 255, 0.5)'
                         },
                         smooth: 0.2,
-                        length: 10,
-                        length2: 20
+                        length: 50,
+                        length2: 100
                     },
                     itemStyle: {
-                        color: '#c12345',
-                        shadowBlur: 20,
-                        shadowColor: 'rgba(0, 0, 0, 0.9)'
+                        color: '#c23531',
+                        shadowBlur:100,
+                        shadowColor: 'rgba(255, 0, 255, 0.7)'
                     },
 
                     animationType: 'scale',
@@ -202,35 +202,8 @@
 
                     series: [
                         {
-                            /*name: '贡献总图',
-                            type: 'pie',
-                            radius: '55%',
-                            center: ['50%', '50%'],*/
                             data: data.sort(function (a, b) { return a.value - b.value; }),
 
-                            /*roseType: 'radius',
-                            label: {
-                                color: 'rgba(0, 255, 255, 0.7)'
-                            },
-                            labelLine: {
-                                lineStyle: {
-                                    color: 'rgba(255, 0, 255, 0.5)'
-                                },
-                                smooth: 0.2,
-                                length: 10,
-                                length2: 20
-                            },
-                            itemStyle: {
-                                color: '#00f00f',
-                                shadowBlur: 20,
-                                shadowColor: 'rgba(0, 0, 0, 0.9)'
-                            },
-
-                            animationType: 'scale',
-                            animationEasing: 'elasticOut',
-                            animationDelay: function (idx) {
-                                return Math.random() * 200;
-                            }*/
                         }
                     ]
                 })

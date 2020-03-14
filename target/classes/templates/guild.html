@@ -27,15 +27,6 @@
             <li class="layui-nav-item"><a th:href="@{/index}" >首页</a></li>
             <li class="layui-nav-item"><a th:href="@{/tologin}" >登录/注册</a></li>
             <li class="layui-nav-item"><a th:href="@{'/torguild/'+${session.id}}">工会</a></li>
-            <!--<li class="layui-nav-item"><a href="">用户</a></li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">其它系统</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">邮件管理</a></dd>
-                    <dd><a href="">消息管理</a></dd>
-                    <dd><a href="">授权管理</a></dd>
-                </dl>
-            </li>-->
         </ul>
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item">
@@ -65,7 +56,7 @@
 
     <!--  嵌入页面内容区  -->
     <div class="layui-body">
-        <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true" style="height: 100%;">
+        <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true" >
             <ul class="layui-tab-title">
                 <li class="layui-this">主页</li>
             </ul>
@@ -133,6 +124,7 @@
             $("#myGuild").append("<a href='javascript:;' lay-id='myGuild' lay-src='"+project+"tomyGuild' lay-name='查看工会' data-btn='btn'>查看工会</a>");
             if (position<=2){
                 $("#myGuild").append("<a href='javascript:;' lay-id='application' lay-src='"+project+"toapplication' lay-name='申请' data-btn='btn'>申请</a>");
+                $("#myGuild").append("<a href='javascript:;' lay-id='manageApplication' lay-src='"+project+"tomanageApplication' lay-name='管理工会' data-btn='btn'>管理工会</a>");
             }
         }
         //全部更新导航条

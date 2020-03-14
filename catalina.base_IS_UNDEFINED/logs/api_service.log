@@ -11040,3 +11040,491 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2020/03/13T15:57:14 [Thread-23] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2020/03/13T15:57:14 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2020/03/13T15:57:14 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020/03/13T17:08:42 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 7728 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/13T17:08:42 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/13T17:08:42 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/13T17:08:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/13T17:08:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/13T17:08:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/13T17:08:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 JDBC repository interfaces.
+2020/03/13T17:08:50 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/13T17:08:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/13T17:08:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/13T17:08:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/13T17:08:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/13T17:08:51 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/13T17:08:51 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9565 ms
+2020/03/13T17:08:55 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/13T17:08:55 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/13T17:08:56 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/13T17:08:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/13T17:08:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/13T17:08:56 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 17.78 seconds (JVM running for 23.015)
+2020/03/13T17:09:16 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/13T17:09:16 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/13T17:09:16 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+2020/03/13T17:09:16 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:09:19 [http-nio-80-exec-1] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:09:19 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/13T17:09:19 [http-nio-80-exec-3] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:09:19 [http-nio-80-exec-2] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:09:19 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/13T17:09:19 [http-nio-80-exec-3] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:09:19 [http-nio-80-exec-2] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:09:19 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:09:20 [http-nio-80-exec-3] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:09:20 [http-nio-80-exec-2] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:09:20 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:09:20 [http-nio-80-exec-1] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:09:20 [http-nio-80-exec-1] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:09:20 [http-nio-80-exec-3] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:09:20 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:09:20 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:09:20 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:09:20 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:09:20 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:09:20 [http-nio-80-exec-2] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:09:37 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:09:39 [http-nio-80-exec-5] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:09:39 [http-nio-80-exec-5] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:09:39 [http-nio-80-exec-5] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:09:39 [http-nio-80-exec-5] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:09:39 [http-nio-80-exec-5] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:09:39 [http-nio-80-exec-5] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:09:39 [http-nio-80-exec-7] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:09:39 [http-nio-80-exec-7] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:09:39 [http-nio-80-exec-7] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:09:39 [http-nio-80-exec-7] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:09:39 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:09:39 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:09:39 [http-nio-80-exec-7] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:09:39 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:12:20 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:12:21 [http-nio-80-exec-2] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:12:21 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:12:21 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:12:21 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:12:21 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:12:21 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:12:21 [http-nio-80-exec-1] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:12:21 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:12:21 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:12:21 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:12:21 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:12:21 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:12:21 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:12:21 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:12:21 [http-nio-80-exec-3] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:12:21 [http-nio-80-exec-3] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:12:21 [http-nio-80-exec-3] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:12:21 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:12:21 [http-nio-80-exec-3] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:14:05 [http-nio-80-exec-6] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:14:06 [http-nio-80-exec-6] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:14:06 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:14:06 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:14:06 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:14:06 [http-nio-80-exec-6] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:14:06 [http-nio-80-exec-6] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:14:06 [http-nio-80-exec-8] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:14:06 [http-nio-80-exec-8] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:14:06 [http-nio-80-exec-8] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:14:06 [http-nio-80-exec-8] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:14:06 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:14:06 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:14:06 [http-nio-80-exec-8] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:14:06 [http-nio-80-exec-8] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:14:06 [http-nio-80-exec-9] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:14:06 [http-nio-80-exec-9] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:14:06 [http-nio-80-exec-9] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:14:06 [http-nio-80-exec-9] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:14:06 [http-nio-80-exec-9] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:15:02 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:15:03 [http-nio-80-exec-1] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:15:03 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:15:03 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:15:03 [http-nio-80-exec-1] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:15:03 [http-nio-80-exec-1] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:15:03 [http-nio-80-exec-1] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:15:03 [http-nio-80-exec-4] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:15:03 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:15:03 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:15:03 [http-nio-80-exec-4] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:15:03 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:15:03 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:15:03 [http-nio-80-exec-4] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:15:03 [http-nio-80-exec-4] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:15:03 [http-nio-80-exec-3] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:15:03 [http-nio-80-exec-3] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:15:03 [http-nio-80-exec-3] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:15:03 [http-nio-80-exec-3] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:15:03 [http-nio-80-exec-3] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:15:46 [http-nio-80-exec-7] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:15:47 [http-nio-80-exec-7] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:15:47 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:15:47 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:15:47 [http-nio-80-exec-7] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:15:47 [http-nio-80-exec-7] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:15:47 [http-nio-80-exec-7] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:15:47 [http-nio-80-exec-6] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:15:47 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:15:47 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:15:47 [http-nio-80-exec-6] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:15:47 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:15:47 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:15:47 [http-nio-80-exec-6] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:15:47 [http-nio-80-exec-6] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:15:47 [http-nio-80-exec-8] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:15:47 [http-nio-80-exec-8] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:15:47 [http-nio-80-exec-8] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:15:47 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:15:47 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:15:47 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:15:48 [http-nio-80-exec-8] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:15:48 [http-nio-80-exec-8] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:16:20 [http-nio-80-exec-4] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:16:22 [http-nio-80-exec-4] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:16:22 [http-nio-80-exec-4] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:16:22 [http-nio-80-exec-4] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:16:22 [http-nio-80-exec-4] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:16:22 [http-nio-80-exec-4] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:16:22 [http-nio-80-exec-4] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:16:22 [http-nio-80-exec-3] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:16:22 [http-nio-80-exec-3] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:16:22 [http-nio-80-exec-3] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:16:22 [http-nio-80-exec-3] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:16:22 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:16:22 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:16:22 [http-nio-80-exec-3] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:16:22 [http-nio-80-exec-3] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:16:22 [http-nio-80-exec-5] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:16:22 [http-nio-80-exec-5] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:16:22 [http-nio-80-exec-5] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:16:22 [http-nio-80-exec-5] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:16:22 [http-nio-80-exec-5] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:22:07 [http-nio-80-exec-9] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:22:09 [http-nio-80-exec-9] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:22:09 [http-nio-80-exec-9] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:22:09 [http-nio-80-exec-9] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:22:09 [http-nio-80-exec-9] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:22:09 [http-nio-80-exec-9] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:22:09 [http-nio-80-exec-9] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:22:10 [http-nio-80-exec-10] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:22:10 [http-nio-80-exec-10] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:22:10 [http-nio-80-exec-10] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:22:10 [http-nio-80-exec-10] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:22:10 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:22:10 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:22:10 [http-nio-80-exec-10] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:22:10 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:22:10 [http-nio-80-exec-2] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:22:10 [http-nio-80-exec-2] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:22:10 [http-nio-80-exec-2] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:22:10 [http-nio-80-exec-2] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:22:10 [http-nio-80-exec-2] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:29:26 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:29:28 [http-nio-80-exec-5] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:29:28 [http-nio-80-exec-5] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:29:28 [http-nio-80-exec-5] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:29:28 [http-nio-80-exec-5] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:29:28 [http-nio-80-exec-5] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:29:28 [http-nio-80-exec-5] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:29:28 [http-nio-80-exec-7] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:29:28 [http-nio-80-exec-7] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:29:28 [http-nio-80-exec-7] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:29:28 [http-nio-80-exec-7] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:29:28 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:29:28 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:29:28 [http-nio-80-exec-7] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:29:28 [http-nio-80-exec-7] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:29:29 [http-nio-80-exec-6] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:29:29 [http-nio-80-exec-6] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:29:29 [http-nio-80-exec-6] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:29:29 [http-nio-80-exec-6] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:29:29 [http-nio-80-exec-6] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/13T17:33:09 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入tomyGuild方法
+2020/03/13T17:33:11 [http-nio-80-exec-2] INFO  c.d.c.UnionattributesController - 进入getById方法
+2020/03/13T17:33:11 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==>  Preparing: select ua_id, ua_name, ua_create_id, ua_rank, ua_announcement,ud_date,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionattributes left join roles on ua_create_id=r_id where ua_id=? 
+2020/03/13T17:33:11 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - ==> Parameters: 1(Integer)
+2020/03/13T17:33:11 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==    Columns: ua_id, ua_name, ua_create_id, ua_rank, ua_announcement, ud_date, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:33:11 [http-nio-80-exec-2] TRACE c.d.dao.UnionattributesDao.getById - <==        Row: 1, 战神工会, 1, 1, 这里是战神工会, 2020-03-06, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:33:11 [http-nio-80-exec-2] DEBUG c.d.dao.UnionattributesDao.getById - <==      Total: 1
+2020/03/13T17:33:11 [http-nio-80-exec-1] INFO  c.d.controller.UnionmemberController - 进入getAll方法
+2020/03/13T17:33:11 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img,p_id, p_name from unionmember, roles , position where un_r_id=r_id and um_ua_id=? and un_p_id=p_id limit ?, ? 
+2020/03/13T17:33:11 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img, p_id, p_name
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg, 1, 工会会长
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png, 2, 副会长
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png, 3, 精英骨干
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE c.d.d.U.queryAllByLimitAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png, 4, 普通成员
+2020/03/13T17:33:11 [http-nio-80-exec-1] DEBUG c.d.d.U.queryAllByLimitAndRoles - <==      Total: 10
+2020/03/13T17:33:11 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - ==>  Preparing: select COUNT(*) FROM unionmember where um_ua_id=? 
+2020/03/13T17:33:11 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - ==> Parameters: 1(Integer)
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.getCount - <==    Columns: COUNT(*)
+2020/03/13T17:33:11 [http-nio-80-exec-1] TRACE com.dong.dao.UnionmemberDao.getCount - <==        Row: 11
+2020/03/13T17:33:11 [http-nio-80-exec-1] DEBUG com.dong.dao.UnionmemberDao.getCount - <==      Total: 1
+2020/03/13T17:33:11 [http-nio-80-exec-4] INFO  c.d.controller.UnionmemberController - 进入getEveryone方法
+2020/03/13T17:33:11 [http-nio-80-exec-4] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from unionmember, roles where un_r_id=r_id and um_ua_id=? 
+2020/03/13T17:33:11 [http-nio-80-exec-4] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - ==> Parameters: 1(Integer)
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id, r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 1, 1, 1, 0, 0, 9851, 1, 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 13, 1, 10, 0, 0, 8000, 2, 10, root67, root, 1, root67, 0, 1, dashboard-photo.png
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 14, 1, 5, 0, 0, 5000, 4, 5, root222, root, 1, root222, 500000000, 1, o11.ico
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 15, 1, 8, 0, 0, 4554, 4, 8, root66, root, 1, root66, 0, 1, dashboard-photo.png
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 19, 1, 4, 0, 0, 5654, 4, 4, root22, root, 1, root22, 500000000, 1, o11.ico
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 20, 1, 3, 0, 0, 5411, 4, 3, roo3, root, 1, 我是一根葱, 500000000, 1, o11.ico
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 21, 1, 6, 0, 0, 5600, 4, 6, root33, root, 1, root33, 500000000, 1, o11.ico
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 22, 1, 7, 0, 0, 5878, 4, 7, gg, gg, 1, gg, 500000000, 1, o11.ico
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 23, 1, 9, 0, 0, 5564, 4, 9, root65, root, 1, root65, 0, 1, dashboard-photo.png
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 24, 1, 22, 0, 0, 5640, 3, 22, root13, root, 1, 我是谁?, 0, 1, dashboard-photo.png
+2020/03/13T17:33:11 [http-nio-80-exec-4] TRACE c.d.d.UnionmemberDao.getAllAndRoles - <==        Row: 25, 1, 23, 0, 0, 831, 4, 23, root14, root, 1, root, 0, 1, dashboard-photo.png
+2020/03/13T17:33:11 [http-nio-80-exec-4] DEBUG c.d.d.UnionmemberDao.getAllAndRoles - <==      Total: 11
+2020/03/14T17:14:13 [restartedMain] INFO  com.dong.UnionApplication - Starting UnionApplication on 22G6OL0BJ9W13L5 with PID 8792 (G:\DAIMA\IDEA\union\target\classes started by Administrator in G:\DAIMA\IDEA\union)
+2020/03/14T17:14:13 [restartedMain] DEBUG com.dong.UnionApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020/03/14T17:14:13 [restartedMain] INFO  com.dong.UnionApplication - The following profiles are active: dev
+2020/03/14T17:14:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020/03/14T17:14:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020/03/14T17:14:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020/03/14T17:14:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100ms. Found 0 JDBC repository interfaces.
+2020/03/14T17:14:28 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020/03/14T17:14:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020/03/14T17:14:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2020/03/14T17:14:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020/03/14T17:14:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020/03/14T17:14:33 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring embedded WebApplicationContext
+2020/03/14T17:14:33 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 18796 ms
+2020/03/14T17:14:40 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020/03/14T17:14:40 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020/03/14T17:14:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020/03/14T17:14:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2020/03/14T17:14:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/union'
+2020/03/14T17:14:47 [restartedMain] INFO  com.dong.UnionApplication - Started UnionApplication in 50.733 seconds (JVM running for 99.789)
+2020/03/14T17:16:03 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/union] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/03/14T17:16:03 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020/03/14T17:16:03 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 156 ms
+2020/03/14T17:16:04 [http-nio-80-exec-1] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/14T17:16:07 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/14T17:17:02 [http-nio-80-exec-5] INFO  com.dong.controller.ToController - 进入tologin方法
+2020/03/14T17:17:08 [http-nio-80-exec-8] INFO  com.dong.controller.RolesController - 进入login方法
+2020/03/14T17:17:08 [http-nio-80-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020/03/14T17:17:09 [http-nio-80-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020/03/14T17:17:09 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryAll - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles WHERE r_user = ? and r_password = ? 
+2020/03/14T17:17:09 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryAll - ==> Parameters: root(String), root(String)
+2020/03/14T17:17:09 [http-nio-80-exec-8] TRACE com.dong.dao.RolesDao.queryAll - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/14T17:17:09 [http-nio-80-exec-8] TRACE com.dong.dao.RolesDao.queryAll - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/14T17:17:09 [http-nio-80-exec-8] DEBUG com.dong.dao.RolesDao.queryAll - <==      Total: 1
+2020/03/14T17:17:11 [http-nio-80-exec-2] INFO  com.dong.controller.ToController - 进入toIndex方法
+2020/03/14T17:17:15 [http-nio-80-exec-10] INFO  com.dong.controller.ToController - 进入torguild方法
+2020/03/14T17:17:15 [http-nio-80-exec-10] DEBUG com.dong.dao.RolesDao.queryById - ==>  Preparing: select r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img from union.roles where r_id = ? 
+2020/03/14T17:17:15 [http-nio-80-exec-10] DEBUG com.dong.dao.RolesDao.queryById - ==> Parameters: 1(Integer)
+2020/03/14T17:17:15 [http-nio-80-exec-10] TRACE com.dong.dao.RolesDao.queryById - <==    Columns: r_id, r_user, r_password, r_grade, r_username, r_gold, r_ua_id, r_img
+2020/03/14T17:17:15 [http-nio-80-exec-10] TRACE com.dong.dao.RolesDao.queryById - <==        Row: 1, root, root, 1, 想改名, 500000000, 1, f8ad52f3-ddff-46a8-b562-41e0cb959d47.jpg
+2020/03/14T17:17:15 [http-nio-80-exec-10] DEBUG com.dong.dao.RolesDao.queryById - <==      Total: 1
+2020/03/14T17:17:15 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==>  Preparing: select um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id from union.unionmember WHERE un_r_id = ? 
+2020/03/14T17:17:15 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.queryAll - ==> Parameters: 1(Integer)
+2020/03/14T17:17:15 [http-nio-80-exec-10] TRACE com.dong.dao.UnionmemberDao.queryAll - <==    Columns: um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id
+2020/03/14T17:17:15 [http-nio-80-exec-10] TRACE com.dong.dao.UnionmemberDao.queryAll - <==        Row: 1, 1, 1, 0, 0, 9851, 1
+2020/03/14T17:17:15 [http-nio-80-exec-10] DEBUG com.dong.dao.UnionmemberDao.queryAll - <==      Total: 1
+2020/03/14T17:21:42 [Thread-107] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020/03/14T17:21:42 [Thread-107] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020/03/14T17:21:42 [Thread-107] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

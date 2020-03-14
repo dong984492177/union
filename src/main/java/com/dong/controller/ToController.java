@@ -92,20 +92,44 @@ public class ToController {
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "newGuild";
     }
+
+    /**
+     * 进入我的工会页面
+     * @return
+     */
     @RequestMapping("/tomyGuild")
     public String tomyGuild(){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "myGuild";
     }
+
+    /**
+     * 进入工会列表页面
+     * @return
+     */
     @RequestMapping("/toguildAll")
     public String toguildAll(){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "guildAll";
     }
+
+    /**
+     * 进入申请页面
+     * @return
+     */
     @RequestMapping("/toapplication")
     public String toapplication(){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
         return "application";
     }
 
+    /**
+     * 进入管理工会页面
+     * @return
+     */
+    @RequestMapping("/tomanageApplication")
+    public String tomanageApplication(){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        return "manageApplication";
+    }
 }

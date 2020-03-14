@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet" th:href="@{/css/bootstrap.min.css}" type="text/css">
+    <link  rel="stylesheet" th:href="@{/layui/css/layui.css}" type="text/css">
+    <title>工会管理页面</title>
+
+</head>
+<body>
+这里是工会管理页面
+<table id="demo" lay-filter="test"></table>
+
+<div class="modal fade" id="updateDivId" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addRoomBackdropLabel">任命</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formId">
+                    <div class="layui-form-item">
+                        <label for="selectId">任命职位</label>
+                        <select  name="unPId" id="selectId" class="form-control" required>
+                            <option value="">请选择</option>
+                        </select>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="hidden" id="uaCreateId" name="umId">
+                            <input type="submit" id="btnResi" value="任命" class="btn btn-warning" lay-submit lay-filter="formDemo">
+                            <input type="reset" value="重置" class="btn btn-warning">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript"  th:src="@{/js/jquery-1.11.0.min.js}" ></script>
+<script type="application/javascript"   th:src="@{/js/jquery.validate.js}"></script>
+<script type="application/javascript"   th:src="@{/js/messages_zh.js}" ></script>
+<script type="application/javascript"   th:src="@{/js/bootstrap.min.js}" ></script>
+<script th:src="@{/js/echarts.min.js}"></script>
+<script th:src="@{/layui/layui.js}"></script>
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm" lay-event="deleteCheckData">选中的全部移出本工会</button>
+        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">查看选中成员信息</button>
+        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">查看选中个数</button>
+        <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+    </div>
+</script>
+<script type="text/html" id="barDemo">
+
+    {{#
+    var position=[[${session.position}]]
+    }}
+    {{#  if(d.unPId > position){ }}
+        <a class="layui-btn layui-btn-xs" lay-event="delete" data-unPId="{{d.unPId}}">移出本工会</a>
+        <a class="btn btn-warning layui-btn layui-btn-xs appoint-btn" lay-event="appoint"  data-unPId="{{d.unPId}}">任命</a>
+    {{#  } }}
+</script>
+<script th:inline="javascript">
+    layui.use(['element','jquery','form','upload','table','laypage'], function(){
+        var element = layui.element;
+        var $ = jQuery = layui.jquery;
+        var form = layui.form;
+        var upload = layui.upload;
+        var table = layui.table;
+        var laypage = layui.laypage;
+        //个人等级
+        var position=/*[[${session.position}]]*/
+        /**
+         * 工会成员分页
+         */
+        table.render({
+            elem: '#demo'
+            ,height: 500
+            ,url:/*[[@{/unionmember/getAll}]]*/ //数据接口
+            ,page: true //开启分页
+            ,toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
+            ,defaultToolbar: ['filter', 'exports', 'print', { //自定义头部工具栏右侧图标。如无需自定义，去除该参数即可
+                title: '提示'
+                ,layEvent: 'LAYTABLE_TIPS'
+                ,icon: 'layui-icon-tips'
+            }]
+            ,cols: [ [  //表头
+                {type: 'checkbox', fixed: 'left'},
+                {title:'成员昵称',templet:function(d){
+                        return d.roles.rUsername;
+                    },},
+                {title:'成员等级',templet:function(d){
+                        return d.roles.rGrade;
+                    },},
+                {field: 'unWeekContribution', title: '周贡献',  sort: true},
+                {field: 'unMonthlyContribution', title: '月贡献',  sort: true},
+                {field: 'unTotalContribution', title: '总贡献' ,  sort: true},
+                {title:'职务',templet:function(d){
+                        if(d.position.pName === '工会会长'){
+                            return  "<span style='color: #F581B1;'>"+ d.position.pName+"</span>"
+                        } else if (d.position.pName === '副会长'){
+                            return  "<span style='color: #7CFC00;'>"+ d.position.pName+"</span>"
+                        }else if (d.position.pName === '精英骨干'){
+                            return  "<span style='color: yellow;'>"+ d.position.pName+"</span>"
+                        }else{
+                            return d.position.pName
+                        }
+                        //return d.position.pName;
+                    }},
+                {fixed: 'right', title:'操作', toolbar: '#barDemo',},
+
+            ] ]
+            ,limit:10
+        });
+
+        if (position==1){
+            $("select[name='unPId']").append("<option value=\"1\">转让工会会长</option>\n" +
+                "<option value=\"2\">副会长</option>\n" +
+                "<option value=\"3\">精英骨干</option>\n" +
+                "<option value=\"4\">普通成员</option>")
+        }else{
+            $("select[name='unPId']").append("<option value=\"3\">精英骨干</option>\n" +
+                "<option value=\"4\">普通成员</option>");
+        }
+
+        //头工具栏事件
+        table.on('toolbar(test)', function(obj){
+            var checkStatus = table.checkStatus(obj.config.id);
+            switch(obj.event){
+                //选中移出
+                case 'deleteCheckData':
+                    var data = checkStatus.data;
+                    layer.msg("选中移出");
+                    break;
+                case 'getCheckData':
+                    var data = checkStatus.data;
+                    var a="选中:";
+                    for (var i=0 ; i<data.length;i++){
+                        a+='\n';
+                        a+='序号'+(i+1)+',昵称：'+ data[i].roles.rUsername+',等级:'+data[i].roles.rGrade;
+
+                    };
+                    alert(a);
+
+                    break;
+                case 'getCheckLength':
+                    var data = checkStatus.data;
+                    layer.msg('选中了：'+ data.length + ' 个');
+                    break;
+                case 'isAll':
+                    layer.msg(checkStatus.isAll ? '全选': '未全选');
+                    break;
+                //自定义头工具栏右侧图标 - 提示
+                case 'LAYTABLE_TIPS':
+                    layer.alert('这是并没有什么用图标按钮');
+                    break;
+            };
+        });
+        //表格内部工具栏
+        table.on('tool(test)', function(obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的 DOM 对象（如果有的话）
+
+            //踢人
+            if(layEvent === 'delete'){ //查看
+                layer.msg("删除");
+            }
+            //任命
+            if(layEvent === 'appoint'){
+
+                layer.msg("任命");
+                // 弹出模态框
+                $("#updateDivId").modal('show');
+            }
+
+
+        })
+
+
+    })
+</script>
+</html>
