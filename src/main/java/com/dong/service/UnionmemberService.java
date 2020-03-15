@@ -89,4 +89,27 @@ public interface UnionmemberService {
      * @return
      */
     List<Map<String, Object>> getAllAndRoles(int uaid);
+
+    /**
+     * 转让会长
+     * @param unionmember
+     * @param rid
+     * @return
+     */
+    int transfer(Unionmember unionmember, int rid);
+
+    /**
+     * 任命
+     * @param unionmember
+     * @return
+     */
+    int appointment(Unionmember unionmember);
+
+    /**
+     * 会长离职
+     * @param unRId
+     * @param rid
+     * @return
+     */
+    int leave(int unRId,int rid);
 }

@@ -8,7 +8,6 @@
 
 </head>
 <body>
-这里是工会管理页面
 <table id="demo" lay-filter="test"></table>
 
 <div class="modal fade" id="updateDivId" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -24,6 +23,7 @@
                 <form id="formId">
                     <div class="layui-form-item">
                         <label for="selectId">任命职位</label>
+
                         <select  name="unPId" id="selectId" class="form-control" required>
                             <option value="">请选择</option>
                         </select>
@@ -31,8 +31,8 @@
 
                     <div class="layui-form-item">
                         <div class="layui-input-block">
-                            <input type="hidden" id="uaCreateId" name="umId">
-                            <input type="submit" id="btnResi" value="任命" class="btn btn-warning" lay-submit lay-filter="formDemo">
+                            <input type="hidden" id="unRId" name="unRId">
+                            <input type="button" id="btnResi" class="btn btn-primary" value="任命">
                             <input type="reset" value="重置" class="btn btn-warning">
                         </div>
                     </div>
@@ -78,9 +78,8 @@
         var laypage = layui.laypage;
         //个人等级
         var position=/*[[${session.position}]]*/
-        /**
-         * 工会成员分页
-         */
+        //工会成员分页
+
         table.render({
             elem: '#demo'
             ,height: 500
@@ -120,13 +119,13 @@
             ] ]
             ,limit:10
         });
-
+        //下拉框填值
         if (position==1){
             $("select[name='unPId']").append("<option value=\"1\">转让工会会长</option>\n" +
                 "<option value=\"2\">副会长</option>\n" +
                 "<option value=\"3\">精英骨干</option>\n" +
                 "<option value=\"4\">普通成员</option>")
-        }else{
+        }else if (position==2){
             $("select[name='unPId']").append("<option value=\"3\">精英骨干</option>\n" +
                 "<option value=\"4\">普通成员</option>");
         }
@@ -176,14 +175,46 @@
             }
             //任命
             if(layEvent === 'appoint'){
-
-                layer.msg("任命");
                 // 弹出模态框
                 $("#updateDivId").modal('show');
+                $("#btnResi").click(function () {
+                    $("#unRId").val(data.unRId);
+                    var  unPId =$("#selectId  option:selected").val();
+                    if (unPId==1){
+                        var r=confirm("您确定将工会转让,转让以后你将不再是工会会长,成为普通管理员");
+                        if (r){
+                            $.ajax({
+                                type: "post",   //提交的方法
+                                dataType: "json",//预期服务器返回的数据类型
+                                //需要修改的地方
+                                url:/*[[@{/unionmember/transfer}]]*/, //提交的地址
+                                data: $('#formId').serialize(),// 序列化表单值
+                                success: function(data){
+                                    if (data>0){
+                                        layer.msg("转让成功");
+                                    }else{
+                                        layer.msg("转让失败");
+                                    }
+
+                                }
+                            })
+                        }
+
+                    }
+                    else if (unPId!=""){
+                        layer.alert("任命职位")
+                    }else{
+                        alert("请选择任命职位");
+                    }
+                })
+
             }
 
 
-        })
+        });
+
+
+
 
 
     })

@@ -166,9 +166,11 @@
             where un_r_id=r_id and um_ua_id=#{uaid} and un_p_id=p_id
             limit #{offset}, #{limit}
     </select>
+    <!--  获得连表分页总条数  -->
     <select id="getCount" resultType="int" parameterType="UnionmemberAndRoles">
             select COUNT(*) FROM unionmember where um_ua_id=#{uaid}
     </select>
+    <!--连表返回键值对    -->
     <select id="getAllAndRoles" resultType="map">
         select
             um_id, um_ua_id, un_r_id, un_week_contribution, un_monthly_contribution, un_total_contribution, un_p_id,

@@ -1,12 +1,16 @@
 package com.dong.service.impl;
 
+import com.dong.dao.UnionattributesDao;
 import com.dong.model.Roles;
+import com.dong.model.Unionattributes;
 import com.dong.model.Unionmember;
 import com.dong.dao.UnionmemberDao;
 import com.dong.model.UnionmemberAndRoles;
 import com.dong.service.RolesService;
+import com.dong.service.UnionattributesService;
 import com.dong.service.UnionmemberService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -24,6 +28,9 @@ public class UnionmemberServiceImpl implements UnionmemberService {
     private UnionmemberDao unionmemberDao;
     @Resource
     private RolesService rolesService;
+    @Resource
+    private UnionattributesDao unionattributesDao;
+
 
     /**
      * 通过ID查询单条数据
@@ -137,5 +144,69 @@ public class UnionmemberServiceImpl implements UnionmemberService {
     @Override
     public List<Map<String, Object>> getAllAndRoles(int uaid) {
         return unionmemberDao.getAllAndRoles(uaid);
+    }
+
+    /**
+     * 转让会长
+     * @param unionmember
+     * @param rid
+     * @return
+     */
+    @Transactional(rollbackFor=Exception.class)
+    @Override
+    public int transfer(Unionmember unionmember, int rid) {
+        int count =0;
+        count  =this.appointment(unionmember);
+        int unRId=unionmember.getUnRId();
+        count=this.leave(unRId,rid);
+        return count;
+    }
+
+    /**
+     * 任命
+     * @param unionmember
+     * @return
+     */
+    @Transactional(rollbackFor=Exception.class)
+    @Override
+    public int appointment(Unionmember unionmember) {
+        int pid = unionmember.getUnPId();
+        Unionmember unionmember2 =new Unionmember();
+        unionmember2.setUnRId(unionmember.getUnRId());
+        unionmember2.setUmUaId(unionmember.getUmId());
+        List<Unionmember> unionmemberList =unionmemberDao.queryAll(unionmember2);
+        unionmember.setUmId(unionmemberList.get(0).getUmId());
+        return this.unionmemberDao.update(unionmember);
+    }
+
+    /**
+     * 会长离职
+     * @param rid
+     * @return
+     */
+    @Transactional(rollbackFor=Exception.class)
+    @Override
+    public int leave(int unRId,int rid) {
+        Unionattributes unionattributes= new  Unionattributes();
+        int count=0;
+        unionattributes.setUaCreateId(rid);
+        //查到工会信息
+        List <Unionattributes> unionattributesList =unionattributesDao.queryAll(unionattributes);
+        //修改工会信息
+        //获得工会信息id
+        int uaId=unionattributesList.get(0).getUaId();
+        //填id
+        unionattributes.setUaId(uaId);
+        //填更换的成员的id
+        unionattributes.setUaCreateId(unRId);
+        //修改工会信息
+        count =unionattributesDao.update(unionattributes);
+        //修改原会长在工会的信息
+        Unionmember unionmember=new Unionmember();
+        unionmember.setUnRId(rid);
+        unionmember.setUmUaId(uaId);
+        unionmember.setUnPId(4);
+        count=this.appointment(unionmember);
+        return count;
     }
 }

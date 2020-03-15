@@ -67,6 +67,12 @@ public class UnionmemberController {
         return parseData;
     }
 
+    /**
+     * 获得所有人的信息键值对
+     *
+     * @param request
+     * @return 只有key为 value和name 的 其值分别为总贡献度 和角色名字
+     */
     @RequestMapping("/getEveryone")
     public List<Map<String ,Object>> getEveryone(HttpServletRequest request){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
@@ -81,6 +87,28 @@ public class UnionmemberController {
             datas.add(maps);
         }
         return datas;
+    }
 
+    /**
+     * 会长转让
+     * @param unPId
+     * @param request
+     * @return
+     */
+    @RequestMapping("/transfer")
+    public  int transfer(int unPId ,int unRId,HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        Unionmember unionmember =new Unionmember();
+        int uaid= (int) session.getAttribute("uald");
+        int rid = (int) session.getAttribute("id");
+        unionmember.setUnRId(unRId);
+        unionmember.setUmUaId(uaid);
+        unionmember.setUnPId(unPId);
+        int count =unionmemberService.transfer(unionmember,rid);
+        if (count>0){
+            session.setAttribute("position", 4);
+        }
+        return count;
     }
 }
