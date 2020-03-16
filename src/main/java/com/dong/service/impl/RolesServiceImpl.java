@@ -77,13 +77,33 @@ public class RolesServiceImpl implements RolesService {
         return this.rolesDao.deleteById(rId) > 0;
     }
 
+    /**
+     * 获取所以的信息
+     * @param roles
+     * @return
+     */
     @Override
     public List<Roles> queryAll(Roles roles) {
         return this.rolesDao.queryAll(roles);
     }
 
+    /**
+     * 修改返回int
+     * @param roles
+     * @return
+     */
     @Override
     public int updateReturnInt(Roles roles) {
         return  this.rolesDao.update(roles);
+    }
+
+    /**
+     * 删除成员信息中的工会id
+     * @param rid
+     * @return
+     */
+    @Override
+    public int deleteApplicationById(int rid) {
+        return this.rolesDao.deleteApplicationById(rid);
     }
 }

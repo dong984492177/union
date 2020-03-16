@@ -9,6 +9,8 @@ import com.dong.model.UnionmemberAndRoles;
 import com.dong.service.RolesService;
 import com.dong.service.UnionattributesService;
 import com.dong.service.UnionmemberService;
+import com.dong.util.AgreeCount;
+import org.omg.CORBA.UnionMember;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -173,7 +175,7 @@ public class UnionmemberServiceImpl implements UnionmemberService {
         int pid = unionmember.getUnPId();
         Unionmember unionmember2 =new Unionmember();
         unionmember2.setUnRId(unionmember.getUnRId());
-        unionmember2.setUmUaId(unionmember.getUmId());
+        unionmember2.setUmUaId(unionmember.getUmUaId());
         List<Unionmember> unionmemberList =unionmemberDao.queryAll(unionmember2);
         unionmember.setUmId(unionmemberList.get(0).getUmId());
         return this.unionmemberDao.update(unionmember);
@@ -207,6 +209,70 @@ public class UnionmemberServiceImpl implements UnionmemberService {
         unionmember.setUmUaId(uaId);
         unionmember.setUnPId(4);
         count=this.appointment(unionmember);
+        return count;
+    }
+
+    /**
+     * 工会移除成员
+     * @param data
+     * @return
+     */
+    @Transactional(rollbackFor=Exception.class)
+    @Override
+    public AgreeCount deleteUnion(Map<String, Object> data) {
+        AgreeCount agreeCount=new AgreeCount();
+        //移除成功
+        int refuseCount=0;
+        //失败
+        int failure=0;
+            //工会成员表id
+            int umId = (int) data.get("umId");
+            //角色信息
+            Map<String ,Object> roles= (Map<String, Object>) data.get("roles");
+            int rid= (int) roles.get("rId");
+            this.unionmemberDao.deleteById(umId);
+            int count=rolesService.deleteApplicationById(rid);
+            if (count>0){
+                refuseCount=count;
+            }else{
+                failure=count;
+            }
+            agreeCount.setFailure(failure);
+            agreeCount.setRefuseCount(refuseCount);
+
+        return agreeCount;
+    }
+
+    /**
+     * 移除全部选中成员
+     * @param data
+     * @return
+     */
+    @Override
+    public AgreeCount deleteUnionAll(Map<String, Object>[] data) {
+        AgreeCount agreeCount=new AgreeCount();
+        //移除成功
+        int refuseCount=0;
+        //失败
+        int failure=0;
+        for (Map<String, Object> map:data ) {
+            AgreeCount  agreeCount2 = this.deleteUnion(map);
+            refuseCount += agreeCount2.getRefuseCount();
+            failure += agreeCount2.getFailure();
+        }
+        agreeCount.setFailure(failure);
+        agreeCount.setRefuseCount(refuseCount);
+        return agreeCount;
+    }
+
+    @Override
+    public int escGuild( int rid) {
+        int count = 0 ;
+        Unionmember unionmember=new Unionmember();
+        unionmember.setUnRId(rid);
+        List<Unionmember> unionmemberList=unionmemberDao.queryAll(unionmember);
+        this.unionmemberDao.deleteById(unionmemberList.get(0).getUmId());
+        count=rolesService.deleteApplicationById(rid);
         return count;
     }
 }

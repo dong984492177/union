@@ -220,6 +220,13 @@ public class ApplicationServiceImpl implements ApplicationService {
         return agreeCount;
     }
 
+    /**
+     * 批量同意
+     * @param data 数据组格式
+     * @param aOperatingId 操作人id
+     * @param uald
+     * @return
+     */
     @Override
     public AgreeCount agreeAll(Map<String, Object>[] data, int aOperatingId, int uald) {
         AgreeCount agreeCount=new AgreeCount();
@@ -230,16 +237,18 @@ public class ApplicationServiceImpl implements ApplicationService {
         //失败
         int failure=0;
         for (Map map:data ){
-            //角色表id
+            //申请表id
             int aid = (int) map.get("aid");
             //角色id
             Map<String ,Object> roles= (Map<String, Object>) map.get("roles");
             int rid= (int) roles.get("rid");
             AgreeCount  agreeCount2=this.agree(aid,aOperatingId,rid,uald);
+            //上值
             agree += agreeCount2.getAgree();
             refuseCount += agreeCount2.getRefuseCount();
             failure += agreeCount2.getFailure();
         }
+        //填值
         agreeCount.setAgree(agree);
         agreeCount.setFailure(failure);
         agreeCount.setRefuseCount(refuseCount);

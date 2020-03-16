@@ -20,7 +20,7 @@
 <div class="layui-layout layui-layout-admin">
     <!--  头部导航条  -->
     <div class="layui-header">
-        <div class="layui-logo">layui 后台布局</div>
+        <div class="layui-logo">董佳奇 后台布局</div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <!--    主页 以此为模板    -->
         <ul class="layui-nav layui-layout-left" lay-filter="test">
@@ -71,7 +71,7 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
+        © dong.com -  董 底部固定区域
     </div>
 </div>
 
@@ -108,6 +108,7 @@
                 //切换当前选项卡
                 element.tabChange('demo', id);
             }
+
         });
         var uald=/*[[${session.uald}]]*/;
         var position=/*[[${session.position}]]*/
@@ -122,13 +123,43 @@
                 "                    <dl class='layui-nav-child' id='myGuild'></dl>\n" +
                 "                </li>")
             $("#myGuild").append("<a href='javascript:;' lay-id='myGuild' lay-src='"+project+"tomyGuild' lay-name='查看工会' data-btn='btn'>查看工会</a>");
-            if (position<=2){
-                $("#myGuild").append("<a href='javascript:;' lay-id='application' lay-src='"+project+"toapplication' lay-name='申请' data-btn='btn'>申请</a>");
-                $("#myGuild").append("<a href='javascript:;' lay-id='manageApplication' lay-src='"+project+"tomanageApplication' lay-name='管理工会' data-btn='btn'>管理工会</a>");
-            }
+        if (position<=2){
+            $("#myGuild").append("<a href='javascript:;' lay-id='application' lay-src='"+project+"toapplication' lay-name='申请' data-btn='btn'>申请</a>");
+            $("#myGuild").append("<a href='javascript:;' lay-id='manageApplication' lay-src='"+project+"tomanageApplication' lay-name='管理工会' data-btn='btn'>管理工会</a>");
         }
+        $("#myGuild").append("<a href='javascript:;' lay-id='application'class='esc'  lay-name='退出工会' data-btn='btn'>退出工会</a>");
+        if (position==1){
+            $("#myGuild").append("<a href='javascript:;' lay-id='application'class='throw'  lay-name='解散工会' data-btn='btn'>解散工会</a>");
+        }
+        }
+
+
+
+
         //全部更新导航条
         element.init();
+        $(".esc").click(function () {
+            if (position==1){
+                alert("您是工会会长,您不能退出工会,如果要退出工会,请先移交工会会长");
+            }else{
+                $.ajax({
+                    type: "post",   //提交的方法
+                    dataType: "json",//预期服务器返回的数据类型
+                    //需要修改的地方
+                    url:/*[[@{/unionmember/escGuild}]]*/, //提交的地址
+                    success: function(data){
+                        //方法体
+                        if (data>1){
+                            alert("退出成功");
+                        }else{
+                            alert("退出失败");
+                        }
+
+                    }
+                })
+            }
+
+        })
     });
 </script>
 </html>

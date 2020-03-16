@@ -2,6 +2,7 @@ package com.dong.service;
 
 import com.dong.model.Unionmember;
 import com.dong.model.UnionmemberAndRoles;
+import com.dong.util.AgreeCount;
 
 import java.util.List;
 import java.util.Map;
@@ -112,4 +113,25 @@ public interface UnionmemberService {
      * @return
      */
     int leave(int unRId,int rid);
+
+    /**
+     * 移除成员
+     * @param data
+     * @return
+     */
+    AgreeCount deleteUnion(Map<String, Object> data);
+
+    /**
+     * 移除选择所有
+     * @param data
+     * @return
+     */
+    AgreeCount deleteUnionAll(Map<String, Object>[] data);
+
+    /**
+     * 退出工会
+     * @param rid
+     * @return
+     */
+    int escGuild( int rid);
 }

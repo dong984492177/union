@@ -65,4 +65,11 @@ public interface RolesService {
      * @return
      */
     int updateReturnInt(Roles roles);
+
+    /**
+     * 删除成员信息中的工会id
+     * @param rid
+     * @return
+     */
+    int deleteApplicationById(int rid);
 }

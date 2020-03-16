@@ -172,6 +172,12 @@ public class ApplicationController {
         return agreeCount;
     }
 
+    /**
+     * 同意所有
+     * @param data
+     * @param request
+     * @return
+     */
     @RequestMapping("/agreeAll")
     public AgreeCount agree(@RequestBody  Map<String ,Object>[] data ,HttpServletRequest request){
         logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
@@ -183,5 +189,6 @@ public class ApplicationController {
         AgreeCount agreeCount=applicationService.agreeAll(data,aOperatingId,uald);
         return agreeCount;
     }
+
 
 }

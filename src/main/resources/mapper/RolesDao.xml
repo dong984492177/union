@@ -147,5 +147,7 @@
     <delete id="deleteById">
         delete from union.roles where r_id = #{rId}
     </delete>
-
+    <update id="deleteApplicationById" parameterType="int">
+        update union.roles set  r_ua_id=null where r_id = #{rId};
+    </update>
 </mapper>

@@ -92,7 +92,7 @@
                 ,icon: 'layui-icon-tips'
             }]
             ,cols: [ [  //表头
-                {type: 'checkbox', fixed: 'left'},
+                {type: 'checkbox', fixed: 'left' },
                 {title:'成员昵称',templet:function(d){
                         return d.roles.rUsername;
                     },},
@@ -137,7 +137,23 @@
                 //选中移出
                 case 'deleteCheckData':
                     var data = checkStatus.data;
-                    layer.msg("选中移出");
+
+                    $.ajax({
+                        type: "post",   //提交的方法
+                        dataType: "json",//预期服务器返回的数据类型
+                        contentType:"application/json",
+                        //需要修改的地方
+                        url:/*[[@{/unionmember/deleteAll}]]*/, //提交的地址
+                        data: JSON.stringify(data),// 序列化表单值
+                        success: function(data){
+                            //方法体
+                            layer.msg('移除成功：'+ data. refuseCount+ ' 个,移除操作失败:'+data.failure);
+                            setTimeout(function(){  //使用  setTimeout（）方法设定定时2000毫秒
+                                location.reload();//页面刷新
+                            },2000);
+
+                        }
+                    })
                     break;
                 case 'getCheckData':
                     var data = checkStatus.data;
@@ -170,8 +186,25 @@
             var tr = obj.tr; //获得当前行 tr 的 DOM 对象（如果有的话）
 
             //踢人
-            if(layEvent === 'delete'){ //查看
-                layer.msg("删除");
+            if(layEvent === 'delete'){
+                $.ajax({
+                    type: "post",   //提交的方法
+                    dataType: "json",//预期服务器返回的数据类型
+                    contentType:"application/json",
+                    //需要修改的地方
+                    url:/*[[@{/unionmember/delete}]]*/, //提交的地址
+                    data: JSON.stringify(data),// 序列化表单值
+                    success: function(data){
+                       if(data.refuseCount>0){
+                           alert("移除成功");
+                           location.reload();//页面刷新
+                       }else{
+                           alert("移除失败");
+                       }
+
+
+                    }
+                })
             }
             //任命
             if(layEvent === 'appoint'){
@@ -203,6 +236,25 @@
                     }
                     else if (unPId!=""){
                         layer.alert("任命职位")
+                        $.ajax({
+                            type: "post",   //提交的方法
+                            dataType: "json",//预期服务器返回的数据类型
+                            //需要修改的地方
+                            url:/*[[@{/unionmember/appointment}]]*/, //提交的地址
+                            data: $('#formId').serialize(),// 序列化表单值
+                            success: function(data){
+                                //方法体
+                                if (data>0){
+                                    layer.msg("任命成功");
+                                    setTimeout(function(){  //使用  setTimeout（）方法设定定时2000毫秒
+                                        location.reload();//页面刷新
+                                    },5000);
+                                }else{
+                                    layer.msg("任命失败");
+                                }
+
+                            }
+                        })
                     }else{
                         alert("请选择任命职位");
                     }

@@ -9,15 +9,31 @@
     <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/api_service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/ApplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionmemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/controller/UnionmemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/dao/RolesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/dao/RolesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/RolesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/RolesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/UnionmemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/UnionmemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/ApplicationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/RolesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/RolesServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionmemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dong/service/impl/UnionmemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UnionmemberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UnionmemberDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RolesDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RolesDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/guild.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/guild.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manageApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manageApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/controller/ApplicationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dong/controller/UnionmemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/controller/UnionmemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/dao/RolesDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/dao/RolesDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/RolesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/service/RolesService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/UnionmemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/service/UnionmemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/ApplicationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/service/impl/ApplicationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/RolesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/service/impl/RolesServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dong/service/impl/UnionmemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dong/service/impl/UnionmemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UnionmemberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UnionmemberDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RolesDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/RolesDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/guild.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/guild.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +75,14 @@
         <item name="本地" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="union: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="unionattributes: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="application: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="本地" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="union: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="unionmember: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -219,7 +242,8 @@
       <workItem from="1584174290772" duration="715000" />
       <workItem from="1584177037762" duration="13086000" />
       <workItem from="1584191628284" duration="163000" />
-      <workItem from="1584256343144" duration="10419000" />
+      <workItem from="1584256343144" duration="11429000" />
+      <workItem from="1584319717342" duration="19714000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -319,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584191762296</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="添加了转让会长功能">
+      <created>1584267248813</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1584267248813</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +360,8 @@
     <MESSAGE value="001" />
     <MESSAGE value="1" />
     <MESSAGE value="最终01" />
-    <option name="LAST_COMMIT_MESSAGE" value="最终01" />
+    <MESSAGE value="添加了转让会长功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了转让会长功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="543" y="200" key="#BuildArtifactsBeforeRunChooser" timestamp="1583317074804">
@@ -348,10 +380,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="106" y="20" width="1166" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1583827096839" />
-    <state x="819" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1584260667968">
+    <state x="819" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1584345716418">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="819" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1584260667968" />
+    <state x="819" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1584345716418" />
     <state x="413" y="146" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583480824283">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -372,10 +404,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583291928352" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584191746685">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584267211923">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584191746685" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584267211923" />
     <state x="393" y="112" key="FileChooserDialogImpl" timestamp="1583391943837">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -388,54 +420,54 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="448" y="76" key="Github.UntrackedFilesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583392681841" />
-    <state width="1325" height="215" key="GridCell.Tab.0.bottom" timestamp="1584266594015">
+    <state width="1325" height="215" key="GridCell.Tab.0.bottom" timestamp="1584330448647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584266594015" />
-    <state width="1325" height="215" key="GridCell.Tab.0.center" timestamp="1584266594015">
+    <state width="1325" height="215" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584330448647" />
+    <state width="1325" height="215" key="GridCell.Tab.0.center" timestamp="1584330448647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1584266594015" />
-    <state width="1325" height="215" key="GridCell.Tab.0.left" timestamp="1584266594014">
+    <state width="1325" height="215" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1584330448647" />
+    <state width="1325" height="215" key="GridCell.Tab.0.left" timestamp="1584330448646">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1584266594014" />
-    <state width="1325" height="215" key="GridCell.Tab.0.right" timestamp="1584266594015">
+    <state width="1325" height="215" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1584330448646" />
+    <state width="1325" height="215" key="GridCell.Tab.0.right" timestamp="1584330448647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1584266594015" />
-    <state width="1325" height="215" key="GridCell.Tab.1.bottom" timestamp="1584266594226">
+    <state width="1325" height="215" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1584330448647" />
+    <state width="1325" height="215" key="GridCell.Tab.1.bottom" timestamp="1584330448648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584266594226" />
-    <state width="1325" height="215" key="GridCell.Tab.1.center" timestamp="1584266594226">
+    <state width="1325" height="215" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584330448648" />
+    <state width="1325" height="215" key="GridCell.Tab.1.center" timestamp="1584330448647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1584266594226" />
-    <state width="1325" height="215" key="GridCell.Tab.1.left" timestamp="1584266594226">
+    <state width="1325" height="215" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1584330448647" />
+    <state width="1325" height="215" key="GridCell.Tab.1.left" timestamp="1584330448647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1584266594226" />
-    <state width="1325" height="215" key="GridCell.Tab.1.right" timestamp="1584266594226">
+    <state width="1325" height="215" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1584330448647" />
+    <state width="1325" height="215" key="GridCell.Tab.1.right" timestamp="1584330448648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1584266594226" />
-    <state width="1325" height="215" key="GridCell.Tab.2.bottom" timestamp="1584266594017">
+    <state width="1325" height="215" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1584330448648" />
+    <state width="1325" height="215" key="GridCell.Tab.2.bottom" timestamp="1584330448649">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584266594017" />
-    <state width="1325" height="215" key="GridCell.Tab.2.center" timestamp="1584266594016">
+    <state width="1325" height="215" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1584330448649" />
+    <state width="1325" height="215" key="GridCell.Tab.2.center" timestamp="1584330448648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1584266594016" />
-    <state width="1325" height="215" key="GridCell.Tab.2.left" timestamp="1584266594016">
+    <state width="1325" height="215" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1584330448648" />
+    <state width="1325" height="215" key="GridCell.Tab.2.left" timestamp="1584330448648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1584266594016" />
-    <state width="1325" height="215" key="GridCell.Tab.2.right" timestamp="1584266594017">
+    <state width="1325" height="215" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1584330448648" />
+    <state width="1325" height="215" key="GridCell.Tab.2.right" timestamp="1584330448648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="215" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1584266594017" />
+    <state width="1325" height="215" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1584330448648" />
     <state width="1103" height="219" key="GridCell.Tab.3.bottom" timestamp="1583478556361">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -468,14 +500,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="52" y="13" width="1087" height="712" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1583827152178" />
-    <state width="498" height="466" key="SwitcherDM" timestamp="1584067178687">
+    <state width="498" height="475" key="SwitcherDM" timestamp="1584328733741">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="498" height="466" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1584067178687" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1584191768941">
+    <state width="498" height="475" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1584328733741" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1584350891983">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1584191768941" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1584350891983" />
     <state x="263" y="25" key="com.intellij.database.dbimport.ImportDialog" timestamp="1583739964471">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -500,10 +532,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="387" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.738@0.0.1366.738" timestamp="1583821523085" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1584087272352">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1584323911622">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1584087272352" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1584323911622" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1584183314794">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

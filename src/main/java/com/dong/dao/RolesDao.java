@@ -65,4 +65,10 @@ public interface RolesDao {
      */
     public int deleteById(Integer rId);
 
+    /**
+     * 删除成员信息中的工会id
+     * @param rid
+     * @return
+     */
+    int deleteApplicationById(int rid);
 }

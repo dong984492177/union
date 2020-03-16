@@ -3,6 +3,7 @@ package com.dong.controller;
 import com.dong.model.Unionmember;
 import com.dong.model.UnionmemberAndRoles;
 import com.dong.service.UnionmemberService;
+import com.dong.util.AgreeCount;
 import com.dong.util.ParseData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -109,6 +110,55 @@ public class UnionmemberController {
         if (count>0){
             session.setAttribute("position", 4);
         }
+        return count;
+    }
+
+    /**
+     * 任命
+     * @param unionmember
+     * @param request
+     * @return
+     */
+    @RequestMapping("/appointment")
+    public  int appointment(Unionmember unionmember,HttpServletRequest request){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        HttpSession session =request.getSession();
+        int uaid= (int) session.getAttribute("uald");
+        unionmember.setUmUaId(uaid);
+        int count=unionmemberService.appointment(unionmember);
+        return count;
+    }
+
+    /**
+     * 移除单个
+     * @param data
+     * @return
+     */
+    @RequestMapping("/delete")
+    public AgreeCount delete( @RequestBody Map<String ,Object> data ){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        AgreeCount agreeCount = unionmemberService.deleteUnion(data);
+        return agreeCount;
+
+    }
+
+    /**
+     * 移除所有选中
+     * @param data
+     * @return
+     */
+    @RequestMapping("/deleteAll")
+    public AgreeCount deleteAll(@RequestBody Map<String ,Object>[] data ){
+        logger.info("进入"+new Exception().getStackTrace()[0].getMethodName()+"方法");
+        AgreeCount agreeCount =unionmemberService.deleteUnionAll(data);
+        return agreeCount;
+    }
+    @RequestMapping("/escGuild")
+    public int escGuild(HttpServletRequest request){
+        HttpSession session =request.getSession();
+        int uaid= (int) session.getAttribute("uald");
+        int rid = (int) session.getAttribute("id");
+        int count = unionmemberService.escGuild(rid);
         return count;
     }
 }
