@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="md修改尝试">
+    <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -219,7 +219,7 @@
       <workItem from="1584191628284" duration="163000" />
       <workItem from="1584256343144" duration="11429000" />
       <workItem from="1584319717342" duration="22930000" />
-      <workItem from="1584406604947" duration="1593000" />
+      <workItem from="1584406604947" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -368,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584408170539</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="md修改尝试">
+      <created>1584408499087</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1584408499087</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,10 +445,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583291928352" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584408435120">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584408470492">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584408435120" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584408470492" />
     <state x="393" y="112" key="FileChooserDialogImpl" timestamp="1583391943837">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -538,10 +545,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="498" height="475" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1584328733741" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1584408339796">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1584408515182">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1584408339796" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1584408515182" />
     <state x="263" y="25" key="com.intellij.database.dbimport.ImportDialog" timestamp="1583739964471">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
