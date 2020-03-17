@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="">
+    <list default="true" id="3db36431-f9c7-476e-9587-04d1aa5b90ea" name="Default Changelist" comment="md修改尝试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -219,7 +219,7 @@
       <workItem from="1584191628284" duration="163000" />
       <workItem from="1584256343144" duration="11429000" />
       <workItem from="1584319717342" duration="22930000" />
-      <workItem from="1584406604947" duration="1079000" />
+      <workItem from="1584406604947" duration="1593000" />
     </task>
     <task id="LOCAL-00001" summary="001">
       <created>1583393248213</created>
@@ -354,7 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584407404115</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="md修改">
+      <created>1584407960342</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1584407960342</updated>
+    </task>
+    <task id="LOCAL-00021" summary="md修改尝试">
+      <created>1584408170539</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1584408170539</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +394,8 @@
     <MESSAGE value="添加了转让会长功能" />
     <MESSAGE value="打死也不改了" />
     <MESSAGE value="md修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="md修改" />
+    <MESSAGE value="md修改尝试" />
+    <option name="LAST_COMMIT_MESSAGE" value="md修改尝试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="543" y="200" key="#BuildArtifactsBeforeRunChooser" timestamp="1583317074804">
@@ -423,10 +438,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1583291928352" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584407952089">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1584408435120">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584407952089" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1584408435120" />
     <state x="393" y="112" key="FileChooserDialogImpl" timestamp="1583391943837">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -523,10 +538,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="498" height="475" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1584328733741" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1584407980513">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1584408339796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1584407980513" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1584408339796" />
     <state x="263" y="25" key="com.intellij.database.dbimport.ImportDialog" timestamp="1583739964471">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -535,10 +550,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="175" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.738@0.0.1366.738" timestamp="1583375218797" />
-    <state x="479" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584351364189">
+    <state x="479" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584408342693">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="479" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1584351364189" />
+    <state x="479" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1584408342693" />
     <state x="0" y="0" width="898" height="738" key="find.popup" timestamp="1583310488977">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
